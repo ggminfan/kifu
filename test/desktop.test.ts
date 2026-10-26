@@ -205,7 +205,8 @@ describe('remote platform probe', () => {
     // a throwaway HOME: only the system profile runs
     const out = await sh(shCommand(probeCommand('/nonexistent/kifu-base')), { HOME: tmp(), PATH: '/usr/bin:/bin', SHELL: '/bin/sh', CODEX_HOME: '/x/codex home', CLAUDE_CONFIG_DIR: '/x/claude' });
     const p = parseProbe(out);
-    expect(p.loginPath).toMatch(/^\/.*\/usr\/bin/);
+    // System profiles may put /usr/bin first (Linux) or after other entries (macOS).
+    expect(p.loginPath?.split(':')).toContain('/usr/bin');
     expect(p).toMatchObject({ loginCodexHome: '/x/codex home', loginClaudeConfigDir: '/x/claude' });
   });
 });
