@@ -178,7 +178,7 @@ describe('evaluation', () => {
       const e = await createEval(setId, { arms: [{ label: 'A′', variantIds: [] }], repeats: 1, options: { ...OPTIONS, judge: true }, rubric });
       await settle(e.id);
       const t0 = Date.now();
-      while (Object.keys(judgmentsOf(e.id)).length < 4 && Date.now() - t0 < 20_000) await new Promise((r) => setTimeout(r, 100));
+      while ((Object.keys(judgmentsOf(e.id)).length < 4 || getEval(e.id)!.judging) && Date.now() - t0 < 20_000) await new Promise((r) => setTimeout(r, 100));
       const j = judgmentsOf(e.id);
       expect(Object.values(j).map((x) => x.scores)).toEqual(Array(4).fill({ clarity: 4, focus: 2 }));
       expect(evalReport(e.id).totals['A′'].scores).toEqual({ clarity: 4, focus: 2 });
@@ -196,7 +196,8 @@ describe('evaluation', () => {
       fs.writeFileSync(answer, JSON.stringify({ scores: { clarity: 3, focus: 3 }, rationale: {} }));
       expect(rejudge(e2.id)).toBe(4);
       const t2 = Date.now();
-      while (Object.values(judgmentsOf(e2.id)).filter((x) => Object.keys(x.scores).length).length < 4 && Date.now() - t2 < 20_000) await new Promise((r) => setTimeout(r, 100));
+      // Scores are saved before asynchronous job cleanup clears the pending state.
+      while ((Object.values(judgmentsOf(e2.id)).filter((x) => Object.keys(x.scores).length).length < 4 || getEval(e2.id)!.judging) && Date.now() - t2 < 20_000) await new Promise((r) => setTimeout(r, 100));
       expect(Object.values(judgmentsOf(e2.id)).map((x) => x.scores)).toEqual(Array(4).fill({ clarity: 3, focus: 3 }));
       expect(getEval(e2.id)!.judging).toBe(0);
       expect(rejudge(e2.id)).toBe(0);
