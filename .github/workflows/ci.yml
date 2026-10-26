@@ -51,14 +51,5 @@ jobs:
       - name: Build desktop and all server targets
         if: matrix.os == 'macos-14'
         run: pnpm desktop:build
-      - name: Upload build verification artifacts
-        if: matrix.os == 'macos-14'
-        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
-        with:
-          name: unsigned-macos-and-server-builds
-          path: |
-            dist/server/*.tar.gz
-            dist/server/*.sha256
-            desktop/artifacts/*
-          if-no-files-found: error
-          retention-days: 7
+      # Binary publication is separate: release packages must include matching
+      # native source companions and complete the checks in docs/RELEASING.md.
