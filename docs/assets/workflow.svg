@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="430" viewBox="0 0 1200 430" role="img" aria-labelledby="title desc">
+  <title id="title">Kifu: turn agent sessions into better skills</title>
+  <desc id="desc">A workflow illustration: inspect a session, replay a changed turn against a baseline, evaluate across cases, and apply a skill with backup and undo.</desc>
+  <defs>
+    <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#151923"/><stop offset="1" stop-color="#212538"/></linearGradient>
+    <marker id="arrow" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto"><path d="M0 0 7 3.5 0 7" fill="none" stroke="#818ca8" stroke-width="1.5"/></marker>
+  </defs>
+  <rect width="1200" height="430" rx="24" fill="url(#bg)"/>
+  <g font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Arial,sans-serif">
+    <text x="44" y="49" fill="#f3c566" font-size="13" font-weight="700" letter-spacing="2">FROM ONE RUN TO A BETTER SKILL</text>
+    <text x="44" y="92" fill="#f4f5fa" font-size="31" font-weight="650">See what happened. Change what happens next.</text>
+    <text x="44" y="120" fill="#a6aec4" font-size="15">A local workflow for Codex and Claude Code sessions.</text>
+    <g fill="#292f43" stroke="#404960"><rect x="44" y="156" width="256" height="208" rx="14"/><rect x="330" y="156" width="256" height="208" rx="14"/><rect x="616" y="156" width="256" height="208" rx="14"/><rect x="902" y="156" width="254" height="208" rx="14"/></g>
+    <g stroke="#818ca8" fill="none" marker-end="url(#arrow)"><path d="M305 262h17"/><path d="M591 262h17"/><path d="M877 262h17"/></g>
+    <g fill="#f3c566" font-size="12" font-weight="700" letter-spacing="1.5"><text x="64" y="185">01 / INSPECT</text><text x="350" y="185">02 / REPLAY</text><text x="636" y="185">03 / EVALUATE</text><text x="922" y="185">04 / IMPROVE</text></g>
+    <g fill="#f4f5fa" font-size="20" font-weight="600"><text x="64" y="216">Follow the trace</text><text x="350" y="216">Test a change</text><text x="636" y="216">Find regressions</text><text x="922" y="216">Keep what works</text></g>
+    <g stroke="#8492be" stroke-width="2"><path d="M77 246v61"/><path d="M92 251h145M92 276h105M92 301h163"/></g>
+    <g fill="#b6a3f3"><circle cx="77" cy="251" r="5"/><circle cx="77" cy="276" r="5"/><circle cx="77" cy="301" r="5"/></g>
+    <g font-size="14"><text x="350" y="257" fill="#b9c3df">A′  Same replay, unchanged</text><text x="350" y="288" fill="#f3c566">B   Your skill / input / model</text><text x="350" y="316" fill="#a6aec4">Repeat. Compare. Inspect.</text></g>
+    <g fill="#7482ac"><rect x="636" y="242" width="46" height="23" rx="5"/><rect x="694" y="242" width="46" height="23" rx="5"/><rect x="752" y="242" width="46" height="23" rx="5"/></g>
+    <g fill="#4c977f"><rect x="636" y="276" width="46" height="23" rx="5"/><rect x="694" y="276" width="46" height="23" rx="5"/></g><rect x="752" y="276" width="46" height="23" rx="5" fill="#cc8865"/>
+    <text x="636" y="325" fill="#a6aec4" font-size="14">Cases × variants × repeats</text>
+    <g fill="#b9c3df" font-size="14"><text x="922" y="257">Refine an existing skill</text><text x="922" y="285">Distill a new workflow</text><text x="922" y="313">Apply · Backup · Undo</text></g>
+    <g fill="#a6aec4" font-size="12"><text x="64" y="344">Context · Tools · Tokens · Skills</text><text x="44" y="402">Workflow illustration • Replay, evaluation and skill distillation currently use Codex.</text></g>
+  </g>
+</svg>

@@ -1,0 +1,13 @@
+Native source notices: crate-upstream-r-efi-7e1b0322d31d
+Source archive SHA-256: c4c0ce4a68412706de70ba2b5711e0f521aee82f6e72fdc1a6e0a7a89dc017cf
+Original terms and copyright statements follow. Coverage includes conservative build/tool dependencies.
+
+
+========================================================================
+README.md
+
+### License:
+
+ - **MIT** OR **Apache-2.0** OR **LGPL-2.1-or-later**
+ - See AUTHORS file for details.
+

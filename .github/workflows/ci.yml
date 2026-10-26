@@ -1,0 +1,64 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  check:
+    name: Check (${{ matrix.os }}, Node ${{ matrix.node }})
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - os: ubuntu-24.04
+            node: '22.22.1'
+            target: linux-x64
+          - os: ubuntu-24.04
+            node: '24'
+            target: linux-x64
+          - os: macos-14
+            node: '22.22.1'
+            target: darwin-arm64
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          persist-credentials: false
+      - uses: pnpm/action-setup@f40ffcd9367d9f12939873eb1018b921a783ffaa # v4
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
+        with:
+          node-version: ${{ matrix.node }}
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm check
+      - name: Compile native server
+        run: pnpm exec tsx scripts/build-server.ts --target ${{ matrix.target }}
+      - name: Codex TCP smoke (synthetic)
+        run: pnpm smoke:server dist/server/${{ matrix.target }}/bin/kifu-server --synthetic
+      - name: Claude socket smoke (synthetic)
+        run: pnpm smoke:server dist/server/${{ matrix.target }}/bin/kifu-server --synthetic --socket --agent claude
+      - name: Build desktop and all server targets
+        if: matrix.os == 'macos-14'
+        run: pnpm desktop:build
+      - name: Upload build verification artifacts
+        if: matrix.os == 'macos-14'
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: unsigned-macos-and-server-builds
+          path: |
+            dist/server/*.tar.gz
+            dist/server/*.sha256
+            desktop/artifacts/*
+          if-no-files-found: error
+          retention-days: 7

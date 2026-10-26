@@ -1,0 +1,65 @@
+@import 'tailwindcss';
+
+@theme {
+  --font-sans: 'Inter', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace;
+}
+
+:root {
+  color-scheme: light dark;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  @apply bg-zinc-50 text-zinc-900 antialiased dark:bg-zinc-950 dark:text-zinc-100;
+  font-size: 13px;
+}
+
+/* Thin scrollbars for the dense panels */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgb(161 161 170 / 0.5) transparent;
+}
+
+.prose-kifu {
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+}
+.prose-kifu p {
+  margin: 0.25rem 0;
+}
+.prose-kifu ul,
+.prose-kifu ol {
+  margin: 0.25rem 0 0.25rem 1.25rem;
+  list-style: revert;
+}
+.prose-kifu code {
+  @apply rounded bg-zinc-100 px-1 font-mono text-[12px] dark:bg-zinc-800;
+}
+.prose-kifu pre {
+  @apply my-1 overflow-x-auto rounded bg-zinc-100 p-2 font-mono text-[12px] dark:bg-zinc-900;
+}
+.prose-kifu pre code {
+  background: none;
+  padding: 0;
+}
+.prose-kifu h1,
+.prose-kifu h2,
+.prose-kifu h3 {
+  @apply mt-2 mb-1 font-semibold;
+}
+.prose-kifu table {
+  @apply my-1 border-collapse text-[12px];
+}
+.prose-kifu td,
+.prose-kifu th {
+  @apply border border-zinc-300 px-1.5 py-0.5 dark:border-zinc-700;
+}
+.prose-kifu a {
+  @apply text-indigo-600 underline dark:text-indigo-400;
+}

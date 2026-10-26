@@ -1,0 +1,33 @@
+name: Bug report / 问题报告
+description: Report a reproducible problem using sanitized or synthetic data.
+body:
+  - type: markdown
+    attributes:
+      value: '安全漏洞请按 SECURITY.md 私下报告。请勿上传真实会话、密钥、auth.json 或私有代码。'
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment / 环境
+      description: Kifu version or commit, OS / CPU, Node / pnpm, web or desktop, agent version.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Reproduction / 复现步骤
+      description: Include a minimal synthetic example when possible.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior / 预期行为
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior / 实际行为
+      description: Sanitized errors or screenshots; remove tokens, personal paths and session content.
+    validations:
+      required: true

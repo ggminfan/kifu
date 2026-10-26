@@ -1,0 +1,116 @@
+Native source notices: libspng-fb768002d428
+Source archive SHA-256: d656813290d70a750b69e768323ff3b3875adf8c2e8c2fdb4e57ca1467abf86a
+Original terms and copyright statements follow. Coverage includes conservative build/tool dependencies.
+
+
+========================================================================
+LICENSE
+
+BSD 2-Clause License
+
+Copyright (c) 2018-2023, Randy <randy408@protonmail.com>
+All rights reserved.
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are met:
+
+* Redistributions of source code must retain the above copyright notice, this
+  list of conditions and the following disclaimer.
+
+* Redistributions in binary form must reproduce the above copyright notice,
+  this list of conditions and the following disclaimer in the documentation
+  and/or other materials provided with the distribution.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+
+
+========================================================================
+README.md
+
+## License
+
+Code is licensed under the BSD 2-clause "Simplified" License.
+
+The project contains optimizations and test images from libpng, these are licensed under the
+[PNG Reference Library License version 2](http://www.libpng.org/pub/png/src/libpng-LICENSE.txt).
+
+## Security & Testing
+
+Code is written according to the rules of the
+[CERT C Coding Standard](https://wiki.sei.cmu.edu/confluence/display/c/SEI+CERT+C+Coding+Standard).
+All integer arithmetic is checked for overflow and all error conditions are handled gracefully.
+
+The library is continuously fuzzed by [OSS-Fuzz](https://github.com/google/oss-fuzz),
+code is also scanned with Clang Static Analyzer, Coverity Scan and PVS-Studio.
+
+The test suite consists of over 1000 test cases,
+175 [test images](http://www.schaik.com/pngsuite/) are decoded with all possible
+output format and flag combinations and compared against libpng for [correctness](tests/README.md#Correctness).
+
+## Versioning
+
+Releases follow the [semantic versioning](https://semver.org/) scheme with additional guarantees:
+
+* Releases from 0.4.0 to 0.8.x are stable
+* If 1.0.0 will introduce breaking changes then 0.8.x will be maintained as a separate stable branch
+
+Currently 1.0.0 is planned to be [compatible](https://github.com/randy408/libspng/issues/3).
+
+## Documentation
+
+Online documentation is available at [libspng.org/docs](https://libspng.org/docs).
+
+## Known Issues
+
+* Decoding to `SPNG_FMT_G8`, `SPNG_FMT_GA8` and `SPNG_FMT_GA16` output formats is not supported
+ for all PNG color type and bit depth combinations, see documentation for details.
+* Gamma correction is not implemented for `SPNG_FMT_PNG`, `SPNG_FMT_G8`, `SPNG_FMT_GA8`
+ and `SPNG_FMT_GA16` output formats.
+
+## Supporting spng
+
+You can sponsor development through [OpenCollective](https://opencollective.com/libspng/), funds will be used for maintenance and further development according to the [roadmap](https://github.com/randy408/libspng/milestones).
+
+### OpenCollective backers
+
+#### Individuals
+
+<a href="https://opencollective.com/libspng"><img src="https://opencollective.com/libspng/backers.svg?width=890"></a>
+
+#### Organizations
+
+Support this project with your organization. Your logo will show up here with a link to your website. [[Contribute](https://opencollective.com/libspng/contribute)]
+
+<a href="https://opencollective.com/libspng/sponsor/0/website"><img src="https://opencollective.com/libspng/sponsor/0/avatar.svg"></a>
+<a href="https://opencollective.com/libspng/sponsor/1/website"><img src="https://opencollective.com/libspng/sponsor/1/avatar.svg"></a>
+<a href="https://opencollective.com/libspng/sponsor/2/website"><img src="https://opencollective.com/libspng/sponsor/2/avatar.svg"></a>
+<a href="https://opencollective.com/libspng/sponsor/3/website"><img src="https://opencollective.com/libspng/sponsor/3/avatar.svg"></a>
+<a href="https://opencollective.com/libspng/sponsor/4/website"><img src="https://opencollective.com/libspng/sponsor/4/avatar.svg"></a>
+<a href="https://opencollective.com/libspng/sponsor/5/website"><img src="https://opencollective.com/libspng/sponsor/5/avatar.svg"></a>
+<a href="https://opencollective.com/libspng/sponsor/6/website"><img src="https://opencollective.com/libspng/sponsor/6/avatar.svg"></a>
+<a href="https://opencollective.com/libspng/sponsor/7/website"><img src="https://opencollective.com/libspng/sponsor/7/avatar.svg"></a>
+<a href="https://opencollective.com/libspng/sponsor/8/website"><img src="https://opencollective.com/libspng/sponsor/8/avatar.svg"></a>
+<a href="https://opencollective.com/libspng/sponsor/9/website"><img src="https://opencollective.com/libspng/sponsor/9/avatar.svg"></a>
+
+
+
+========================================================================
+spng/spng.c
+
+/* SPDX-License-Identifier: (BSD-2-Clause AND libpng-2.0) */
+
+
+========================================================================
+spng/spng.h
+
+/* SPDX-License-Identifier: BSD-2-Clause */

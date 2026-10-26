@@ -1,0 +1,117 @@
+{
+  "name": "kifu",
+  "version": "0.1.0",
+  "private": true,
+  "license": "MIT",
+  "packageManager": "pnpm@10.32.1",
+  "engines": {
+    "node": ">=22.22.1 <23 || >=24 <25",
+    "pnpm": ">=10 <11"
+  },
+  "type": "module",
+  "description": "Codex and Claude Code session visualization, replay debugging, evaluation and skill tuning (local-first)",
+  "scripts": {
+    "dev": "concurrently -k -n server,web -c blue,green \"pnpm dev:server\" \"pnpm dev:web\"",
+    "dev:server": "NODE_OPTIONS=--disable-warning=ExperimentalWarning tsx watch --clear-screen=false src/server/main.ts",
+    "dev:web": "vite",
+    "build": "vite build",
+    "start": "NODE_ENV=production NODE_OPTIONS=--disable-warning=ExperimentalWarning tsx src/server/main.ts",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit",
+    "check": "pnpm typecheck && pnpm typecheck:desktop && pnpm i18n:check && pnpm test && pnpm build",
+    "i18n:check": "node scripts/i18n/check.mjs",
+    "audit:dependencies": "pnpm audit --registry=https://registry.npmjs.org",
+    "smoke": "NODE_OPTIONS=--disable-warning=ExperimentalWarning tsx scripts/smoke-corpus.ts",
+    "build:server": "pnpm build && NODE_OPTIONS=--disable-warning=ExperimentalWarning tsx scripts/build-server.ts",
+    "build:remote": "pnpm build && NODE_OPTIONS=--disable-warning=ExperimentalWarning tsx scripts/build-server.ts --remote",
+    "smoke:server": "NODE_OPTIONS=--disable-warning=ExperimentalWarning tsx scripts/smoke-server.ts",
+    "e2e:remote": "NODE_OPTIONS=--disable-warning=ExperimentalWarning tsx scripts/e2e-remote.ts",
+    "typecheck:desktop": "node scripts/typecheck-desktop.mjs",
+    "desktop:dev": "pnpm build:server && pnpm --filter kifu-desktop dev",
+    "desktop:build": "pnpm build:server && pnpm --filter kifu-desktop build",
+    "e2e:local-sshd": "NODE_OPTIONS=--disable-warning=ExperimentalWarning tsx scripts/e2e-local-sshd.ts",
+    "preview:shell": "NODE_OPTIONS=--disable-warning=ExperimentalWarning tsx scripts/preview-shell.ts",
+    "demo:replay": "NODE_OPTIONS=--disable-warning=ExperimentalWarning tsx scripts/demo-replay.ts",
+    "icons": "NODE_OPTIONS=--disable-warning=ExperimentalWarning tsx scripts/build-icons.ts",
+    "licenses:collect": "node scripts/licenses.mjs",
+    "native:fetch": "python3 scripts/native-materials.py fetch",
+    "native:verify": "python3 scripts/native-materials.py verify",
+    "native:notices": "python3 scripts/native-materials.py notices",
+    "native:sources": "python3 scripts/native-materials.py bundle",
+    "native:audit": "node scripts/native-audit.mjs"
+  },
+  "dependencies": {
+    "@codemirror/lang-markdown": "^6.5.2",
+    "@codemirror/language": "^6.12.4",
+    "@codemirror/merge": "^6.12.2",
+    "@codemirror/state": "^6.7.6",
+    "@codemirror/view": "^6.43.13",
+    "@hono/node-server": "^2.1.3",
+    "@tanstack/react-query": "^5.104.1",
+    "@tanstack/react-virtual": "^3.14.13",
+    "codemirror": "^6.0.2",
+    "diff": "^9.0.0",
+    "hono": "^4.13.13",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "react-markdown": "^10.1.0",
+    "remark-gfm": "^4.0.1",
+    "wouter": "^3.13.0",
+    "yaml": "^2.9.1",
+    "zod": "^4.6.6"
+  },
+  "devDependencies": {
+    "@babel/parser": "^8.0.8",
+    "@oven/bun-linux-aarch64": "1.4.2",
+    "@oven/bun-linux-x64": "1.4.2",
+    "@tailwindcss/vite": "^4.3.3",
+    "@types/node": "^26.6.4",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^6.1.1",
+    "bun": "1.4.2",
+    "concurrently": "^10.0.5",
+    "tailwindcss": "^4.3.3",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.3",
+    "vitest": "^5.0.3"
+  },
+  "pnpm": {
+    "overrides": {
+      "rolldown": "1.2.11",
+      "basic-ftp": "6.2.1",
+      "source-map-js": "1.2.2",
+      "shell-quote": "1.11.0",
+      "ip-address": "10.7.4"
+    },
+    "onlyBuiltDependencies": [
+      "bun",
+      "esbuild"
+    ],
+    "supportedArchitectures": {
+      "os": [
+        "current",
+        "linux"
+      ],
+      "cpu": [
+        "current",
+        "x64",
+        "arm64"
+      ],
+      "libc": [
+        "current",
+        "glibc"
+      ]
+    }
+  },
+  "author": "Liam",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ggminfan/kifu.git"
+  },
+  "homepage": "https://github.com/ggminfan/kifu#readme",
+  "bugs": {
+    "url": "https://github.com/ggminfan/kifu/issues"
+  }
+}

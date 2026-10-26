@@ -1,0 +1,30 @@
+{
+  "license": "Brand artwork: Copyright (c) 2026 Liam. See TRADEMARKS.md; excluded from the default MIT grant.",
+  "wordmark": {
+    "viewBox": "0 -22 1720 742",
+    "width": 1720,
+    "height": 742,
+    "fills": [
+      "M0 0H158V720H0Z",
+      "M372 0H588L158 537L0 465Z",
+      "M145 309H341L596 720H400Z",
+      "M632 200H790V720H632Z",
+      "M830 200H1200V310H830Z"
+    ],
+    "strokes": [
+      "M979 720V250Q979 79 1150 79H1239",
+      "M1319 200V480A161 161 0 0 0 1641 480",
+      "M1641 200V720"
+    ],
+    "stroke": 158,
+    "spark": "M711 -22Q725.1 51.9 799 66Q725.1 80.1 711 154Q696.9 80.1 623 66Q696.9 51.9 711 -22Z",
+    "k": {
+      "fills": [
+        0,
+        1,
+        2
+      ],
+      "width": 596
+    }
+  }
+}

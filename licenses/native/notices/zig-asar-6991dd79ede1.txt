@@ -1,0 +1,62 @@
+Native source notices: zig-asar-6991dd79ede1
+Source archive SHA-256: 86c7c7e7e97299cc759a84719cf4195dddc113433c6e342af6f36c7b3fcbe3fd
+Original terms and copyright statements follow. Coverage includes conservative build/tool dependencies.
+
+
+========================================================================
+README.md
+
+## License
+
+MIT
+
+
+
+========================================================================
+package.json
+
+{
+  "name": "zig-asar",
+  "version": "0.2.2",
+  "description": "Fast, lightweight ASAR (Electron Archive) implementation in Zig",
+  "license": "MIT",
+  "author": "Blackboard Technologies Inc.",
+  "type": "module",
+  "scripts": {
+    "setup": "node scripts/setup.js",
+    "build": "bun run setup && vendors/zig/zig build",
+    "build:release": "bun run setup && vendors/zig/zig build -Doptimize=ReleaseFast",
+    "zig-test": "vendors/zig/zig build test",
+    "test": "bun test",
+    "dev": "bun run setup && bun run build && bun run zig-test && bun run test",
+    "push:beta": "npm version prerelease --preid=beta && git push origin main --tags",
+    "push:patch": "npm version prepatch --preid=beta && git push origin main --tags",
+    "push:minor": "npm version preminor --preid=beta && git push origin main --tags",
+    "push:major": "npm version premajor --preid=beta && git push origin main --tags",
+    "push:stable": "npm version patch && git push origin main --tags"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/blackboardsh/zig-asar.git"
+  },
+  "keywords": [
+    "asar",
+    "electron",
+    "archive",
+    "zig"
+  ],
+  "bugs": {
+    "url": "https://github.com/blackboardsh/zig-asar/issues"
+  },
+  "homepage": "https://github.com/blackboardsh/zig-asar#readme",
+  "os": [
+    "darwin",
+    "linux",
+    "win32"
+  ],
+  "cpu": [
+    "x64",
+    "arm64"
+  ]
+}
+

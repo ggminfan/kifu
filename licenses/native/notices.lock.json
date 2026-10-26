@@ -1,0 +1,1388 @@
+[
+  {
+    "component": "bun142",
+    "file": "notices/bun142.txt",
+    "sha256": "4ecf9e4612b877f4c99236c6de191022bc01c22469fa1d21b33e007a1218cffd",
+    "noticeBlocks": 175
+  },
+  {
+    "component": "bun1313",
+    "file": "notices/bun1313.txt",
+    "sha256": "51dd42fda3f684a8b1cbd437866b462239223b57d478f70c4583fdcda3c2558e",
+    "noticeBlocks": 215
+  },
+  {
+    "component": "electrobun",
+    "file": "notices/electrobun.txt",
+    "sha256": "2817bc52241cd399772e395febdb5480c95f4df88d3a6638fae689f008505584",
+    "noticeBlocks": 2
+  },
+  {
+    "component": "libdeflate-c8c56a20f8f6",
+    "file": "notices/libdeflate-c8c56a20f8f6.txt",
+    "sha256": "e86c00ca94535a87643f4913bcfc6e1ba0076f1297982c02962557efddd304bb",
+    "noticeBlocks": 40
+  },
+  {
+    "component": "picohttpparser-066d2b1e9ab8",
+    "file": "notices/picohttpparser-066d2b1e9ab8.txt",
+    "sha256": "1c3af74907e2223d2bca03bc532d4c86b8b052cd2e72e5eafcd87ad2a4d38d73",
+    "noticeBlocks": 1
+  },
+  {
+    "component": "libspng-fb768002d428",
+    "file": "notices/libspng-fb768002d428.txt",
+    "sha256": "b0bc97302399b4b7f150fcd1ec8793a1ff8603343d608d6cc2127cc11e1b9552",
+    "noticeBlocks": 4
+  },
+  {
+    "component": "zstd-f8745da6ff1a",
+    "file": "notices/zstd-f8745da6ff1a.txt",
+    "sha256": "3ce39e56e5a84a2fea347b56cccfef565fa7999128184ec7a7bdbf8b07cc3f01",
+    "noticeBlocks": 36
+  },
+  {
+    "component": "rust-argon2-ed81866f163f",
+    "file": "notices/rust-argon2-ed81866f163f.txt",
+    "sha256": "e39efc769489a68036b6c2ef0ab51a0aabe6960740d9157f312dcdb1332d831d",
+    "noticeBlocks": 5
+  },
+  {
+    "component": "lshpack-8905c024b6d0",
+    "file": "notices/lshpack-8905c024b6d0.txt",
+    "sha256": "f15f6509d069c52af4929fbb395ba59d9ee7c44be1c32be1fb04e9f8e66c84e7",
+    "noticeBlocks": 5
+  },
+  {
+    "component": "brotli-ed738e842d2f",
+    "file": "notices/brotli-ed738e842d2f.txt",
+    "sha256": "7596990eadab76118e4ec9274b5a5c07c63ec32350d906db298332f5a8158785",
+    "noticeBlocks": 9
+  },
+  {
+    "component": "lolhtml-725ce499aa9b",
+    "file": "notices/lolhtml-725ce499aa9b.txt",
+    "sha256": "2baac3e159d69702d630dc4d2ca7754c5fa93b4875b5b56c5fe1c4d0440185c4",
+    "noticeBlocks": 3
+  },
+  {
+    "component": "highway-2607d3b5b011",
+    "file": "notices/highway-2607d3b5b011.txt",
+    "sha256": "f85b95a04fa23ec722d734b1913ee4d9f075d4c177861a55581121f2653ab53e",
+    "noticeBlocks": 27
+  },
+  {
+    "component": "libuv-8023581113b2",
+    "file": "notices/libuv-8023581113b2.txt",
+    "sha256": "e5fb92672cddf5ee7dd5ed85f3a69335615ab517df1c8399f5fd75771e9ac1ed",
+    "noticeBlocks": 14
+  },
+  {
+    "component": "tinycc-05f0fafaa3be",
+    "file": "notices/tinycc-05f0fafaa3be.txt",
+    "sha256": "8726c171650ff75e1ec3a5cd6210c2793f732e5955a91855db57bc633988d059",
+    "noticeBlocks": 32
+  },
+  {
+    "component": "zlib-12731092979c",
+    "file": "notices/zlib-12731092979c.txt",
+    "sha256": "808a096aff2bf55bcc44fa91f17a12a0f01c661d23a29e4f4c345d182fe587af",
+    "noticeBlocks": 125
+  },
+  {
+    "component": "boringssl-41bf9b59c2eb",
+    "file": "notices/boringssl-41bf9b59c2eb.txt",
+    "sha256": "4e9567ad96b42e7c152d5723a042a61065846fab64c00d0262e60f46976c4e34",
+    "noticeBlocks": 77
+  },
+  {
+    "component": "lsquic-3181911301b1",
+    "file": "notices/lsquic-3181911301b1.txt",
+    "sha256": "4fd09e11cdabe1f2d55286b6d79bf68e3c98af4834fe00f3c081f2681dd68d67",
+    "noticeBlocks": 16
+  },
+  {
+    "component": "mimalloc-6a64e1ba7f5b",
+    "file": "notices/mimalloc-6a64e1ba7f5b.txt",
+    "sha256": "873a16f07e7c648a23928ba1e15d1ac1559d8d40741025c1d8e80f46e5459b23",
+    "noticeBlocks": 24
+  },
+  {
+    "component": "libjpeg-turbo-e352b02f794f",
+    "file": "notices/libjpeg-turbo-e352b02f794f.txt",
+    "sha256": "e072654a2634bb520fd75595f254566ab63c1087e70c806e3eba58417684d2e2",
+    "noticeBlocks": 282
+  },
+  {
+    "component": "libwebp-b7e29b9d75bd",
+    "file": "notices/libwebp-b7e29b9d75bd.txt",
+    "sha256": "6f698b64a0c8e77bee3497d6ee95c34b58401ed9b12c2df5f85e02b1084fb9a9",
+    "noticeBlocks": 180
+  },
+  {
+    "component": "cares-c7a3138dcfe3",
+    "file": "notices/cares-c7a3138dcfe3.txt",
+    "sha256": "f699c5b492d0b145e1dcd5657870fd14131351bc56304dbd5a3b012c1c2fd754",
+    "noticeBlocks": 40
+  },
+  {
+    "component": "lsqpack-1e9c5b8e59f8",
+    "file": "notices/lsqpack-1e9c5b8e59f8.txt",
+    "sha256": "c4f5a866682619f962476f7ecaa47e22cca0cacbe734b2984f2d110ba3e5b084",
+    "noticeBlocks": 5
+  },
+  {
+    "component": "hdrhistogram-be60a9987ee4",
+    "file": "notices/hdrhistogram-be60a9987ee4.txt",
+    "sha256": "5c41efb01884d9011c88839f0957039ab4ee4f4c73432babbd210965e620a7df",
+    "noticeBlocks": 18
+  },
+  {
+    "component": "libarchive-ded82291ab41",
+    "file": "notices/libarchive-ded82291ab41.txt",
+    "sha256": "156bef5ea4edabedc127aab52bc1e87928708ebb25396ff8d6ff32d009d1254c",
+    "noticeBlocks": 111
+  },
+  {
+    "component": "lolhtml-77127cd2b854",
+    "file": "notices/lolhtml-77127cd2b854.txt",
+    "sha256": "ecc483dbc7fd1447303ffe465c4eab9b83219487bc479bd875e59834ce52a2d9",
+    "noticeBlocks": 3
+  },
+  {
+    "component": "highway-ac0d5d297b13",
+    "file": "notices/highway-ac0d5d297b13.txt",
+    "sha256": "c55a30b4d55df7d5ca097c2168c0763b90b0e548996e8fb27ad417e7437b0f1e",
+    "noticeBlocks": 25
+  },
+  {
+    "component": "libuv-f3ce527ea940",
+    "file": "notices/libuv-f3ce527ea940.txt",
+    "sha256": "75871b27929dd65600b552ae11a956449dadfda1173eee37b3d0e9e90b3a7c2f",
+    "noticeBlocks": 14
+  },
+  {
+    "component": "tinycc-12882eee073c",
+    "file": "notices/tinycc-12882eee073c.txt",
+    "sha256": "02825cfbb508995fedb8da399126b3ff0fb0416cb129f7133ab29c261f5468e4",
+    "noticeBlocks": 31
+  },
+  {
+    "component": "boringssl-0c5fce43b7ed",
+    "file": "notices/boringssl-0c5fce43b7ed.txt",
+    "sha256": "6b75afae315c0f9100f822a8d5536601dc4b342c19431b25208abb2b6e1cbb60",
+    "noticeBlocks": 77
+  },
+  {
+    "component": "mimalloc-57029fb1f193",
+    "file": "notices/mimalloc-57029fb1f193.txt",
+    "sha256": "91f97f5b0583c4c4da8a40207e261db37c8435ac353cca36f910f1cbce6ff953",
+    "noticeBlocks": 25
+  },
+  {
+    "component": "cares-3ac47ee46edd",
+    "file": "notices/cares-3ac47ee46edd.txt",
+    "sha256": "3c0b8e69d780735861a89737bc9928175f3a12939f6b74734f153996086b80e7",
+    "noticeBlocks": 40
+  },
+  {
+    "component": "zig-bsdiff-b7bc5e37cbaf",
+    "file": "notices/zig-bsdiff-b7bc5e37cbaf.txt",
+    "sha256": "4f2abf23694309acda83aebe1c094c25bcaf376a845ab40652cf9d5574504efc",
+    "noticeBlocks": 3
+  },
+  {
+    "component": "zig-zstd-1bdae3a84d80",
+    "file": "notices/zig-zstd-1bdae3a84d80.txt",
+    "sha256": "d5e6e80060c2c0afc7020ba0c1fa02c4614cc7de8c17d03b6c46eb9d6007f65d",
+    "noticeBlocks": 1
+  },
+  {
+    "component": "zig-asar-6991dd79ede1",
+    "file": "notices/zig-asar-6991dd79ede1.txt",
+    "sha256": "1e830ab26c1aea29ad640e574d8e47683abee455cecd87cf83125a915fb2588b",
+    "noticeBlocks": 2
+  },
+  {
+    "component": "zstd-bsdiff-448cd340879a",
+    "file": "notices/zstd-bsdiff-448cd340879a.txt",
+    "sha256": "351879dd058b027c84de2eb8bb2ec2c2a876b25f2e0496ce34c49d6ffe71d5f2",
+    "noticeBlocks": 36
+  },
+  {
+    "component": "zstd-zig-1168da0e5679",
+    "file": "notices/zstd-zig-1168da0e5679.txt",
+    "sha256": "fcc5853e14dacc3b12a6da1d43e359c773fa0b811370bc95d1695eb17e672145",
+    "noticeBlocks": 36
+  },
+  {
+    "component": "zig-cf90dfd3098b",
+    "file": "notices/zig-cf90dfd3098b.txt",
+    "sha256": "87aac9c1101e23a84c7d8ce3c4dd6e9dc4baf12b7f5b60dbdfb3c347f2d69a1c",
+    "noticeBlocks": 2319
+  },
+  {
+    "component": "icu-78.3",
+    "file": "notices/icu-78.3.txt",
+    "sha256": "cf3ddefc7fcd4395bd2e8042f8ad24fc0918c4f7b546c1087d98ba26799b71f0",
+    "noticeBlocks": 870
+  },
+  {
+    "component": "icu-75_1",
+    "file": "notices/icu-75_1.txt",
+    "sha256": "c776722ad559180a918878adc061fc10c9bd422a1950b2c180d9e8726d8b48ff",
+    "noticeBlocks": 867
+  },
+  {
+    "component": "crate-aho-corasick-1.1.4",
+    "file": "notices/crate-aho-corasick-1.1.4.txt",
+    "sha256": "48734de987719f7f49fa494d064f7bd81a24898409309adf486b2b8f2657570a",
+    "noticeBlocks": 3
+  },
+  {
+    "component": "crate-allocator-api2-0.2.21",
+    "file": "notices/crate-allocator-api2-0.2.21.txt",
+    "sha256": "9c54f16050718fbf127e0825fe8baff85eb550cf583fb0f10c05ee84a5d1d342",
+    "noticeBlocks": 3
+  },
+  {
+    "component": "crate-anes-0.1.6",
+    "file": "notices/crate-anes-0.1.6.txt",
+    "sha256": "8c33da81d9c4c22987a76922c7849ac4ad2285805e5d52a6ae4b8f55fcf7cd72",
+    "noticeBlocks": 1
+  },
+  {
+    "component": "crate-anstyle-1.0.14",
+    "file": "notices/crate-anstyle-1.0.14.txt",
+    "sha256": "8bfbb310ae77cea5eb8795cb73517ddb7711ef4e9bdc7ff707deb275494766ca",
+    "noticeBlocks": 3
+  },
+  {
+    "component": "crate-anyhow-1.0.102",
+    "file": "notices/crate-anyhow-1.0.102.txt",
+    "sha256": "e3ee2a7a7a2f70211fd8f1616732cf65f5002c1a2678fe79b31f37e4afa24e5f",
+    "noticeBlocks": 2
+  },
+  {
+    "component": "crate-arrayref-0.3.9",
+    "file": "notices/crate-arrayref-0.3.9.txt",
+    "sha256": "a35e406933e5405688ded9e036aa3933c8d5a263ef7f8348aa1d118436dbf84b",
+    "noticeBlocks": 1
+  },
+  {
+    "component": "crate-arrayvec-0.7.6",
+    "file": "notices/crate-arrayvec-0.7.6.txt",
+    "sha256": "7ac70e62ebf7e26b65f949ba806e1e84d0c404861b25b4996077085f91b8f59d",
+    "noticeBlocks": 4
+  },
+  {
+    "component": "crate-autocfg-1.5.0",
+    "file": "notices/crate-autocfg-1.5.0.txt",
+    "sha256": "a2e9fc6d9b1685e25b7903f1c136cf0da3cfb9525fce24be9f1e36153d9eaad7",
+    "noticeBlocks": 3
+  },
+  {
+    "component": "crate-base64-0.22.1",
+    "file": "notices/crate-base64-0.22.1.txt",
+    "sha256": "0fbe7dbdea5704e957c36e7a72e15b0f0f0760b87660b166c5d5884c03cb325a",
+    "noticeBlocks": 3
+  },
+  {
+    "component": "crate-bcrypt-0.19.0",
+    "file": "notices/crate-bcrypt-0.19.0.txt",
+    "sha256": "2633c630e719e40666234408bd00f48bde2a4d9f1d6dd92a5f67fc5ebbb766e5",
+    "noticeBlocks": 1
+  },
+  {
+    "component": "crate-bitflags-2.11.1",
+    "file": "notices/crate-bitflags-2.11.1.txt",
+    "sha256": "9372ba0d61e833fd68973a84ad6f83e7a62a443074a0179f41c1d616b47129aa",
+    "noticeBlocks": 3
+  },
+  {
+    "component": "crate-blake2-0.10.6",
+    "file": "notices/crate-blake2-0.10.6.txt",
+    "sha256": "6f784df45bac27fe9377bb4cf4e8d58ca2cd5ec10bb7278edf402c485d242b21",
+    "noticeBlocks": 5
+  },
+  {
+    "component": "crate-blake2b_simd-1.0.4",
+    "file": "notices/crate-blake2b_simd-1.0.4.txt",
+    "sha256": "a497989ec13e6b0122cf2c00a2a216f5f986491a30ad356dbd2ce638f8e4d57e",
+    "noticeBlocks": 0
+  },
+  {
+    "component": "crate-block-buffer-0.10.4",
+    "file": "notices/crate-block-buffer-0.10.4.txt",
+    "sha256": "145a87daae7aa9ef8e5112b1fc469ef3b9c81ee58b4720b74639b1a613d17392",
+    "noticeBlocks": 3
+  },
+  {
+    "component": "crate-blowfish-0.9.1",
+    "file": "notices/crate-blowfish-0.9.1.txt",
+    "sha256": "a6a3e88a827322b1e96a45887f9dd56aaae1395596ce73839e892caed1f7cb8f",
+    "noticeBlocks": 3
+  },
+  {
+    "component": "crate-bstr-1.12.1",
+    "file": "notices/crate-bstr-1.12.1.txt",
+    "sha256": "e08e745d5e4d0d1eb94ec1e92114f48f0949f0b6efef38346fb3dedfa1858684",
+    "noticeBlocks": 4
+  },
+  {
+    "component": "crate-bumpalo-3.20.2",
+    "file": "notices/crate-bumpalo-3.20.2.txt",
+    "sha256": "49b493580e112f6d28d9b0b50c9af1e2ede262f49113139a0920f7e036e1792b",
+    "noticeBlocks": 8
+  },
+  {
+    "component": "crate-bytemuck-1.25.0",
+    "file": "notices/crate-bytemuck-1.25.0.txt",
+    "sha256": "1d1f08be198ead73f94d68844e0cdafd20a9acfd30739b6061cb4055a6fb0703",
+    "noticeBlocks": 3
+  },
+  {
+    "component": "crate-byteorder-1.5.0",
+    "file": "notices/crate-byteorder-1.5.0.txt",
+    "sha256": "3caa399f9f6a397d60ccc17d48056e1ecae09ff34f0c851cb98ab1e00c9a8b0d",
+    "noticeBlocks": 3
+  },
+  {
+    "component": "crate-cast-0.3.0",
+    "file": "notices/crate-cast-0.3.0.txt",
+    "sha256": "97656e0caa09ca3462f2ab1dee44b8a57c916deff289533a0f07b964fe425195",
+    "noticeBlocks": 3
+  },
+  {
+    "component": "crate-cfg-if-1.0.4",
+    "file": "notices/crate-cfg-if-1.0.4.txt",
+    "sha256": "981ee4951dcda47e13759c83c06873fc649bc52f3886be801cc3cf294e6b45cc",
+    "noticeBlocks": 3
+  },
+  {
+    "component": "crate-ciborium-0.2.2",
+    "file": "notices/crate-ciborium-0.2.2.txt",
+    "sha256": "b4fffd8f891c59f54d941b871374c43e42df602ac162b8ca129ea01fd50aa4e8",
+    "noticeBlocks": 2
+  },
+  {
+    "component": "crate-ciborium-io-0.2.2",
+    "file": "notices/crate-ciborium-io-0.2.2.txt",
+    "sha256": "53bda45377e6e6bc21e8e067aca0091bdec2a2ae7fe97905d0d7da95efc91968",
+    "noticeBlocks": 2
+  },
+  {
+    "component": "crate-ciborium-ll-0.2.2",
+    "file": "notices/crate-ciborium-ll-0.2.2.txt",
+    "sha256": "8956014c8d6966a5e687bea0e510c0bea11af1680bff4cc3e5a18c02fab8f858",
+    "noticeBlocks": 2
+  },
+  {
+    "component": "crate-cipher-0.4.4",
+    "file": "notices/crate-cipher-0.4.4.txt",
+    "sha256": "ae96abffab2485fbd353714ed8ec89e9810d9171b57976bdc4eda82cdc41343a",
+    "noticeBlocks": 3
+  },
+  {
+    "component": "crate-clap-4.6.1",
+    "file": "notices/crate-clap-4.6.1.txt",
+    "sha256": "c5860f67a168c5518e707b4852957c32da5fa8f4b2da8b48a45b3d871f6f2251",
+    "noticeBlocks": 3
+  },
+  {
+    "component": "crate-clap_builder-4.6.0",
+    "file": "notices/crate-clap_builder-4.6.0.txt",
+    "sha256": "494b91587da0bd132fd4e2445bc6bf2bddc6385e0de081d0581eef1ba9436fce",
+    "noticeBlocks": 4
+  },
+  {
+    "component": "crate-clap_lex-1.1.0",
+    "file": "notices/crate-clap_lex-1.1.0.txt",
+    "sha256": "8fa76781fce6127783ffca24185a9bd008adf57036e60fd0857a081fd93aff12",
+    "noticeBlocks": 2
+  },
+  {
+    "component": "crate-const_format-0.2.36",
+    "file": "notices/crate-const_format-0.2.36.txt",
+    "sha256": "7d491329eaaa2d555f4c1f7a41f513f9e3b45cf79285856107e8dc513276732d",
+    "noticeBlocks": 1
+  },
+  {
+    "component": "crate-const_format_proc_macros-0.2.34",
+    "file": "notices/crate-const_format_proc_macros-0.2.34.txt",
+    "sha256": "e9233afc606eb52714e2c436e3785b84a90ed40cffbc8f502735adc0ea1278fb",
+    "noticeBlocks": 1
+  },
+  {
+    "component": "crate-constant_time_eq-0.4.2",
+    "file": "notices/crate-constant_time_eq-0.4.2.txt",
+    "sha256": "b4df52aaa46254680a630bd577b6a45548cfd4da9ce4ecc4c90ba20fafbc7468",
+    "noticeBlocks": 3
+  },
+  {
+    "component": "crate-cpufeatures-0.2.17",
+    "file": "notices/crate-cpufeatures-0.2.17.txt",
+    "sha256": "9f47b1f9ab531d04fdd498ea77fe088aa88d972cc84c195c1caad3c1284acdc3",
+    "noticeBlocks": 3
+  },
+  {
+    "component": "crate-criterion-0.5.1",
+    "file": "notices/crate-criterion-0.5.1.txt",
+    "sha256": "0804b79daf9fdf5dd66636758881906690f7df2a9b6c5e100d128ac67f987285",
+    "noticeBlocks": 3
+  },
+  {
+    "component": "crate-criterion-plot-0.5.0",
+    "file": "notices/crate-criterion-plot-0.5.0.txt",
+    "sha256": "57159f07ef391ad3e794ac1645d4df11604cc53bf8ae36fa7e9aee373b18d99b",
+    "noticeBlocks": 3
+  },
+  {
+    "component": "crate-crossbeam-deque-0.8.6",
+    "file": "notices/crate-crossbeam-deque-0.8.6.txt",
+    "sha256": "5ddd8b4c28cf95b1df09aacb92b5328c179b7f1bef3eec109ac9b8c7fe659cd3",
+    "noticeBlocks": 3
+  },
+  {
+    "component": "crate-crossbeam-epoch-0.9.18",
+    "file": "notices/crate-crossbeam-epoch-0.9.18.txt",
+    "sha256": "ca4e08e75ca1e49fb37f149c7b92de6225f52401e29fc0983e045ded673d9393",
+    "noticeBlocks": 3
+  },
+  {
+    "component": "crate-crossbeam-utils-0.8.21",
+    "file": "notices/crate-crossbeam-utils-0.8.21.txt",
+    "sha256": "7cb10067121c0e160735fa846b7da508b7e9d2dda362dcd22b2a7346d80c397e",
+    "noticeBlocks": 3
+  },
+  {
+    "component": "crate-crunchy-0.2.4",
+    "file": "notices/crate-crunchy-0.2.4.txt",
+    "sha256": "ec08158686c276ab59ba0f89f70da9c8fe5b84870752e64674f976d921fe3b74",
+    "noticeBlocks": 1
+  },
+  {
+    "component": "crate-crypto-common-0.1.7",
+    "file": "notices/crate-crypto-common-0.1.7.txt",
+    "sha256": "ceb7cbd610b88ee7b91ac41a2da234c3744a26071a5b5f87b376ff364c059e65",
+    "noticeBlocks": 3
+  },
+  {
+    "component": "crate-cssparser-0.36.0",
+    "file": "notices/crate-cssparser-0.36.0.txt",
+    "sha256": "1c0a5acfa5d4a49b1bad7ed1a5ad73be39d8cb61d9e7e39bdcaa0fb526c3189c",
+    "noticeBlocks": 1
+  },
+  {
+    "component": "crate-cssparser-macros-0.6.1",
+    "file": "notices/crate-cssparser-macros-0.6.1.txt",
+    "sha256": "abc1bfbc049642e9be0f38faa51e402ee2512d4940a2b8a9c89c58ba32c9fba8",
+    "noticeBlocks": 1
+  },
+  {
+    "component": "crate-darling-0.21.3",
+    "file": "notices/crate-darling-0.21.3.txt",
+    "sha256": "ae7837371ceade5a8f7bfc7538509a21d50b65768b2e82da8e6c53748f924d75",
+    "noticeBlocks": 1
+  },
+  {
+    "component": "crate-darling_core-0.21.3",
+    "file": "notices/crate-darling_core-0.21.3.txt",
+    "sha256": "812dbc792d7c6465363f2ac9dc170d2f43f3f77d7ee91840479ef5e8654d2702",
+    "noticeBlocks": 1
+  },
+  {
+    "component": "crate-darling_macro-0.21.3",
+    "file": "notices/crate-darling_macro-0.21.3.txt",
+    "sha256": "335ac4382169067b608a45fa5dfc1fee6c9cb3258a856cb9659db0d279fc41ad",
+    "noticeBlocks": 1
+  },
+  {
+    "component": "crate-derive_more-2.1.1",
+    "file": "notices/crate-derive_more-2.1.1.txt",
+    "sha256": "a5d1d1f275fea26f0d46c4bfaa61c36150a95f8782e29fa098415309c4afdcbe",
+    "noticeBlocks": 1
+  },
+  {
+    "component": "crate-derive_more-impl-2.1.1",
+    "file": "notices/crate-derive_more-impl-2.1.1.txt",
+    "sha256": "c26d74dea68002021acf03936f6cc9ec3a046447a869bfac0942d599f229aff6",
+    "noticeBlocks": 1
+  },
+  {
+    "component": "crate-digest-0.10.7",
+    "file": "notices/crate-digest-0.10.7.txt",
+    "sha256": "d78d6920a9710724d86aec37d781d8ead3d9774fbd2e6fa89a5265b1bd2842ce",
+    "noticeBlocks": 3
+  },
+  {
+    "component": "crate-dtoa-1.0.11",
+    "file": "notices/crate-dtoa-1.0.11.txt",
+    "sha256": "f41dd365d79d7c91674c4b683f429c2a686d3759e232da4c7168eaed1bfd31d4",
+    "noticeBlocks": 3
+  },
+  {
+    "component": "crate-dtoa-short-0.3.5",
+    "file": "notices/crate-dtoa-short-0.3.5.txt",
+    "sha256": "b85153e60ffdd4b39c27bd9a66ca1cce5e73ed2098db13efa92f58c439fe82d1",
+    "noticeBlocks": 1
+  },
+  {
+    "component": "crate-either-1.15.0",
+    "file": "notices/crate-either-1.15.0.txt",
+    "sha256": "ec5a7f9e290251f19bfb7b114fa8ba0da0e654961eee41a4bbe62d2d811c05e5",
+    "noticeBlocks": 2
+  },
+  {
+    "component": "crate-encoding_rs-0.8.35",
+    "file": "notices/crate-encoding_rs-0.8.35.txt",
+    "sha256": "795bb42ef99448b62d83c3093a75eb6e04f9a825fb517d94d199218a6e699a7f",
+    "noticeBlocks": 10
+  },
+  {
+    "component": "crate-enum-map-2.7.3",
+    "file": "notices/crate-enum-map-2.7.3.txt",
+    "sha256": "f49802e316afed3cfba813f9604be7d6933f62c320678534c9d714fd347737a9",
+    "noticeBlocks": 6
+  },
+  {
+    "component": "crate-enum-map-derive-0.17.0",
+    "file": "notices/crate-enum-map-derive-0.17.0.txt",
+    "sha256": "ace91669196323da1652688335f4013ce65b87ac452a74dbd1b5d6e8cd103fc4",
+    "noticeBlocks": 3
+  },
+  {
+    "component": "crate-enumset-1.1.10",
+    "file": "notices/crate-enumset-1.1.10.txt",
+    "sha256": "0d49c132b23d744b70d65f1c3e08c70f2030a599cafb0bc7a7df2f3236eb5984",
+    "noticeBlocks": 3
+  },
+  {
+    "component": "crate-enumset_derive-0.14.0",
+    "file": "notices/crate-enumset_derive-0.14.0.txt",
+    "sha256": "21e360329b04a4f43475a06db231ab28e5a013b0c01bd402024849fa5bd197c7",
+    "noticeBlocks": 2
+  },
+  {
+    "component": "crate-equivalent-1.0.2",
+    "file": "notices/crate-equivalent-1.0.2.txt",
+    "sha256": "ea056f51cb2aa39bf40fd50bee7ba2f26d20f8efebf4b42d3b0332acf9de26af",
+    "noticeBlocks": 3
+  },
+  {
+    "component": "crate-errno-0.3.14",
+    "file": "notices/crate-errno-0.3.14.txt",
+    "sha256": "397e6c545007503de60e756143b765a156bd98e70d8c717f7b124a8529427501",
+    "noticeBlocks": 4
+  },
+  {
+    "component": "crate-fastrand-2.4.1",
+    "file": "notices/crate-fastrand-2.4.1.txt",
+    "sha256": "898258001a99ecadc761b41e0eccf5ae43a92bfcfff83434860b3d6cbb7cf4ba",
+    "noticeBlocks": 3
+  },
+  {
+    "component": "crate-fnv-1.0.7",
+    "file": "notices/crate-fnv-1.0.7.txt",
+    "sha256": "1d58217a9a30f8a03e063e38884f986c8f279e7e221b02669d8962883a4c0ea4",
+    "noticeBlocks": 2
+  },
+  {
+    "component": "crate-foldhash-0.1.5",
+    "file": "notices/crate-foldhash-0.1.5.txt",
+    "sha256": "ae016830504856e5655e0541a11fccb175cf204462577bf74cc564f309afced5",
+    "noticeBlocks": 1
+  },
+  {
+    "component": "crate-foldhash-0.2.0",
+    "file": "notices/crate-foldhash-0.2.0.txt",
+    "sha256": "986376ec63ae984aa598490b6376681832bd400115fad53079bd3cded727f40c",
+    "noticeBlocks": 1
+  },
+  {
+    "component": "crate-futures-core-0.3.32",
+    "file": "notices/crate-futures-core-0.3.32.txt",
+    "sha256": "8eef14dca327e9877456385364f2e9fc15946bfc22631705acd1e0e696acbbf3",
+    "noticeBlocks": 3
+  },
+  {
+    "component": "crate-futures-task-0.3.32",
+    "file": "notices/crate-futures-task-0.3.32.txt",
+    "sha256": "cdbeb90168cc13779f173adc32e1daf1854bb7662cccc8d4b19a020fab1a0824",
+    "noticeBlocks": 3
+  },
+  {
+    "component": "crate-futures-util-0.3.32",
+    "file": "notices/crate-futures-util-0.3.32.txt",
+    "sha256": "91e3b635fd357d5b9d662408ac34205362f3740c04295044cbba552d8b66dd88",
+    "noticeBlocks": 3
+  },
+  {
+    "component": "crate-generic-array-0.14.7",
+    "file": "notices/crate-generic-array-0.14.7.txt",
+    "sha256": "c09032e59ed38ade5b2130a6bbf891bfb7035cb1236b894bbce6a9a6fac0eebc",
+    "noticeBlocks": 1
+  },
+  {
+    "component": "crate-getrandom-0.4.2",
+    "file": "notices/crate-getrandom-0.4.2.txt",
+    "sha256": "91157fb810abaa438e7410dd20d5526cd7944a2a94e1862856a23d79d7e07d83",
+    "noticeBlocks": 3
+  },
+  {
+    "component": "crate-half-2.7.1",
+    "file": "notices/crate-half-2.7.1.txt",
+    "sha256": "3ec2d7b0bd56ef7982dcbe9ff4a2b6f6b84880c26762d4cd322266326044ba20",
+    "noticeBlocks": 3
+  },
+  {
+    "component": "crate-hashbrown-0.15.5",
+    "file": "notices/crate-hashbrown-0.15.5.txt",
+    "sha256": "6a1ddec0f27f164120039f198b87ce04e9ed9bfdc2ce2e674c300c6ae9ec5636",
+    "noticeBlocks": 3
+  },
+  {
+    "component": "crate-hashbrown-0.16.1",
+    "file": "notices/crate-hashbrown-0.16.1.txt",
+    "sha256": "b32e5858db73c31ee7d71ac5043062d43077de82e391c422b1579dcc969be178",
+    "noticeBlocks": 3
+  },
+  {
+    "component": "crate-hashbrown-0.17.0",
+    "file": "notices/crate-hashbrown-0.17.0.txt",
+    "sha256": "1b3fdb128db1b42b250a7420a8d7a4012f3c18377162e89f8704030fb0864b1e",
+    "noticeBlocks": 3
+  },
+  {
+    "component": "crate-heck-0.5.0",
+    "file": "notices/crate-heck-0.5.0.txt",
+    "sha256": "77f21ab96c4f81673ae05b7126793b40cba375b848fc872fcd44a6ea223d8fb4",
+    "noticeBlocks": 3
+  },
+  {
+    "component": "crate-hermit-abi-0.5.2",
+    "file": "notices/crate-hermit-abi-0.5.2.txt",
+    "sha256": "96e50e17f2732707c6a0bc0f5a3114b7e52ba4d83c8752b75bcc13ddd894816c",
+    "noticeBlocks": 3
+  },
+  {
+    "component": "crate-id-arena-2.3.0",
+    "file": "notices/crate-id-arena-2.3.0.txt",
+    "sha256": "5e11f1b3aa722252045f863000a487affd8f52571ed387ca0bd869a7014fcc77",
+    "noticeBlocks": 2
+  },
+  {
+    "component": "crate-ident_case-1.0.1",
+    "file": "notices/crate-ident_case-1.0.1.txt",
+    "sha256": "e666116ac0e8d87efe0f36a1aa273910e5eae0c7a247a8ee5752154b2232cbae",
+    "noticeBlocks": 2
+  },
+  {
+    "component": "crate-indexmap-2.14.0",
+    "file": "notices/crate-indexmap-2.14.0.txt",
+    "sha256": "d0e16a42214395257068381874469ff25b85b3b357a02930cd4095a80ce9de95",
+    "noticeBlocks": 2
+  },
+  {
+    "component": "crate-inout-0.1.4",
+    "file": "notices/crate-inout-0.1.4.txt",
+    "sha256": "e2f248fe6d8c70f73b46bf3e6ab3f72a00ad56094fb26bc9e0af244526c97329",
+    "noticeBlocks": 2
+  },
+  {
+    "component": "crate-is-terminal-0.4.17",
+    "file": "notices/crate-is-terminal-0.4.17.txt",
+    "sha256": "312ca0329fa591f8b15b05669bef949a6f9cb0b6f9938338d99b4f87ead449ec",
+    "noticeBlocks": 2
+  },
+  {
+    "component": "crate-itertools-0.10.5",
+    "file": "notices/crate-itertools-0.10.5.txt",
+    "sha256": "14455a6c12d8454bea0ed9834c6ea945df808910f6c9a91a532851a04410c414",
+    "noticeBlocks": 3
+  },
+  {
+    "component": "crate-itoa-1.0.18",
+    "file": "notices/crate-itoa-1.0.18.txt",
+    "sha256": "ca1026cb14689ceda3186d3c078fd9c86728cc81ed174337a70cdddc66871e30",
+    "noticeBlocks": 2
+  },
+  {
+    "component": "crate-js-sys-0.3.98",
+    "file": "notices/crate-js-sys-0.3.98.txt",
+    "sha256": "4f2d127ed2d6ce233a1bb7cc4a3945d0e7dbe64bcd7fd436d657687d7bec3a41",
+    "noticeBlocks": 2
+  },
+  {
+    "component": "crate-keccak-0.1.6",
+    "file": "notices/crate-keccak-0.1.6.txt",
+    "sha256": "1c2b159d2fe57a32682c5b4ab5fb8ec3199abacf1af105ea92ad12275c018ade",
+    "noticeBlocks": 3
+  },
+  {
+    "component": "crate-konst-0.2.20",
+    "file": "notices/crate-konst-0.2.20.txt",
+    "sha256": "5081a24045b73abfb961fe1497a7572a26bf2632ff6aa7fa568f9df4f2ea75cc",
+    "noticeBlocks": 1
+  },
+  {
+    "component": "crate-konst_macro_rules-0.2.19",
+    "file": "notices/crate-konst_macro_rules-0.2.19.txt",
+    "sha256": "8546b76eeace6a6bd36f54c276a8b58e64bcb15130bd4668bc785f3f246ffdbe",
+    "noticeBlocks": 1
+  },
+  {
+    "component": "crate-leb128fmt-0.1.0",
+    "file": "notices/crate-leb128fmt-0.1.0.txt",
+    "sha256": "1fc4946f97291708c0c748c71ec13c07ec0d15131c459e260e83a7f80ae04a42",
+    "noticeBlocks": 3
+  },
+  {
+    "component": "crate-libc-0.2.186",
+    "file": "notices/crate-libc-0.2.186.txt",
+    "sha256": "bdb389babe081543081119303cc2788f8425a4790c0690179e61477fd8f39fdc",
+    "noticeBlocks": 3
+  },
+  {
+    "component": "crate-linux-raw-sys-0.4.15",
+    "file": "notices/crate-linux-raw-sys-0.4.15.txt",
+    "sha256": "a23aa1036365c1802b166417764e8fb83222d241671833072b783fa19935ae24",
+    "noticeBlocks": 4
+  },
+  {
+    "component": "crate-log-0.4.29",
+    "file": "notices/crate-log-0.4.29.txt",
+    "sha256": "ef956740a676879e206e2330eca7d01c09bc1304a8a66ebe8f8fcbaf35628062",
+    "noticeBlocks": 4
+  },
+  {
+    "component": "crate-memchr-2.8.0",
+    "file": "notices/crate-memchr-2.8.0.txt",
+    "sha256": "974ffa282a9d452604a26530c34454f7161d441c2333ff1123d66cc541f3dbb3",
+    "noticeBlocks": 3
+  },
+  {
+    "component": "crate-mime-0.3.17",
+    "file": "notices/crate-mime-0.3.17.txt",
+    "sha256": "6f737c56daf8240d21febcef8a8e02fc832bacf026e3f42c2102bb0f9ffe03a1",
+    "noticeBlocks": 2
+  },
+  {
+    "component": "crate-new_debug_unreachable-1.0.6",
+    "file": "notices/crate-new_debug_unreachable-1.0.6.txt",
+    "sha256": "0e9b0314e99718dcf8906add1e914cd0868af30f0effad3be9d8554a2363590b",
+    "noticeBlocks": 2
+  },
+  {
+    "component": "crate-num-traits-0.2.19",
+    "file": "notices/crate-num-traits-0.2.19.txt",
+    "sha256": "e323edf56ce17ff540ec3d7c1d8ea1f416a8beee34e6086be8a6ea824a886cd7",
+    "noticeBlocks": 4
+  },
+  {
+    "component": "crate-once_cell-1.21.4",
+    "file": "notices/crate-once_cell-1.21.4.txt",
+    "sha256": "00fc6852636d3ccbd430f05c5fda3e1c8a674b59e8d74c8dbe0e257c60166ca3",
+    "noticeBlocks": 2
+  },
+  {
+    "component": "crate-oorandom-11.1.5",
+    "file": "notices/crate-oorandom-11.1.5.txt",
+    "sha256": "8955e94915ff39e57e9e254be4e72e0f1e2fa0257a0b1f8e3689e9f06f210031",
+    "noticeBlocks": 2
+  },
+  {
+    "component": "crate-paste-1.0.15",
+    "file": "notices/crate-paste-1.0.15.txt",
+    "sha256": "5d1b63af1ec7ade9f59fdd95d16d2f63012505a4f1736563f68af651cfe6dd13",
+    "noticeBlocks": 2
+  },
+  {
+    "component": "crate-phf-0.13.1",
+    "file": "notices/crate-phf-0.13.1.txt",
+    "sha256": "b1a61bee6209a4f089af94af3f516af7602d414231017b40be07f052742662d5",
+    "noticeBlocks": 1
+  },
+  {
+    "component": "crate-phf_codegen-0.13.1",
+    "file": "notices/crate-phf_codegen-0.13.1.txt",
+    "sha256": "1fa9bb5aeee347e7684aa62048c17e7ee4409cea877e589a690f33f05a2501fc",
+    "noticeBlocks": 1
+  },
+  {
+    "component": "crate-phf_generator-0.13.1",
+    "file": "notices/crate-phf_generator-0.13.1.txt",
+    "sha256": "f54ff25921f2c0e51a303175ba377c4546d936b1e8af42f10414124ba6ecca39",
+    "noticeBlocks": 1
+  },
+  {
+    "component": "crate-phf_macros-0.13.1",
+    "file": "notices/crate-phf_macros-0.13.1.txt",
+    "sha256": "129afe77945e4d75c98ad1594a562eab76385308749127060f8f51e5ca7cd2fd",
+    "noticeBlocks": 1
+  },
+  {
+    "component": "crate-phf_shared-0.13.1",
+    "file": "notices/crate-phf_shared-0.13.1.txt",
+    "sha256": "ecb06c17d609520f92e5d5c56d6b4efefcba35bf376131328560bdd96ddf2793",
+    "noticeBlocks": 1
+  },
+  {
+    "component": "crate-pin-project-lite-0.2.17",
+    "file": "notices/crate-pin-project-lite-0.2.17.txt",
+    "sha256": "561725ebf0c3d77e15b433d78219306739ecf6f18c2acb9289d6f355360dff7e",
+    "noticeBlocks": 4
+  },
+  {
+    "component": "crate-plotters-0.3.7",
+    "file": "notices/crate-plotters-0.3.7.txt",
+    "sha256": "7b737a34355114e2fa7521f4c0d4bb3e13cfd9ca6cd583ab6667da5021e4db79",
+    "noticeBlocks": 1
+  },
+  {
+    "component": "crate-plotters-backend-0.3.7",
+    "file": "notices/crate-plotters-backend-0.3.7.txt",
+    "sha256": "e9b4c9e49a279b90a334f92b915ab275d8f33ee8caece9dcdcdae28a3932632a",
+    "noticeBlocks": 1
+  },
+  {
+    "component": "crate-plotters-svg-0.3.7",
+    "file": "notices/crate-plotters-svg-0.3.7.txt",
+    "sha256": "3aa4d31e96bb6ecb898ae32a3dd3d58e1060aa683ee017822cde95cd2bc77553",
+    "noticeBlocks": 1
+  },
+  {
+    "component": "crate-precomputed-hash-0.1.1",
+    "file": "notices/crate-precomputed-hash-0.1.1.txt",
+    "sha256": "40d8716f90545e5b40d4991904ac93ac9e461f0b7a5f426c19c3431013667b31",
+    "noticeBlocks": 1
+  },
+  {
+    "component": "crate-prettyplease-0.2.37",
+    "file": "notices/crate-prettyplease-0.2.37.txt",
+    "sha256": "221ada35082ccb1392e5ca26a2cc9d1979c420c99ecf4c5dddd8aa506b7272c0",
+    "noticeBlocks": 2
+  },
+  {
+    "component": "crate-proc-macro2-1.0.106",
+    "file": "notices/crate-proc-macro2-1.0.106.txt",
+    "sha256": "142f59ccd35c7d3492479935e58e715800a8ae398e72403d934a4d6a47092da1",
+    "noticeBlocks": 2
+  },
+  {
+    "component": "crate-quick-xml-0.38.4",
+    "file": "notices/crate-quick-xml-0.38.4.txt",
+    "sha256": "fc54da8b1240bde8fe9cf73c595250cf6a436dcaa5a7ab441048172d3f64a38b",
+    "noticeBlocks": 2
+  },
+  {
+    "component": "crate-quote-1.0.45",
+    "file": "notices/crate-quote-1.0.45.txt",
+    "sha256": "8d2c4964b4559fb7d1d8aa972ba603d7d8408e7612b78756b64465f1ad2f7c56",
+    "noticeBlocks": 2
+  },
+  {
+    "component": "crate-r-efi-6.0.0",
+    "file": "notices/crate-r-efi-6.0.0.txt",
+    "sha256": "fcc3dccd8553baf7d87aeebbc6ffc2a2df8ef303de24d4fb104ee6c90e6f0dd3",
+    "noticeBlocks": 1
+  },
+  {
+    "component": "crate-rayon-1.12.0",
+    "file": "notices/crate-rayon-1.12.0.txt",
+    "sha256": "c49b529d890dbac788522799decb2748743d87f0cfff9a6d49f6d6cd15041d35",
+    "noticeBlocks": 3
+  },
+  {
+    "component": "crate-rayon-core-1.13.0",
+    "file": "notices/crate-rayon-core-1.13.0.txt",
+    "sha256": "2e29a1834340bc525159f68e74958ca4c33e227736309b4f18388f99b47ba797",
+    "noticeBlocks": 2
+  },
+  {
+    "component": "crate-regex-1.12.3",
+    "file": "notices/crate-regex-1.12.3.txt",
+    "sha256": "64a0e00db64199a80b216d64259524160347a3c2e3460c498e50b0c921ffe7fa",
+    "noticeBlocks": 3
+  },
+  {
+    "component": "crate-regex-automata-0.4.14",
+    "file": "notices/crate-regex-automata-0.4.14.txt",
+    "sha256": "ab2a537c7b36a8e3c865b0604ae9a43451177b3bff2c3a0977e7fc55b7ce432e",
+    "noticeBlocks": 2
+  },
+  {
+    "component": "crate-regex-syntax-0.8.10",
+    "file": "notices/crate-regex-syntax-0.8.10.txt",
+    "sha256": "937d738c6faf1589582094de18a8d2c3d46e54314896503dbb70cb7232b22501",
+    "noticeBlocks": 3
+  },
+  {
+    "component": "crate-roxmltree-0.20.0",
+    "file": "notices/crate-roxmltree-0.20.0.txt",
+    "sha256": "29b220307363cc6d85aad11b3a1cab54ebef90a44c2129f6e26b4b18d606608a",
+    "noticeBlocks": 3
+  },
+  {
+    "component": "crate-rustc-hash-2.1.2",
+    "file": "notices/crate-rustc-hash-2.1.2.txt",
+    "sha256": "bc7a9b0891cf2466d254294190ee64f4b0040ddcf01f32ad8f78808a5df837b2",
+    "noticeBlocks": 2
+  },
+  {
+    "component": "crate-rustc_version-0.4.1",
+    "file": "notices/crate-rustc_version-0.4.1.txt",
+    "sha256": "260121265ab0d3b3fc1f560cc269eecb0a79d8aa2664bed2c2d064a93d0967b9",
+    "noticeBlocks": 4
+  },
+  {
+    "component": "crate-rustix-0.38.44",
+    "file": "notices/crate-rustix-0.38.44.txt",
+    "sha256": "c4b946467f02292cef3f8d6901f82fd3c47d1bd8072ead9bc39d52d9d3edf473",
+    "noticeBlocks": 4
+  },
+  {
+    "component": "crate-rustversion-1.0.22",
+    "file": "notices/crate-rustversion-1.0.22.txt",
+    "sha256": "2066d853fb48a8795c5cba170b5c0f9ac0634840849501dabe06e77bcb1c6206",
+    "noticeBlocks": 2
+  },
+  {
+    "component": "crate-same-file-1.0.6",
+    "file": "notices/crate-same-file-1.0.6.txt",
+    "sha256": "275401e671e32fc329f236646f75ce655811291e86d35a7f6f9dda74c4b1f35d",
+    "noticeBlocks": 3
+  },
+  {
+    "component": "crate-scopeguard-1.2.0",
+    "file": "notices/crate-scopeguard-1.2.0.txt",
+    "sha256": "f029c2d4e8b10f3c0226f7bd85f5e61ba1bed713bda21cb906c84dd550be9f17",
+    "noticeBlocks": 2
+  },
+  {
+    "component": "crate-selectors-0.33.0",
+    "file": "notices/crate-selectors-0.33.0.txt",
+    "sha256": "45615ea6485e14be708843d44990cc981f61adbbbaf168320bbd1711968ff69e",
+    "noticeBlocks": 0
+  },
+  {
+    "component": "crate-semver-1.0.28",
+    "file": "notices/crate-semver-1.0.28.txt",
+    "sha256": "3172bb5a5b0c6ddca29333e57038492750cc8c1a82348ba8cb062f9aa421c19e",
+    "noticeBlocks": 2
+  },
+  {
+    "component": "crate-serde-1.0.228",
+    "file": "notices/crate-serde-1.0.228.txt",
+    "sha256": "bfd1fcee3402120948c82ac37e4a4cd1de95f5b87e453660626c105b5c00f3b4",
+    "noticeBlocks": 2
+  },
+  {
+    "component": "crate-serde_core-1.0.228",
+    "file": "notices/crate-serde_core-1.0.228.txt",
+    "sha256": "e97278b60fe3b76ffaa85fddd61ecca58a7135811123c5fe1c92ac67def0fe96",
+    "noticeBlocks": 2
+  },
+  {
+    "component": "crate-serde_derive-1.0.228",
+    "file": "notices/crate-serde_derive-1.0.228.txt",
+    "sha256": "142cc7706a1a7b4ecb74f4ff0bd4f1defa65d07811739a125e20031ec8846ece",
+    "noticeBlocks": 2
+  },
+  {
+    "component": "crate-serde_json-1.0.149",
+    "file": "notices/crate-serde_json-1.0.149.txt",
+    "sha256": "6ddf5b3b3461a2924cae2356155e431000539345c4e0001c40781db3f079353c",
+    "noticeBlocks": 3
+  },
+  {
+    "component": "crate-servo_arc-0.4.3",
+    "file": "notices/crate-servo_arc-0.4.3.txt",
+    "sha256": "27ed3ad1ab3824a0ff0e54609190cc906101737d73eb481dbc176743121237c8",
+    "noticeBlocks": 4
+  },
+  {
+    "component": "crate-sha3-0.10.9",
+    "file": "notices/crate-sha3-0.10.9.txt",
+    "sha256": "bbce09b71dcbb3b328206553440de3d0dce565d81b7ee883410eaa7a394654f2",
+    "noticeBlocks": 3
+  },
+  {
+    "component": "crate-siphasher-1.0.3",
+    "file": "notices/crate-siphasher-1.0.3.txt",
+    "sha256": "cc04346ef3c752109ee4d6b4e2bf23cd96b74ef525d256790bea713515d15e15",
+    "noticeBlocks": 3
+  },
+  {
+    "component": "crate-slab-0.4.12",
+    "file": "notices/crate-slab-0.4.12.txt",
+    "sha256": "aafd0288db79f063dd7643edaf748e43745d643e827cf99299daa6271dfb0194",
+    "noticeBlocks": 2
+  },
+  {
+    "component": "crate-smallvec-1.15.1",
+    "file": "notices/crate-smallvec-1.15.1.txt",
+    "sha256": "e67bfe46fac2473fecd7748728b81fca8b4e88ca51dec8d870785294684cf7a2",
+    "noticeBlocks": 2
+  },
+  {
+    "component": "crate-stable_deref_trait-1.2.1",
+    "file": "notices/crate-stable_deref_trait-1.2.1.txt",
+    "sha256": "31a8de7e8892bd49bb503e49349d1d6a6df55305bada64c0e45215bf787261db",
+    "noticeBlocks": 3
+  },
+  {
+    "component": "crate-strum-0.26.3",
+    "file": "notices/crate-strum-0.26.3.txt",
+    "sha256": "84a7d561c8d80951889383125a7b2a44bf7c5bc2230d9ab27a327e036f15b760",
+    "noticeBlocks": 1
+  },
+  {
+    "component": "crate-strum_macros-0.26.4",
+    "file": "notices/crate-strum_macros-0.26.4.txt",
+    "sha256": "a56f8a5bd80212cd0e93879c0255b9af6f88d4e46f2a4ce3aa230edc9b4a4a56",
+    "noticeBlocks": 1
+  },
+  {
+    "component": "crate-subtle-2.6.1",
+    "file": "notices/crate-subtle-2.6.1.txt",
+    "sha256": "745ae1fb7fbdb55f39ce46d9b928ef81795e0fbcd05ec89bad36b17782d2ad7e",
+    "noticeBlocks": 2
+  },
+  {
+    "component": "crate-syn-2.0.117",
+    "file": "notices/crate-syn-2.0.117.txt",
+    "sha256": "0f056bc9893db9d6dc632bbb7a202a674a7e6b1bc6178cb557b18d596ce21d43",
+    "noticeBlocks": 2
+  },
+  {
+    "component": "crate-thiserror-2.0.18",
+    "file": "notices/crate-thiserror-2.0.18.txt",
+    "sha256": "eb6d5fd5c70d5775b3ae13aeb66d3c227d4595f903daa0b82e35453d0a91a1f9",
+    "noticeBlocks": 2
+  },
+  {
+    "component": "crate-thiserror-impl-2.0.18",
+    "file": "notices/crate-thiserror-impl-2.0.18.txt",
+    "sha256": "950d5b230c7ff7b3d16d4c14ed19697da9bd8d05a1246dccdce75eea7da960c0",
+    "noticeBlocks": 2
+  },
+  {
+    "component": "crate-tinytemplate-1.2.1",
+    "file": "notices/crate-tinytemplate-1.2.1.txt",
+    "sha256": "adafa3c67c80c6d3a4a22a4621b122c6e098102ead473db0b7d0c280a5e16fbb",
+    "noticeBlocks": 3
+  },
+  {
+    "component": "crate-typed-arena-2.0.2",
+    "file": "notices/crate-typed-arena-2.0.2.txt",
+    "sha256": "ccbec94a2853088eca9b72b93872e6bcc3655cb581c882ce99d975712bc84195",
+    "noticeBlocks": 1
+  },
+  {
+    "component": "crate-typenum-1.20.0",
+    "file": "notices/crate-typenum-1.20.0.txt",
+    "sha256": "29266db1330265046e43db0e738a17cd0b161b2c9554796b4dfbcf305f18a4b8",
+    "noticeBlocks": 4
+  },
+  {
+    "component": "crate-unicode-ident-1.0.24",
+    "file": "notices/crate-unicode-ident-1.0.24.txt",
+    "sha256": "4b1c32ea5cd6f879361cbe392f0e614e277fbcd9e73f4519f720c25f2eba2eeb",
+    "noticeBlocks": 4
+  },
+  {
+    "component": "crate-unicode-xid-0.2.6",
+    "file": "notices/crate-unicode-xid-0.2.6.txt",
+    "sha256": "f4637cd85fc9d55b9e95ca92e9b84dd152fb8654ea5e4befdeec43ac81299aea",
+    "noticeBlocks": 4
+  },
+  {
+    "component": "crate-version_check-0.9.5",
+    "file": "notices/crate-version_check-0.9.5.txt",
+    "sha256": "cd95e6ea4487005e6ed569bc2a4b08bddb11803eb3512a9bf845f6aca7c06d4d",
+    "noticeBlocks": 3
+  },
+  {
+    "component": "crate-walkdir-2.5.0",
+    "file": "notices/crate-walkdir-2.5.0.txt",
+    "sha256": "c34377cb062f5cc11ca2d667cb893cf4a6aba8dee7c821082f4b7d39c1d249c8",
+    "noticeBlocks": 3
+  },
+  {
+    "component": "crate-wasip2-1.0.3+wasi-0.2.9",
+    "file": "notices/crate-wasip2-1.0.3+wasi-0.2.9.txt",
+    "sha256": "c58890ddc17107111c69dec098fc2e0e09b3a2350da386bd097f050bc2d4e9cf",
+    "noticeBlocks": 3
+  },
+  {
+    "component": "crate-wasip3-0.4.0+wasi-0.3.0-rc-2026-01-06",
+    "file": "notices/crate-wasip3-0.4.0+wasi-0.3.0-rc-2026-01-06.txt",
+    "sha256": "b18d8c57cde45e56f6b066fdabe330bcffca60f45e8fd2f525bdb61078255f30",
+    "noticeBlocks": 0
+  },
+  {
+    "component": "crate-wasm-bindgen-0.2.121",
+    "file": "notices/crate-wasm-bindgen-0.2.121.txt",
+    "sha256": "5efc94234aa6bd4eb5d3cd0a457d715169ed179d9498773c92c36cd0c95423af",
+    "noticeBlocks": 3
+  },
+  {
+    "component": "crate-wasm-bindgen-macro-0.2.121",
+    "file": "notices/crate-wasm-bindgen-macro-0.2.121.txt",
+    "sha256": "82012a60d94065fe7f3fa8bba84625e54fbe804a0cd051d222a4a0b5cb894740",
+    "noticeBlocks": 2
+  },
+  {
+    "component": "crate-wasm-bindgen-macro-support-0.2.121",
+    "file": "notices/crate-wasm-bindgen-macro-support-0.2.121.txt",
+    "sha256": "8d3de735fbcb430d5bf960de96bf14bfc6f597a41799e7749b225651787b50af",
+    "noticeBlocks": 2
+  },
+  {
+    "component": "crate-wasm-bindgen-shared-0.2.121",
+    "file": "notices/crate-wasm-bindgen-shared-0.2.121.txt",
+    "sha256": "2e6d05a0b3d55e9e4bee6cb0560bdc55a30802878e32b1807e5e79f40b1b373e",
+    "noticeBlocks": 2
+  },
+  {
+    "component": "crate-wasm-encoder-0.244.0",
+    "file": "notices/crate-wasm-encoder-0.244.0.txt",
+    "sha256": "3f34015ab30e24af7cee0d3a9a9d4ab0065153e8edf987ca1ad8b67923c63397",
+    "noticeBlocks": 1
+  },
+  {
+    "component": "crate-wasm-metadata-0.244.0",
+    "file": "notices/crate-wasm-metadata-0.244.0.txt",
+    "sha256": "9da4eaf43a4f9a5b47a79dd925c2f3f2a5aeff9ff96cc0142cbcf6884a5761a9",
+    "noticeBlocks": 1
+  },
+  {
+    "component": "crate-wasmparser-0.244.0",
+    "file": "notices/crate-wasmparser-0.244.0.txt",
+    "sha256": "6b14f6372831a0f8fc1637087cde933e1e2d6f398ef489927720aa73266debbf",
+    "noticeBlocks": 5
+  },
+  {
+    "component": "crate-web-sys-0.3.98",
+    "file": "notices/crate-web-sys-0.3.98.txt",
+    "sha256": "46a382b2f296de6851fc1805fce058fa7cd10de8133a2213bc061f98cf24b655",
+    "noticeBlocks": 2
+  },
+  {
+    "component": "crate-winapi-util-0.1.11",
+    "file": "notices/crate-winapi-util-0.1.11.txt",
+    "sha256": "4dc3adac90b8db6a1f55d53d555bb1caff2d76367ca890c6533a81626ff91202",
+    "noticeBlocks": 3
+  },
+  {
+    "component": "crate-windows-link-0.2.1",
+    "file": "notices/crate-windows-link-0.2.1.txt",
+    "sha256": "1181b0c389b67350e957841cdd926761dbd2efbd248407db82234cc22535bc4f",
+    "noticeBlocks": 2
+  },
+  {
+    "component": "crate-windows-sys-0.59.0",
+    "file": "notices/crate-windows-sys-0.59.0.txt",
+    "sha256": "9826d64497b4d264c21e111cd1c991f6c590479ab1ec07d221da67217371e581",
+    "noticeBlocks": 2
+  },
+  {
+    "component": "crate-windows-sys-0.61.2",
+    "file": "notices/crate-windows-sys-0.61.2.txt",
+    "sha256": "979dc5e884234ad74f0217b07e30070382f23ed0c77cdc4472512762c9fd2ff2",
+    "noticeBlocks": 2
+  },
+  {
+    "component": "crate-windows-targets-0.52.6",
+    "file": "notices/crate-windows-targets-0.52.6.txt",
+    "sha256": "2837ddd39a404989ac2be4f2affce0ee99c1f4705199b1fe32318cf465e69adc",
+    "noticeBlocks": 2
+  },
+  {
+    "component": "crate-windows_aarch64_gnullvm-0.52.6",
+    "file": "notices/crate-windows_aarch64_gnullvm-0.52.6.txt",
+    "sha256": "f080a2e7d3a2874c60027b5d2f0560fc1e7319b0a8536e57b43a16da6c5903c3",
+    "noticeBlocks": 2
+  },
+  {
+    "component": "crate-windows_aarch64_msvc-0.52.6",
+    "file": "notices/crate-windows_aarch64_msvc-0.52.6.txt",
+    "sha256": "92f798db92e05d89a8a028ac7c6887f804e084019998d08e3812011f92a0975a",
+    "noticeBlocks": 2
+  },
+  {
+    "component": "crate-windows_i686_gnu-0.52.6",
+    "file": "notices/crate-windows_i686_gnu-0.52.6.txt",
+    "sha256": "6f2fd45df299cfa8c5e74ba64258a3311bf241f1869065f66e7414669a29ce8a",
+    "noticeBlocks": 2
+  },
+  {
+    "component": "crate-windows_i686_gnullvm-0.52.6",
+    "file": "notices/crate-windows_i686_gnullvm-0.52.6.txt",
+    "sha256": "386dfcfca05b5241cc2ebcaf2a7e2153d33a0063bec999916f6cf195a8bc40d1",
+    "noticeBlocks": 2
+  },
+  {
+    "component": "crate-windows_i686_msvc-0.52.6",
+    "file": "notices/crate-windows_i686_msvc-0.52.6.txt",
+    "sha256": "8d13f94f814f481e18aaa245c0b37606599d015b9cfa7608ae0702acc0f7c6bb",
+    "noticeBlocks": 2
+  },
+  {
+    "component": "crate-windows_x86_64_gnu-0.52.6",
+    "file": "notices/crate-windows_x86_64_gnu-0.52.6.txt",
+    "sha256": "587452978acd2b5dae2861e9f000abc6604794d11bdde5937fd7346c28565257",
+    "noticeBlocks": 2
+  },
+  {
+    "component": "crate-windows_x86_64_gnullvm-0.52.6",
+    "file": "notices/crate-windows_x86_64_gnullvm-0.52.6.txt",
+    "sha256": "661ac366f17609067191d2e76a2bce2db192587de0f537ebe954b9f26a375d1a",
+    "noticeBlocks": 2
+  },
+  {
+    "component": "crate-windows_x86_64_msvc-0.52.6",
+    "file": "notices/crate-windows_x86_64_msvc-0.52.6.txt",
+    "sha256": "e2043b9757019e5eb3f259c64a179b02a105ccef768ec5576d7667f10361feed",
+    "noticeBlocks": 2
+  },
+  {
+    "component": "crate-wit-bindgen-0.51.0",
+    "file": "notices/crate-wit-bindgen-0.51.0.txt",
+    "sha256": "30056ae68f069a44032f8b381ee3b6771884c4a6a37b440286a29ae84f1aac56",
+    "noticeBlocks": 4
+  },
+  {
+    "component": "crate-wit-bindgen-0.57.1",
+    "file": "notices/crate-wit-bindgen-0.57.1.txt",
+    "sha256": "ebaadd87aebcb30e2bd01e5f9fa88bde2f67251f21447c014bd2565931736ea7",
+    "noticeBlocks": 4
+  },
+  {
+    "component": "crate-wit-bindgen-core-0.51.0",
+    "file": "notices/crate-wit-bindgen-core-0.51.0.txt",
+    "sha256": "cf6f6a2e21312125a03625a2e9fa7db233018c50f364210bc968bf8c5e0f6a11",
+    "noticeBlocks": 3
+  },
+  {
+    "component": "crate-wit-bindgen-rust-0.51.0",
+    "file": "notices/crate-wit-bindgen-rust-0.51.0.txt",
+    "sha256": "6673d12a60ca982c45d06a439c0bd99e7378e66024fe1174a04c11f917719142",
+    "noticeBlocks": 3
+  },
+  {
+    "component": "crate-wit-bindgen-rust-macro-0.51.0",
+    "file": "notices/crate-wit-bindgen-rust-macro-0.51.0.txt",
+    "sha256": "51fdb3b37ad7ac6abb6c63fc00f11cd5dd274e4ea2ed5bd2b76e301b1539a059",
+    "noticeBlocks": 3
+  },
+  {
+    "component": "crate-wit-component-0.244.0",
+    "file": "notices/crate-wit-component-0.244.0.txt",
+    "sha256": "f82a020a745b78aa1b12ad0ed6387a466eee46992917dc906942963f9c2e5e5d",
+    "noticeBlocks": 0
+  },
+  {
+    "component": "crate-wit-parser-0.244.0",
+    "file": "notices/crate-wit-parser-0.244.0.txt",
+    "sha256": "01382351c2c7225a2303b700aa4fb5e96ff339459b946eb31cbdea7be625b1a1",
+    "noticeBlocks": 0
+  },
+  {
+    "component": "crate-xml-rs-0.8.29",
+    "file": "notices/crate-xml-rs-0.8.29.txt",
+    "sha256": "a10529c9cd9ae6000809f29830e4ed03b4814cb47e97af66426f27bd3162a4d8",
+    "noticeBlocks": 1
+  },
+  {
+    "component": "crate-zerocopy-0.8.48",
+    "file": "notices/crate-zerocopy-0.8.48.txt",
+    "sha256": "e64476e2bd1fd24c7d387ec67d709278e28acab0eeb944f7290edfc77dfc8483",
+    "noticeBlocks": 11
+  },
+  {
+    "component": "crate-zerocopy-derive-0.8.48",
+    "file": "notices/crate-zerocopy-derive-0.8.48.txt",
+    "sha256": "03417b23bb5eec4a60ad03793c37970386a89530b350766e06aed608afe477a0",
+    "noticeBlocks": 5
+  },
+  {
+    "component": "crate-zeroize-1.8.2",
+    "file": "notices/crate-zeroize-1.8.2.txt",
+    "sha256": "07a5f8eceedc4d1d7a7f3469c63c556bde079361384bc3921bc32ffaf19615a8",
+    "noticeBlocks": 3
+  },
+  {
+    "component": "crate-zmij-1.0.21",
+    "file": "notices/crate-zmij-1.0.21.txt",
+    "sha256": "38ab76d98042442dcc73978b3aa19f8f93d700d6532cb2984659cae9faeb50f0",
+    "noticeBlocks": 1
+  },
+  {
+    "component": "crate-upstream-anes-rs-378ac7461eca",
+    "file": "notices/crate-upstream-anes-rs-378ac7461eca.txt",
+    "sha256": "08c1d6e1e5afb0f9b9537f5e8a25024fffb1ce1b7abfe5c987ad25ae6a98d910",
+    "noticeBlocks": 3
+  },
+  {
+    "component": "crate-upstream-blake2_simd-6a94ae2e1898",
+    "file": "notices/crate-upstream-blake2_simd-6a94ae2e1898.txt",
+    "sha256": "82c42ef4cd917e95e99db90d3f910d38b7b3dfad005a7d0f60ceeca18b448887",
+    "noticeBlocks": 2
+  },
+  {
+    "component": "crate-upstream-enum-map-c788a9c4bd04",
+    "file": "notices/crate-upstream-enum-map-c788a9c4bd04.txt",
+    "sha256": "610868f91e69aa753a060db473c190b2148c1e890eca709c27a4e4404b492a43",
+    "noticeBlocks": 9
+  },
+  {
+    "component": "crate-upstream-enum-map-2026968c30ad",
+    "file": "notices/crate-upstream-enum-map-2026968c30ad.txt",
+    "sha256": "433ab55ddac1be18fdb9e48f6aba685ff86b9eac785dc3ad4f586684b93924c0",
+    "noticeBlocks": 9
+  },
+  {
+    "component": "crate-upstream-r-efi-7e1b0322d31d",
+    "file": "notices/crate-upstream-r-efi-7e1b0322d31d.txt",
+    "sha256": "43bfa316dbf824a9cca11d4c056e87dadded7f14859c877b544cd7c6b77cdec0",
+    "noticeBlocks": 1
+  },
+  {
+    "component": "crate-upstream-stylo-f319793c6989",
+    "file": "notices/crate-upstream-stylo-f319793c6989.txt",
+    "sha256": "c72d11e44c697ec2f184665b16e4b7a0cab39bf10e3abdcff68202daf9ec3497",
+    "noticeBlocks": 6
+  },
+  {
+    "component": "crate-upstream-wasi-rs-06ce201370fc",
+    "file": "notices/crate-upstream-wasi-rs-06ce201370fc.txt",
+    "sha256": "3730c2792ad65990b11f66fcd1b1e723c69157f76df16097b1b37ff6f02aa0ff",
+    "noticeBlocks": 4
+  },
+  {
+    "component": "crate-upstream-wasm-tools-d4e317f22c3b",
+    "file": "notices/crate-upstream-wasm-tools-d4e317f22c3b.txt",
+    "sha256": "fbf27604ff9cf4b51c65fcca908f9a05dd4190bd853338a012c7bbb709ae6be9",
+    "noticeBlocks": 14
+  },
+  {
+    "component": "zig-bun-365343af4fc5",
+    "file": "notices/zig-bun-365343af4fc5.txt",
+    "sha256": "158bc69154729eba2a237eabf9e2691698c19ba8a2164a649655dfb90c0eb918",
+    "noticeBlocks": 4522
+  },
+  {
+    "component": "webkit142",
+    "file": "notices/webkit142.txt",
+    "sha256": "71bf9db85f6dffd51d185c54972eafa04f215ced43e624381ae239c20aa0a330",
+    "noticeBlocks": 6961
+  },
+  {
+    "component": "webkit1313",
+    "file": "notices/webkit1313.txt",
+    "sha256": "6e440d74f77ba2317b9adae6134a272bf9b9dbb717455b0069729c14c882c6a9",
+    "noticeBlocks": 6776
+  }
+]

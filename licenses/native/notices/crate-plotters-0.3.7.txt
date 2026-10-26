@@ -1,0 +1,9 @@
+Native source notices: crate-plotters-0.3.7
+Source archive SHA-256: 5aeb6f403d7a4911efb1e33402027fc44f29b5bf6def3effcc22d7bb75f2b747
+Original terms and copyright statements follow. Coverage includes conservative build/tool dependencies.
+
+
+========================================================================
+LICENSE
+
+../LICENSE

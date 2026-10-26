@@ -1,0 +1,32 @@
+{
+  "name": "kifu-desktop",
+  "version": "0.1.0",
+  "private": true,
+  "license": "MIT",
+  "type": "module",
+  "description": "Kifu desktop shell (Electrobun) with SSH remote runtimes",
+  "scripts": {
+    "dev": "node ../scripts/electrobun.mjs dev",
+    "build": "node ../scripts/electrobun.mjs build --env=stable"
+  },
+  "dependencies": {
+    "electrobun": "1.18.1",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0"
+  },
+  "devDependencies": {
+    "@types/bun": "1.4.2",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0"
+  },
+  "author": "Liam",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ggminfan/kifu.git",
+    "directory": "desktop"
+  },
+  "homepage": "https://github.com/ggminfan/kifu#readme",
+  "bugs": {
+    "url": "https://github.com/ggminfan/kifu/issues"
+  }
+}

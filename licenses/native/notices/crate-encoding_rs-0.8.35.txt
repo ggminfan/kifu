@@ -1,0 +1,900 @@
+Native source notices: crate-encoding_rs-0.8.35
+Source archive SHA-256: 75030f3c4f45dafd7586dd6780965a8c7e8e285a5ecb86713e63a79c5b2766f3
+Original terms and copyright statements follow. Coverage includes conservative build/tool dependencies.
+
+
+========================================================================
+COPYRIGHT
+
+encoding_rs is copyright Mozilla Foundation.
+
+Licensed under the Apache License, Version 2.0
+<LICENSE-APACHE or
+https://www.apache.org/licenses/LICENSE-2.0> or the MIT
+license <LICENSE-MIT or https://opensource.org/licenses/MIT>,
+at your option. All files in the project carrying such
+notice may not be copied, modified, or distributed except
+according to those terms.
+
+This crate includes data derived from the data files supplied
+with the WHATWG Encoding Standard, which, when incorporated into
+source code, are licensed under the BSD 3-Clause License
+<LICENSE-WHATWG>.
+
+Test code within encoding_rs is dedicated to the Public Domain when so
+designated (see the individual files for PD/CC0-dedicated sections).
+
+
+
+========================================================================
+LICENSE-APACHE
+
+
+                                 Apache License
+                           Version 2.0, January 2004
+                        http://www.apache.org/licenses/
+
+   TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION
+
+   1. Definitions.
+
+      "License" shall mean the terms and conditions for use, reproduction,
+      and distribution as defined by Sections 1 through 9 of this document.
+
+      "Licensor" shall mean the copyright owner or entity authorized by
+      the copyright owner that is granting the License.
+
+      "Legal Entity" shall mean the union of the acting entity and all
+      other entities that control, are controlled by, or are under common
+      control with that entity. For the purposes of this definition,
+      "control" means (i) the power, direct or indirect, to cause the
+      direction or management of such entity, whether by contract or
+      otherwise, or (ii) ownership of fifty percent (50%) or more of the
+      outstanding shares, or (iii) beneficial ownership of such entity.
+
+      "You" (or "Your") shall mean an individual or Legal Entity
+      exercising permissions granted by this License.
+
+      "Source" form shall mean the preferred form for making modifications,
+      including but not limited to software source code, documentation
+      source, and configuration files.
+
+      "Object" form shall mean any form resulting from mechanical
+      transformation or translation of a Source form, including but
+      not limited to compiled object code, generated documentation,
+      and conversions to other media types.
+
+      "Work" shall mean the work of authorship, whether in Source or
+      Object form, made available under the License, as indicated by a
+      copyright notice that is included in or attached to the work
+      (an example is provided in the Appendix below).
+
+      "Derivative Works" shall mean any work, whether in Source or Object
+      form, that is based on (or derived from) the Work and for which the
+      editorial revisions, annotations, elaborations, or other modifications
+      represent, as a whole, an original work of authorship. For the purposes
+      of this License, Derivative Works shall not include works that remain
+      separable from, or merely link (or bind by name) to the interfaces of,
+      the Work and Derivative Works thereof.
+
+      "Contribution" shall mean any work of authorship, including
+      the original version of the Work and any modifications or additions
+      to that Work or Derivative Works thereof, that is intentionally
+      submitted to Licensor for inclusion in the Work by the copyright owner
+      or by an individual or Legal Entity authorized to submit on behalf of
+      the copyright owner. For the purposes of this definition, "submitted"
+      means any form of electronic, verbal, or written communication sent
+      to the Licensor or its representatives, including but not limited to
+      communication on electronic mailing lists, source code control systems,
+      and issue tracking systems that are managed by, or on behalf of, the
+      Licensor for the purpose of discussing and improving the Work, but
+      excluding communication that is conspicuously marked or otherwise
+      designated in writing by the copyright owner as "Not a Contribution."
+
+      "Contributor" shall mean Licensor and any individual or Legal Entity
+      on behalf of whom a Contribution has been received by Licensor and
+      subsequently incorporated within the Work.
+
+   2. Grant of Copyright License. Subject to the terms and conditions of
+      this License, each Contributor hereby grants to You a perpetual,
+      worldwide, non-exclusive, no-charge, royalty-free, irrevocable
+      copyright license to reproduce, prepare Derivative Works of,
+      publicly display, publicly perform, sublicense, and distribute the
+      Work and such Derivative Works in Source or Object form.
+
+   3. Grant of Patent License. Subject to the terms and conditions of
+      this License, each Contributor hereby grants to You a perpetual,
+      worldwide, non-exclusive, no-charge, royalty-free, irrevocable
+      (except as stated in this section) patent license to make, have made,
+      use, offer to sell, sell, import, and otherwise transfer the Work,
+      where such license applies only to those patent claims licensable
+      by such Contributor that are necessarily infringed by their
+      Contribution(s) alone or by combination of their Contribution(s)
+      with the Work to which such Contribution(s) was submitted. If You
+      institute patent litigation against any entity (including a
+      cross-claim or counterclaim in a lawsuit) alleging that the Work
+      or a Contribution incorporated within the Work constitutes direct
+      or contributory patent infringement, then any patent licenses
+      granted to You under this License for that Work shall terminate
+      as of the date such litigation is filed.
+
+   4. Redistribution. You may reproduce and distribute copies of the
+      Work or Derivative Works thereof in any medium, with or without
+      modifications, and in Source or Object form, provided that You
+      meet the following conditions:
+
+      (a) You must give any other recipients of the Work or
+          Derivative Works a copy of this License; and
+
+      (b) You must cause any modified files to carry prominent notices
+          stating that You changed the files; and
+
+      (c) You must retain, in the Source form of any Derivative Works
+          that You distribute, all copyright, patent, trademark, and
+          attribution notices from the Source form of the Work,
+          excluding those notices that do not pertain to any part of
+          the Derivative Works; and
+
+      (d) If the Work includes a "NOTICE" text file as part of its
+          distribution, then any Derivative Works that You distribute must
+          include a readable copy of the attribution notices contained
+          within such NOTICE file, excluding those notices that do not
+          pertain to any part of the Derivative Works, in at least one
+          of the following places: within a NOTICE text file distributed
+          as part of the Derivative Works; within the Source form or
+          documentation, if provided along with the Derivative Works; or,
+          within a display generated by the Derivative Works, if and
+          wherever such third-party notices normally appear. The contents
+          of the NOTICE file are for informational purposes only and
+          do not modify the License. You may add Your own attribution
+          notices within Derivative Works that You distribute, alongside
+          or as an addendum to the NOTICE text from the Work, provided
+          that such additional attribution notices cannot be construed
+          as modifying the License.
+
+      You may add Your own copyright statement to Your modifications and
+      may provide additional or different license terms and conditions
+      for use, reproduction, or distribution of Your modifications, or
+      for any such Derivative Works as a whole, provided Your use,
+      reproduction, and distribution of the Work otherwise complies with
+      the conditions stated in this License.
+
+   5. Submission of Contributions. Unless You explicitly state otherwise,
+      any Contribution intentionally submitted for inclusion in the Work
+      by You to the Licensor shall be under the terms and conditions of
+      this License, without any additional terms or conditions.
+      Notwithstanding the above, nothing herein shall supersede or modify
+      the terms of any separate license agreement you may have executed
+      with Licensor regarding such Contributions.
+
+   6. Trademarks. This License does not grant permission to use the trade
+      names, trademarks, service marks, or product names of the Licensor,
+      except as required for reasonable and customary use in describing the
+      origin of the Work and reproducing the content of the NOTICE file.
+
+   7. Disclaimer of Warranty. Unless required by applicable law or
+      agreed to in writing, Licensor provides the Work (and each
+      Contributor provides its Contributions) on an "AS IS" BASIS,
+      WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or
+      implied, including, without limitation, any warranties or conditions
+      of TITLE, NON-INFRINGEMENT, MERCHANTABILITY, or FITNESS FOR A
+      PARTICULAR PURPOSE. You are solely responsible for determining the
+      appropriateness of using or redistributing the Work and assume any
+      risks associated with Your exercise of permissions under this License.
+
+   8. Limitation of Liability. In no event and under no legal theory,
+      whether in tort (including negligence), contract, or otherwise,
+      unless required by applicable law (such as deliberate and grossly
+      negligent acts) or agreed to in writing, shall any Contributor be
+      liable to You for damages, including any direct, indirect, special,
+      incidental, or consequential damages of any character arising as a
+      result of this License or out of the use or inability to use the
+      Work (including but not limited to damages for loss of goodwill,
+      work stoppage, computer failure or malfunction, or any and all
+      other commercial damages or losses), even if such Contributor
+      has been advised of the possibility of such damages.
+
+   9. Accepting Warranty or Additional Liability. While redistributing
+      the Work or Derivative Works thereof, You may choose to offer,
+      and charge a fee for, acceptance of support, warranty, indemnity,
+      or other liability obligations and/or rights consistent with this
+      License. However, in accepting such obligations, You may act only
+      on Your own behalf and on Your sole responsibility, not on behalf
+      of any other Contributor, and only if You agree to indemnify,
+      defend, and hold each Contributor harmless for any liability
+      incurred by, or claims asserted against, such Contributor by reason
+      of your accepting any such warranty or additional liability.
+
+   END OF TERMS AND CONDITIONS
+
+   APPENDIX: How to apply the Apache License to your work.
+
+      To apply the Apache License to your work, attach the following
+      boilerplate notice, with the fields enclosed by brackets "[]"
+      replaced with your own identifying information. (Don't include
+      the brackets!)  The text should be enclosed in the appropriate
+      comment syntax for the file format. We also recommend that a
+      file or class name and description of purpose be included on the
+      same "printed page" as the copyright notice for easier
+      identification within third-party archives.
+
+   Copyright [yyyy] [name of copyright owner]
+
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+
+
+
+========================================================================
+LICENSE-MIT
+
+Copyright Mozilla Foundation
+
+Permission is hereby granted, free of charge, to any
+person obtaining a copy of this software and associated
+documentation files (the "Software"), to deal in the
+Software without restriction, including without
+limitation the rights to use, copy, modify, merge,
+publish, distribute, sublicense, and/or sell copies of
+the Software, and to permit persons to whom the Software
+is furnished to do so, subject to the following
+conditions:
+
+The above copyright notice and this permission notice
+shall be included in all copies or substantial portions
+of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF
+ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED
+TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A
+PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT
+SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
+CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
+OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR
+IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+DEALINGS IN THE SOFTWARE.
+
+
+
+========================================================================
+LICENSE-WHATWG
+
+Copyright © WHATWG (Apple, Google, Mozilla, Microsoft).
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are met:
+
+1. Redistributions of source code must retain the above copyright notice, this
+   list of conditions and the following disclaimer.
+
+2. Redistributions in binary form must reproduce the above copyright notice,
+   this list of conditions and the following disclaimer in the documentation
+   and/or other materials provided with the distribution.
+
+3. Neither the name of the copyright holder nor the names of its
+   contributors may be used to endorse or promote products derived from
+   this software without specific prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+
+
+========================================================================
+src/ascii.rs
+src/handles.rs
+src/iso_2022_jp.rs
+src/macros.rs
+src/mem.rs
+src/simd_funcs.rs
+src/single_byte.rs
+src/testing.rs
+src/utf_8.rs
+src/variant.rs
+
+// Copyright Mozilla Foundation. See the COPYRIGHT
+// file at the top-level directory of this distribution.
+//
+// Licensed under the Apache License, Version 2.0 <LICENSE-APACHE or
+// https://www.apache.org/licenses/LICENSE-2.0> or the MIT license
+// <LICENSE-MIT or https://opensource.org/licenses/MIT>, at your
+// option. This file may not be copied, modified, or distributed
+// except according to those terms.
+
+
+
+========================================================================
+src/big5.rs
+src/euc_jp.rs
+src/euc_kr.rs
+src/gb18030.rs
+src/replacement.rs
+src/shift_jis.rs
+src/utf_16.rs
+src/x_user_defined.rs
+
+// Copyright Mozilla Foundation. See the COPYRIGHT
+// file at the top-level directory of this distribution.
+//
+// Licensed under the Apache License, Version 2.0 <LICENSE-APACHE or
+// https://www.apache.org/licenses/LICENSE-2.0> or the MIT license
+// <LICENSE-MIT or https://opensource.org/licenses/MIT>, at your
+// option. This file may not be copied, modified, or distributed
+// except according to those terms.
+
+
+// Any copyright to the test code below this comment is dedicated to the
+// Public Domain. http://creativecommons.org/publicdomain/zero/1.0/
+
+
+
+========================================================================
+src/data.rs
+
+// Copyright Mozilla Foundation. See the COPYRIGHT
+// file at the top-level directory of this distribution.
+//
+// Licensed under the Apache License, Version 2.0 <LICENSE-APACHE or
+// https://www.apache.org/licenses/LICENSE-2.0> or the MIT license
+// <LICENSE-MIT or https://opensource.org/licenses/MIT>, at your
+// option. This file may not be copied, modified, or distributed
+// except according to those terms.
+
+
+// Copyright © WHATWG (Apple, Google, Mozilla, Microsoft).
+//
+// Redistribution and use in source and binary forms, with or without
+// modification, are permitted provided that the following conditions are met:
+//
+// 1. Redistributions of source code must retain the above copyright notice, this
+//    list of conditions and the following disclaimer.
+//
+// 2. Redistributions in binary form must reproduce the above copyright notice,
+//    this list of conditions and the following disclaimer in the documentation
+//    and/or other materials provided with the distribution.
+//
+// 3. Neither the name of the copyright holder nor the names of its
+//    contributors may be used to endorse or promote products derived from
+//    this software without specific prior written permission.
+//
+// THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+// AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+// IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+// DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+// FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+// DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+// SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+// CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+// OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+// OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+
+
+========================================================================
+src/gb18030_2022.rs
+
+// Copyright © WHATWG (Apple, Google, Mozilla, Microsoft).
+//
+// Redistribution and use in source and binary forms, with or without
+// modification, are permitted provided that the following conditions are met:
+//
+// 1. Redistributions of source code must retain the above copyright notice, this
+//    list of conditions and the following disclaimer.
+//
+// 2. Redistributions in binary form must reproduce the above copyright notice,
+//    this list of conditions and the following disclaimer in the documentation
+//    and/or other materials provided with the distribution.
+//
+// 3. Neither the name of the copyright holder nor the names of its
+//    contributors may be used to endorse or promote products derived from
+//    this software without specific prior written permission.
+//
+// THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+// AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+// IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+// DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+// FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+// DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+// SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+// CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+// OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+// OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+
+
+========================================================================
+src/lib.rs
+
+// Copyright Mozilla Foundation. See the COPYRIGHT
+// file at the top-level directory of this distribution.
+//
+// Licensed under the Apache License, Version 2.0 <LICENSE-APACHE or
+// https://www.apache.org/licenses/LICENSE-2.0> or the MIT license
+// <LICENSE-MIT or https://opensource.org/licenses/MIT>, at your
+// option. This file may not be copied, modified, or distributed
+// except according to those terms.
+
+
+// Copyright © WHATWG (Apple, Google, Mozilla, Microsoft).
+//
+// Redistribution and use in source and binary forms, with or without
+// modification, are permitted provided that the following conditions are met:
+//
+// 1. Redistributions of source code must retain the above copyright notice, this
+//    list of conditions and the following disclaimer.
+//
+// 2. Redistributions in binary form must reproduce the above copyright notice,
+//    this list of conditions and the following disclaimer in the documentation
+//    and/or other materials provided with the distribution.
+//
+// 3. Neither the name of the copyright holder nor the names of its
+//    contributors may be used to endorse or promote products derived from
+//    this software without specific prior written permission.
+//
+// THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+// AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+// IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+// DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+// FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+// DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+// SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+// CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+// OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+// OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+
+//! encoding_rs is a Gecko-oriented Free Software / Open Source implementation
+//! of the [Encoding Standard](https://encoding.spec.whatwg.org/) in Rust.
+//! Gecko-oriented means that converting to and from UTF-16 is supported in
+//! addition to converting to and from UTF-8, that the performance and
+//! streamability goals are browser-oriented, and that FFI-friendliness is a
+//! goal.
+//!
+//! Additionally, the `mem` module provides functions that are useful for
+//! applications that need to be able to deal with legacy in-memory
+//! representations of Unicode.
+//!
+//! For expectation setting, please be sure to read the sections
+//! [_UTF-16LE, UTF-16BE and Unicode Encoding Schemes_](#utf-16le-utf-16be-and-unicode-encoding-schemes),
+//! [_ISO-8859-1_](#iso-8859-1) and [_Web / Browser Focus_](#web--browser-focus) below.
+//!
+//! There is a [long-form write-up](https://hsivonen.fi/encoding_rs/) about the
+//! design and internals of the crate.
+//!
+//! # Availability
+//!
+//! The code is available under the
+//! [Apache license, Version 2.0](https://www.apache.org/licenses/LICENSE-2.0)
+//! or the [MIT license](https://opensource.org/licenses/MIT), at your option.
+//! See the
+//! [`COPYRIGHT`](https://github.com/hsivonen/encoding_rs/blob/master/COPYRIGHT)
+//! file for details.
+//! The [repository is on GitHub](https://github.com/hsivonen/encoding_rs). The
+//! [crate is available on crates.io](https://crates.io/crates/encoding_rs).
+//!
+//! # Integration with `std::io`
+//!
+//! This crate doesn't implement traits from `std::io`. However, for the case of
+//! wrapping a `std::io::Read` in a decoder that implements `std::io::Read` and
+//! presents the data from the wrapped `std::io::Read` as UTF-8 is addressed by
+//! the [`encoding_rs_io`](https://docs.rs/encoding_rs_io/) crate.
+//!
+//! # Examples
+//!
+//! Example programs:
+//!
+//! * [Rust](https://github.com/hsivonen/recode_rs)
+//! * [C](https://github.com/hsivonen/recode_c)
+//! * [C++](https://github.com/hsivonen/recode_cpp)
+//!
+//! Decode using the non-streaming API:
+//!
+//! ```
+//! #[cfg(feature = "alloc")] {
+//! use encoding_rs::*;
+//!
+//! let expectation = "\u{30CF}\u{30ED}\u{30FC}\u{30FB}\u{30EF}\u{30FC}\u{30EB}\u{30C9}";
+//! let bytes = b"\x83n\x83\x8D\x81[\x81E\x83\x8F\x81[\x83\x8B\x83h";
+//!
+//! let (cow, encoding_used, had_errors) = SHIFT_JIS.decode(bytes);
+//! assert_eq!(&cow[..], expectation);
+//! assert_eq!(encoding_used, SHIFT_JIS);
+//! assert!(!had_errors);
+//! }
+//! ```
+//!
+//! Decode using the streaming API with minimal `unsafe`:
+//!
+//! ```
+//! use encoding_rs::*;
+//!
+//! let expectation = "\u{30CF}\u{30ED}\u{30FC}\u{30FB}\u{30EF}\u{30FC}\u{30EB}\u{30C9}";
+//!
+//! // Use an array of byte slices to demonstrate content arriving piece by
+//! // piece from the network.
+//! let bytes: [&'static [u8]; 4] = [b"\x83",
+//!                                  b"n\x83\x8D\x81",
+//!                                  b"[\x81E\x83\x8F\x81[\x83",
+//!                                  b"\x8B\x83h"];
+//!
+//! // Very short output buffer to demonstrate the output buffer getting full.
+//! // Normally, you'd use something like `[0u8; 2048]`.
+//! let mut buffer_bytes = [0u8; 8];
+//! let mut buffer: &mut str = std::str::from_utf8_mut(&mut buffer_bytes[..]).unwrap();
+//!
+//! // How many bytes in the buffer currently hold significant data.
+//! let mut bytes_in_buffer = 0usize;
+//!
+//! // Collect the output to a string for demonstration purposes.
+//! let mut output = String::new();
+//!
+//! // The `Decoder`
+//! let mut decoder = SHIFT_JIS.new_decoder();
+//!
+//! // Track whether we see errors.
+//! let mut total_had_errors = false;
+//!
+//! // Decode using a fixed-size intermediate buffer (for demonstrating the
+//! // use of a fixed-size buffer; normally when the output of an incremental
+//! // decode goes to a `String` one would use `Decoder.decode_to_string()` to
+//! // avoid the intermediate buffer).
+//! for input in &bytes[..] {
+//!     // The number of bytes already read from current `input` in total.
+//!     let mut total_read_from_current_input = 0usize;
+//!
+//!     loop {
+//!         let (result, read, written, had_errors) =
+//!             decoder.decode_to_str(&input[total_read_from_current_input..],
+//!                                   &mut buffer[bytes_in_buffer..],
+//!                                   false);
+//!         total_read_from_current_input += read;
+//!         bytes_in_buffer += written;
+//!         total_had_errors |= had_errors;
+//!         match result {
+//!             CoderResult::InputEmpty => {
+//!                 // We have consumed the current input buffer. Break out of
+//!                 // the inner loop to get the next input buffer from the
+//!                 // outer loop.
+//!                 break;
+//!             },
+//!             CoderResult::OutputFull => {
+//!                 // Write the current buffer out and consider the buffer
+//!                 // empty.
+//!                 output.push_str(&buffer[..bytes_in_buffer]);
+//!                 bytes_in_buffer = 0usize;
+//!                 continue;
+//!             }
+//!         }
+//!     }
+//! }
+//!
+//! // Process EOF
+//! loop {
+//!     let (result, _, written, had_errors) =
+//!         decoder.decode_to_str(b"",
+//!                               &mut buffer[bytes_in_buffer..],
+//!                               true);
+//!     bytes_in_buffer += written;
+//!     total_had_errors |= had_errors;
+//!     // Write the current buffer out and consider the buffer empty.
+//!     // Need to do this here for both `match` arms, because we exit the
+//!     // loop on `CoderResult::InputEmpty`.
+//!     output.push_str(&buffer[..bytes_in_buffer]);
+//!     bytes_in_buffer = 0usize;
+//!     match result {
+//!         CoderResult::InputEmpty => {
+//!             // Done!
+//!             break;
+//!         },
+//!         CoderResult::OutputFull => {
+//!             continue;
+//!         }
+//!     }
+//! }
+//!
+//! assert_eq!(&output[..], expectation);
+//! assert!(!total_had_errors);
+//! ```
+//!
+//! ## UTF-16LE, UTF-16BE and Unicode Encoding Schemes
+//!
+//! The Encoding Standard doesn't specify encoders for UTF-16LE and UTF-16BE,
+//! __so this crate does not provide encoders for those encodings__!
+//! Along with the replacement encoding, their _output encoding_ (i.e. the
+//! encoding used for form submission and error handling in the query string
+//! of URLs) is UTF-8, so you get an UTF-8 encoder if you request an encoder
+//! for them.
+//!
+//! Additionally, the Encoding Standard factors BOM handling into wrapper
+//! algorithms so that BOM handling isn't part of the definition of the
+//! encodings themselves. The Unicode _encoding schemes_ in the Unicode
+//! Standard define BOM handling or lack thereof as part of the encoding
+//! scheme.
+//!
+//! When used with the `_without_bom_handling` entry points, the UTF-16LE
+//! and UTF-16BE _encodings_ match the same-named _encoding schemes_ from
+//! the Unicode Standard.
+//!
+//! When used with the `_with_bom_removal` entry points, the UTF-8
+//! _encoding_ matches the UTF-8 _encoding scheme_ from the Unicode
+//! Standard.
+//!
+//! This crate does not provide a mode that matches the UTF-16 _encoding
+//! scheme_ from the Unicode Stardard. The UTF-16BE encoding used with
+//! the entry points without `_bom_` qualifiers is the closest match,
+//! but in that case, the UTF-8 BOM triggers UTF-8 decoding, which is
+//! not part of the behavior of the UTF-16 _encoding scheme_ per the
+//! Unicode Standard.
+//!
+//! The UTF-32 family of Unicode encoding schemes is not supported
+//! by this crate. The Encoding Standard doesn't define any UTF-32
+//! family encodings, since they aren't necessary for consuming Web
+//! content.
+//!
+//! While gb18030 is capable of representing U+FEFF, the Encoding
+//! Standard does not treat the gb18030 byte representation of U+FEFF
+//! as a BOM, so neither does this crate.
+//!
+//! ## ISO-8859-1
+//!
+//! ISO-8859-1 does not exist as a distinct encoding from windows-1252 in
+//! the Encoding Standard. Therefore, an encoding that maps the unsigned
+//! byte value to the same Unicode scalar value is not available via
+//! `Encoding` in this crate.
+//!
+//! However, the functions whose name starts with `convert` and contains
+//! `latin1` in the `mem` module support such conversions, which are known as
+//! [_isomorphic decode_](https://infra.spec.whatwg.org/#isomorphic-decode)
+//! and [_isomorphic encode_](https://infra.spec.whatwg.org/#isomorphic-encode)
+//! in the [Infra Standard](https://infra.spec.whatwg.org/).
+//!
+//! ## Web / Browser Focus
+//!
+//! Both in terms of scope and performance, the focus is on the Web. For scope,
+//! this means that encoding_rs implements the Encoding Standard fully and
+//! doesn't implement encodings that are not specified in the Encoding
+//! Standard. For performance, this means that decoding performance is
+//! important as well as performance for encoding into UTF-8 or encoding the
+//! Basic Latin range (ASCII) into legacy encodings. Non-Basic Latin needs to
+//! be encoded into legacy encodings in only two places in the Web platform: in
+//! the query part of URLs, in which case it's a matter of relatively rare
+//! error handling, and in form submission, in which case the user action and
+//! networking tend to hide the performance of the encoder.
+//!
+//! Deemphasizing performance of encoding non-Basic Latin text into legacy
+//! encodings enables smaller code size thanks to the encoder side using the
+//! decode-optimized data tables without having encode-optimized data tables at
+//! all. Even in decoders, smaller lookup table size is preferred over avoiding
+//! multiplication operations.
+//!
+//! Additionally, performance is a non-goal for the ASCII-incompatible
+//! ISO-2022-JP encoding, which are rarely used on the Web. Instead of
+//! performance, the decoder for ISO-2022-JP optimizes for ease/clarity
+//! of implementation.
+//!
+//! Despite the browser focus, the hope is that non-browser applications
+//! that wish to consume Web content or submit Web forms in a Web-compatible
+//! way will find encoding_rs useful. While encoding_rs does not try to match
+//! Windows behavior, many of the encodings are close enough to legacy
+//! encodings implemented by Windows that applications that need to consume
+//! data in legacy Windows encodins may find encoding_rs useful. The
+//! [codepage](https://crates.io/crates/codepage) crate maps from Windows
+//! code page identifiers onto encoding_rs `Encoding`s and vice versa.
+//!
+//! For decoding email, UTF-7 support is needed (unfortunately) in additition
+//! to the encodings defined in the Encoding Standard. The
+//! [charset](https://crates.io/crates/charset) wraps encoding_rs and adds
+//! UTF-7 decoding for email purposes.
+//!
+//! For single-byte DOS encodings beyond the ones supported by the Encoding
+//! Standard, there is the [`oem_cp`](https://crates.io/crates/oem_cp) crate.
+//!
+//! # Preparing Text for the Encoders
+//!
+//! Normalizing text into Unicode Normalization Form C prior to encoding text
+//! into a legacy encoding minimizes unmappable characters. Text can be
+//! normalized to Unicode Normalization Form C using the
+//! [`icu_normalizer`](https://crates.io/crates/icu_normalizer) crate, which
+//! is part of [ICU4X](https://icu4x.unicode.org/).
+//!
+//! The exception is windows-1258, which after normalizing to Unicode
+//! Normalization Form C requires tone marks to be decomposed in order to
+//! minimize unmappable characters. Vietnamese tone marks can be decomposed
+//! using the [`detone`](https://crates.io/crates/detone) crate.
+//!
+//! # Streaming & Non-Streaming; Rust & C/C++
+//!
+//! The API in Rust has two modes of operation: streaming and non-streaming.
+//! The streaming API is the foundation of the implementation and should be
+//! used when processing data that arrives piecemeal from an i/o stream. The
+//! streaming API has an FFI wrapper (as a [separate crate][1]) that exposes it
+//! to C callers. The non-streaming part of the API is for Rust callers only and
+//! is smart about borrowing instead of copying when possible. When
+//! streamability is not needed, the non-streaming API should be preferrer in
+//! order to avoid copying data when a borrow suffices.
+//!
+//! There is no analogous C API exposed via FFI, mainly because C doesn't have
+//! standard types for growable byte buffers and Unicode strings that know
+//! their length.
+//!
+//! The C API (header file generated at `target/include/encoding_rs.h` when
+//! building encoding_rs) can, in turn, be wrapped for use from C++. Such a
+//! C++ wrapper can re-create the non-streaming API in C++ for C++ callers.
+//! The C binding comes with a [C++17 wrapper][2] that uses standard library +
+//! [GSL][3] types and that recreates the non-streaming API in C++ on top of
+//! the streaming API. A C++ wrapper with XPCOM/MFBT types is available as
+//! [`mozilla::Encoding`][4].
+//!
+//! The `Encoding` type is common to both the streaming and non-streaming
+//! modes. In the streaming mode, decoding operations are performed with a
+//! `Decoder` and encoding operations with an `Encoder` object obtained via
+//! `Encoding`. In the non-streaming mode, decoding and encoding operations are
+//! performed using methods on `Encoding` objects themselves, so the `Decoder`
+//! and `Encoder` objects are not used at all.
+//!
+//! [1]: https://github.com/hsivonen/encoding_c
+//! [2]: https://github.com/hsivonen/encoding_c/blob/master/include/encoding_rs_cpp.h
+//! [3]: https://github.com/Microsoft/GSL/
+//! [4]: https://searchfox.org/mozilla-central/source/intl/Encoding.h
+//!
+//! # Memory management
+//!
+//! The non-streaming mode never performs heap allocations (even the methods
+//! that write into a `Vec<u8>` or a `String` by taking them as arguments do
+//! not reallocate the backing buffer of the `Vec<u8>` or the `String`). That
+//! is, the non-streaming mode uses caller-allocated buffers exclusively.
+//!
+//! The methods of the streaming mode that return a `Vec<u8>` or a `String`
+//! perform heap allocations but only to allocate the backing buffer of the
+//! `Vec<u8>` or the `String`.
+//!
+//! `Encoding` is always statically allocated. `Decoder` and `Encoder` need no
+//! `Drop` cleanup.
+//!
+//! # Buffer reading and writing behavior
+//!
+//! Based on experience gained with the `java.nio.charset` encoding converter
+//! API and with the Gecko uconv encoding converter API, the buffer reading
+//! and writing behaviors of encoding_rs are asymmetric: input buffers are
+//! fully drained but output buffers are not always fully filled.
+//!
+//! When reading from an input buffer, encoding_rs always consumes all input
+//! up to the next error or to the end of the buffer. In particular, when
+//! decoding, even if the input buffer ends in the middle of a byte sequence
+//! for a character, the decoder consumes all input. This has the benefit that
+//! the caller of the API can always fill the next buffer from the start from
+//! whatever source the bytes come from and never has to first copy the last
+//! bytes of the previous buffer to the start of the next buffer. However, when
+//! encoding, the UTF-8 input buffers have to end at a character boundary, which
+//! is a requirement for the Rust `str` type anyway, and UTF-16 input buffer
+//! boundaries falling in the middle of a surrogate pair result in both
+//! suggorates being treated individually as unpaired surrogates.
+//!
+//! Additionally, decoders guarantee that they can be fed even one byte at a
+//! time and encoders guarantee that they can be fed even one code point at a
+//! time. This has the benefit of not placing restrictions on the size of
+//! chunks the content arrives e.g. from network.
+//!
+//! When writing into an output buffer, encoding_rs makes sure that the code
+//! unit sequence for a character is never split across output buffer
+//! boundaries. This may result in wasted space at the end of an output buffer,
+//! but the advantages are that the output side of both decoders and encoders
+//! is greatly simplified compared to designs that attempt to fill output
+//! buffers exactly even when that entails splitting a code unit sequence and
+//! when encoding_rs methods return to the caller, the output produces thus
+//! far is always valid taken as whole. (In the case of encoding to ISO-2022-JP,
+//! the output needs to be considered as a whole, because the latest output
+//! buffer taken alone might not be valid taken alone if the transition away
+//! from the ASCII state occurred in an earlier output buffer. However, since
+//! the ISO-2022-JP decoder doesn't treat streams that don't end in the ASCII
+//! state as being in error despite the encoder generating a transition to the
+//! ASCII state at the end, the claim about the partial output taken as a whole
+//! being valid is true even for ISO-2022-JP.)
+//!
+//! # Error Reporting
+//!
+//! Based on experience gained with the `java.nio.charset` encoding converter
+//! API and with the Gecko uconv encoding converter API, the error reporting
+//! behaviors of encoding_rs are asymmetric: decoder errors include offsets
+//! that leave it up to the caller to extract the erroneous bytes from the
+//! input stream if the caller wishes to do so but encoder errors provide the
+//! code point associated with the error without requiring the caller to
+//! extract it from the input on its own.
+//!
+//! On the encoder side, an error is always triggered by the most recently
+//! pushed Unicode scalar, which makes it simple to pass the `char` to the
+//! caller. Also, it's very typical for the caller to wish to do something with
+//! this data: generate a numeric escape for the character. Additionally, the
+//! ISO-2022-JP encoder reports U+FFFD instead of the actual input character in
+//! certain cases, so requiring the caller to extract the character from the
+//! input buffer would require the caller to handle ISO-2022-JP details.
+//! Furthermore, requiring the caller to extract the character from the input
+//! buffer would require the caller to implement UTF-8 or UTF-16 math, which is
+//! the job of an encoding conversion library.
+//!
+//! On the decoder side, errors are triggered in more complex ways. For
+//! example, when decoding the sequence ESC, '$', _buffer boundary_, 'A' as
+//! ISO-2022-JP, the ESC byte is in error, but this is discovered only after
+//! the buffer boundary when processing 'A'. Thus, the bytes in error might not
+//! be the ones most recently pushed to the decoder and the error might not even
+//! be in the current buffer.
+//!
+//! Some encoding conversion APIs address the problem by not acknowledging
+//! trailing bytes of an input buffer as consumed if it's still possible for
+//! future bytes to cause the trailing bytes to be in error. This way, error
+//! reporting can always refer to the most recently pushed buffer. This has the
+//! problem that the caller of the API has to copy the unconsumed trailing
+//! bytes to the start of the next buffer before being able to fill the rest
+//! of the next buffer. This is annoying, error-prone and inefficient.
+//!
+//! A possible solution would be making the decoder remember recently consumed
+//! bytes in order to be able to include a copy of the erroneous bytes when
+//! reporting an error. This has two problem: First, callers a rarely
+//! interested in the erroneous bytes, so attempts to identify them are most
+//! often just overhead anyway. Second, the rare applications that are
+//! interested typically care about the location of the error in the input
+//! stream.
+//!
+//! To keep the API convenient for common uses and the overhead low while making
+//! it possible to develop applications, such as HTML validators, that care
+//! about which bytes were in error, encoding_rs reports the length of the
+//! erroneous sequence and the number of bytes consumed after the erroneous
+//! sequence. As long as the caller doesn't discard the 6 most recent bytes,
+//! this makes it possible for callers that care about the erroneous bytes to
+//! locate them.
+//!
+//! # No Convenience API for Custom Replacements
+//!
+//! The Web Platform and, therefore, the Encoding Standard supports only one
+//! error recovery mode for decoders and only one error recovery mode for
+//! encoders. The supported error recovery mode for decoders is emitting the
+//! REPLACEMENT CHARACTER on error. The supported error recovery mode for
+//! encoders is emitting an HTML decimal numeric character reference for
+//! unmappable characters.
+//!
+//! Since encoding_rs is Web-focused, these are the only error recovery modes
+//! for which convenient support is provided. Moreover, on the decoder side,
+//! there aren't really good alternatives for emitting the REPLACEMENT CHARACTER
+//! on error (other than treating errors as fatal). In particular, simply
+//! ignoring errors is a
+//! [security problem](http://www.unicode.org/reports/tr36/#Substituting_for_Ill_Formed_Subsequences),
+//! so it would be a bad idea for encoding_rs to provide a mode that encouraged
+//! callers to ignore errors.
+//!
+//! On the encoder side, there are plausible alternatives for HTML decimal
+//! numeric character references. For example, when outputting CSS, CSS-style
+//! escapes would seem to make sense. However, instead of facilitating the
+//! output of CSS, JS, etc. in non-UTF-8 encodings, encoding_rs takes the design
+//! position that you shouldn't generate output in encodings other than UTF-8,
+//! except where backward compatibility with interacting with the legacy Web
+//! requires it. The legacy Web requires it only when parsing the query strings
+//! of URLs and when submitting forms, and those two both use HTML decimal
+//! numeric character references.
+//!
+//! While encoding_rs doesn't make encoder replacements other than HTML decimal
+
+
+
+========================================================================
+src/test_labels_names.rs
+
+// Any copyright to the test code below this comment is dedicated to the
+// Public Domain. http://creativecommons.org/publicdomain/zero/1.0/
+

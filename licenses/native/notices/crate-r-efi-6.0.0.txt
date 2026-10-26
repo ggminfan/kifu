@@ -1,0 +1,13 @@
+Native source notices: crate-r-efi-6.0.0
+Source archive SHA-256: f8dcc9c7d52a811697d2151c701e0d08956f92b0e24136cf4cf27b57a6a0d9bf
+Original terms and copyright statements follow. Coverage includes conservative build/tool dependencies.
+
+
+========================================================================
+README.md
+
+### License:
+
+ - **MIT** OR **Apache-2.0** OR **LGPL-2.1-or-later**
+ - See AUTHORS file for details.
+

@@ -1,0 +1,5 @@
+Native source notices: crate-selectors-0.33.0
+Source archive SHA-256: feef350c36147532e1b79ea5c1f3791373e61cbd9a6a2615413b3807bb164fb7
+Original terms and copyright statements follow. Coverage includes conservative build/tool dependencies.
+
+Workspace notices: crate-upstream-stylo-f319793c6989

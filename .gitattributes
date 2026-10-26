@@ -1,0 +1,7 @@
+* text=auto eol=lf
+*.png binary
+*.icns binary
+*.dmg binary
+*.gz binary
+# Preserve original third-party notices byte-for-byte for the locked hashes.
+licenses/**/*.txt -text -whitespace

@@ -1,0 +1,19 @@
+Native source notices: crate-wasm-encoder-0.244.0
+Source archive SHA-256: 990065f2fe63003fe337b932cfb5e3b80e0b4d0f5ff650e6985b1048f62c8319
+Original terms and copyright statements follow. Coverage includes conservative build/tool dependencies.
+
+
+========================================================================
+README.md
+
+# License
+
+This project is licensed under the Apache 2.0 license with the LLVM exception.
+See [LICENSE](LICENSE) for more details.
+
+### Contribution
+
+Unless you explicitly state otherwise, any contribution intentionally submitted
+for inclusion in this project by you, as defined in the Apache-2.0 license,
+shall be licensed as above, without any additional terms or conditions.
+

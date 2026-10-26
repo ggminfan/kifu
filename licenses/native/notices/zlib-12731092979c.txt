@@ -1,0 +1,1381 @@
+Native source notices: zlib-12731092979c
+Source archive SHA-256: a0d2a5d122c84b56a793a1553a9c3327fb2eb7469bf7a86b79e3c7be5d92e8d6
+Original terms and copyright statements follow. Coverage includes conservative build/tool dependencies.
+
+
+========================================================================
+LICENSE.md
+
+(C) 1995-2024 Jean-loup Gailly and Mark Adler
+
+This software is provided 'as-is', without any express or implied
+warranty. In no event will the authors be held liable for any damages
+arising from the use of this software.
+
+Permission is granted to anyone to use this software for any purpose,
+including commercial applications, and to alter it and redistribute it
+freely, subject to the following restrictions:
+
+1. The origin of this software must not be misrepresented; you must not
+   claim that you wrote the original software. If you use this software
+   in a product, an acknowledgment in the product documentation would be
+   appreciated but is not required.
+
+2. Altered source versions must be plainly marked as such, and must not be
+   misrepresented as being the original software.
+
+3. This notice may not be removed or altered from any source distribution.
+
+
+
+========================================================================
+adler32.c
+arch/generic/adler32_c.c
+
+/* adler32.c -- compute the Adler-32 checksum of a data stream
+ * Copyright (C) 1995-2011, 2016 Mark Adler
+ * For conditions of distribution and use, see copyright notice in zlib.h
+ */
+
+
+========================================================================
+adler32_p.h
+
+/* adler32_p.h -- Private inline functions and macros shared with
+ *                different computation of the Adler-32 checksum
+ *                of a data stream.
+ * Copyright (C) 1995-2011, 2016 Mark Adler
+ * For conditions of distribution and use, see copyright notice in zlib.h
+ */
+
+
+========================================================================
+arch/arm/adler32_neon.c
+
+/* Copyright (C) 1995-2011, 2016 Mark Adler
+ * Copyright (C) 2017 ARM Holdings Inc.
+ * Authors:
+ *   Adenilson Cavalcanti <adenilson.cavalcanti@arm.com>
+ *   Adam Stylinski <kungfujesus06@gmail.com>
+ * For conditions of distribution and use, see copyright notice in zlib.h
+ */
+
+
+========================================================================
+arch/arm/arm_features.h
+
+/* arm_features.h -- check for ARM features.
+ * For conditions of distribution and use, see copyright notice in zlib.h
+ */
+
+
+========================================================================
+arch/arm/arm_functions.h
+
+/* arm_functions.h -- ARM implementations for arch-specific functions.
+ * For conditions of distribution and use, see copyright notice in zlib.h
+ */
+
+
+========================================================================
+arch/arm/chunkset_neon.c
+
+/* chunkset_neon.c -- NEON inline functions to copy small data chunks.
+ * For conditions of distribution and use, see copyright notice in zlib.h
+ */
+
+
+========================================================================
+arch/arm/compare256_neon.c
+
+/* compare256_neon.c - NEON version of compare256
+ * Copyright (C) 2022 Nathan Moinvaziri
+ * For conditions of distribution and use, see copyright notice in zlib.h
+ */
+
+
+========================================================================
+arch/arm/crc32_armv8.c
+
+/* crc32_armv8.c -- compute the CRC-32 of a data stream
+ * Copyright (C) 1995-2006, 2010, 2011, 2012 Mark Adler
+ * Copyright (C) 2016 Yang Zhang
+ * For conditions of distribution and use, see copyright notice in zlib.h
+ */
+
+
+========================================================================
+arch/arm/slide_hash_armv6.c
+
+/* slide_hash_armv6.c -- Optimized hash table shifting for ARMv6 with support for SIMD instructions
+ * Copyright (C) 2023 Cameron Cawley
+ * For conditions of distribution and use, see copyright notice in zlib.h
+ */
+
+
+========================================================================
+arch/arm/slide_hash_neon.c
+
+/* slide_hash_neon.c -- Optimized hash table shifting for ARM with support for NEON instructions
+ * Copyright (C) 2017-2020 Mika T. Lindqvist
+ *
+ * Authors:
+ * Mika T. Lindqvist <postmaster@raasu.org>
+ * Jun He <jun.he@arm.com>
+ *
+ * For conditions of distribution and use, see copyright notice in zlib.h
+ */
+
+
+========================================================================
+arch/generic/adler32_fold_c.c
+
+/* adler32_fold.c -- adler32 folding interface
+ * Copyright (C) 2022 Adam Stylinski
+ * For conditions of distribution and use, see copyright notice in zlib.h
+ */
+
+
+========================================================================
+arch/generic/chunk_128bit_perm_idx_lut.h
+
+/* chunk_128bit_perm_idx_lut.h - shared SSSE3/NEON/LSX permutation idx lut for use with chunkmemset family of functions.
+ * For conditions of distribution and use, see copyright notice in zlib.h
+ */
+
+
+========================================================================
+arch/generic/chunk_256bit_perm_idx_lut.h
+
+/* chunk_256bit_perm_idx_lut.h - shared AVX512/AVX2/LASX permutation idx lut for use with chunkmemset family of functions.
+ * For conditions of distribution and use, see copyright notice in zlib.h
+ */
+
+
+========================================================================
+arch/generic/chunk_permute_table.h
+
+/* chunk_permute_table.h - shared AVX/SSSE3 permutation table for use with chunkmemset family of functions.
+ * For conditions of distribution and use, see copyright notice in zlib.h
+ */
+
+
+========================================================================
+arch/generic/chunkset_c.c
+
+/* chunkset.c -- inline functions to copy small data chunks.
+ * For conditions of distribution and use, see copyright notice in zlib.h
+ */
+
+
+========================================================================
+arch/generic/compare256_c.c
+
+/* compare256.c -- 256 byte memory comparison with match length return
+ * Copyright (C) 2020 Nathan Moinvaziri
+ * For conditions of distribution and use, see copyright notice in zlib.h
+ */
+
+
+========================================================================
+arch/generic/compare256_p.h
+
+/* compare256_p.h -- 256 byte memory comparison with match length return
+ * Copyright (C) 2020 Nathan Moinvaziri
+ * For conditions of distribution and use, see copyright notice in zlib.h
+ */
+
+
+========================================================================
+arch/generic/crc32_braid_c.c
+
+/* crc32_braid.c -- compute the CRC-32 of a data stream
+ * Copyright (C) 1995-2022 Mark Adler
+ * For conditions of distribution and use, see copyright notice in zlib.h
+ *
+ * This interleaved implementation of a CRC makes use of pipelined multiple
+ * arithmetic-logic units, commonly found in modern CPU cores. It is due to
+ * Kadatch and Jenkins (2010). See doc/crc-doc.1.0.pdf in this distribution.
+ */
+
+
+========================================================================
+arch/generic/crc32_fold_c.c
+
+/* crc32_fold.c -- crc32 folding interface
+ * Copyright (C) 2021 Nathan Moinvaziri
+ * For conditions of distribution and use, see copyright notice in zlib.h
+ */
+
+
+========================================================================
+arch/generic/generic_functions.h
+
+/* generic_functions.h -- generic C implementations for arch-specific functions.
+ * For conditions of distribution and use, see copyright notice in zlib.h
+ */
+
+
+========================================================================
+arch/generic/slide_hash_c.c
+
+/* slide_hash.c -- slide hash table C implementation
+ *
+ * Copyright (C) 1995-2024 Jean-loup Gailly and Mark Adler
+ * For conditions of distribution and use, see copyright notice in zlib.h
+ */
+
+
+========================================================================
+arch/loongarch/adler32_lasx.c
+
+/* adler32_lasx.c -- compute the Adler-32 checksum of a data stream, based on Intel AVX2 implementation
+ * Copyright (C) 1995-2011 Mark Adler
+ * Copyright (C) 2022 Adam Stylinski
+ * Copyright (C) 2025 Vladislav Shchapov <vladislav@shchapov.ru>
+ * Authors:
+ *   Brian Bockelman <bockelman@gmail.com>
+ *   Adam Stylinski <kungfujesus06@gmail.com>
+ * For conditions of distribution and use, see copyright notice in zlib.h
+ */
+
+
+========================================================================
+arch/loongarch/adler32_lsx.c
+
+/* adler32_lsx.c -- compute the Adler-32 checksum of a data stream, based on Intel SSE4.2 implementation
+ * Copyright (C) 1995-2011 Mark Adler
+ * Copyright (C) 2025 Vladislav Shchapov <vladislav@shchapov.ru>
+ * Authors:
+ *   Adam Stylinski <kungfujesus06@gmail.com>
+ *   Brian Bockelman <bockelman@gmail.com>
+ * For conditions of distribution and use, see copyright notice in zlib.h
+ */
+
+
+========================================================================
+arch/loongarch/chunkset_lasx.c
+
+/* chunkset_lasx.c -- LASX inline functions to copy small data chunks, based on Intel AVX2 implementation
+ * Copyright (C) 2025 Vladislav Shchapov <vladislav@shchapov.ru>
+ * For conditions of distribution and use, see copyright notice in zlib.h
+ */
+
+
+========================================================================
+arch/loongarch/chunkset_lsx.c
+
+/* chunkset_lsx.c -- LSX inline functions to copy small data chunks, based on Intel SSSE3 implementation
+ * Copyright (C) 2025 Vladislav Shchapov <vladislav@shchapov.ru>
+ * For conditions of distribution and use, see copyright notice in zlib.h
+ */
+
+
+========================================================================
+arch/loongarch/compare256_lasx.c
+
+/* compare256_lasx.c -- LASX version of compare256, based on Intel AVX2 implementation
+ * Copyright Mika T. Lindqvist  <postmaster@raasu.org>
+ * Copyright (C) 2025 Vladislav Shchapov <vladislav@shchapov.ru>
+ * For conditions of distribution and use, see copyright notice in zlib.h
+ */
+
+
+========================================================================
+arch/loongarch/compare256_lsx.c
+
+/* compare256_lsx.c -- LSX version of compare256, based on Intel SSE implementation
+ * Copyright Adam Stylinski <kungfujesus06@gmail.com>
+ * Copyright (C) 2025 Vladislav Shchapov <vladislav@shchapov.ru>
+ * For conditions of distribution and use, see copyright notice in zlib.h
+ */
+
+
+========================================================================
+arch/loongarch/crc32_la.c
+
+/* crc32_la.c - LoongArch version of crc32
+ * Copyright (C) 2025 Vladislav Shchapov <vladislav@shchapov.ru>
+ * For conditions of distribution and use, see copyright notice in zlib.h
+ */
+
+
+========================================================================
+arch/loongarch/lasxintrin_ext.h
+
+/* lasxintrin_ext.h
+ * Copyright (C) 2025 Vladislav Shchapov <vladislav@shchapov.ru>
+ * For conditions of distribution and use, see copyright notice in zlib.h
+ */
+
+
+========================================================================
+arch/loongarch/loongarch_features.c
+
+/* loongarch_features.c -- check for LoongArch features.
+ *
+ * Copyright (C) 2025 Vladislav Shchapov <vladislav@shchapov.ru>
+ *
+ * For conditions of distribution and use, see copyright notice in zlib.h
+ */
+
+
+========================================================================
+arch/loongarch/loongarch_features.h
+
+/* loongarch_features.h -- check for LoongArch features.
+ *
+ * Copyright (C) 2025 Vladislav Shchapov <vladislav@shchapov.ru>
+ *
+ * For conditions of distribution and use, see copyright notice in zlib.h
+ */
+
+
+========================================================================
+arch/loongarch/loongarch_functions.h
+
+/* loongarch_functions.h -- LoongArch implementations for arch-specific functions.
+ *
+ * Copyright (C) 2025 Vladislav Shchapov <vladislav@shchapov.ru>
+ *
+ * For conditions of distribution and use, see copyright notice in zlib.h
+ */
+
+
+========================================================================
+arch/loongarch/lsxintrin_ext.h
+
+/* lsxintrin_ext.h
+ * Copyright (C) 2025 Vladislav Shchapov <vladislav@shchapov.ru>
+ * For conditions of distribution and use, see copyright notice in zlib.h
+ */
+
+
+========================================================================
+arch/loongarch/slide_hash_lasx.c
+
+/*
+ * LASX optimized hash slide, based on Intel AVX2 implementation
+ *
+ * Copyright (C) 2017 Intel Corporation
+ * Copyright (C) 2025 Vladislav Shchapov <vladislav@shchapov.ru>
+ * Authors:
+ *   Arjan van de Ven   <arjan@linux.intel.com>
+ *   Jim Kukunas        <james.t.kukunas@linux.intel.com>
+ *   Mika T. Lindqvist  <postmaster@raasu.org>
+ *
+ * For conditions of distribution and use, see copyright notice in zlib.h
+ */
+
+
+========================================================================
+arch/loongarch/slide_hash_lsx.c
+
+/*
+ * LSX optimized hash slide, based on Intel SSE implementation
+ *
+ * Copyright (C) 2017 Intel Corporation
+ * Copyright (C) 2025 Vladislav Shchapov <vladislav@shchapov.ru>
+ * Authors:
+ *   Arjan van de Ven   <arjan@linux.intel.com>
+ *   Jim Kukunas        <james.t.kukunas@linux.intel.com>
+ *
+ * For conditions of distribution and use, see copyright notice in zlib.h
+ */
+
+
+========================================================================
+arch/power/adler32_power8.c
+
+/* Adler32 for POWER8 using VSX instructions.
+ * Copyright (C) 2020 IBM Corporation
+ * Author: Rogerio Alves <rcardoso@linux.ibm.com>
+ * For conditions of distribution and use, see copyright notice in zlib.h
+ *
+ * Calculate adler32 checksum for 16 bytes at once using POWER8+ VSX (vector)
+ * instructions.
+ *
+ * If adler32 do 1 byte at time on the first iteration s1 is s1_0 (_n means
+ * iteration n) is the initial value of adler - at start  _0 is 1 unless
+ * adler initial value is different than 1. So s1_1 = s1_0 + c[0] after
+ * the first calculation. For the iteration s1_2 = s1_1 + c[1] and so on.
+ * Hence, for iteration N, s1_N = s1_(N-1) + c[N] is the value of s1 on
+ * after iteration N.
+ *
+ * Therefore, for s2 and iteration N, s2_N = s2_0 + N*s1_N + N*c[0] +
+ * N-1*c[1] + ... + c[N]
+ *
+ * In a more general way:
+ *
+ * s1_N = s1_0 + sum(i=1 to N)c[i]
+ * s2_N = s2_0 + N*s1 + sum (i=1 to N)(N-i+1)*c[i]
+ *
+ * Where s1_N, s2_N are the values for s1, s2 after N iterations. So if we
+ * can process N-bit at time we can do this at once.
+ *
+ * Since VSX can support 16-bit vector instructions, we can process
+ * 16-bit at time using N = 16 we have:
+ *
+ * s1 = s1_16 = s1_(16-1) + c[16] = s1_0 + sum(i=1 to 16)c[i]
+ * s2 = s2_16 = s2_0 + 16*s1 + sum(i=1 to 16)(16-i+1)*c[i]
+ *
+ * After the first iteration we calculate the adler32 checksum for 16 bytes.
+ *
+ * For more background about adler32 please check the RFC:
+ * https://www.ietf.org/rfc/rfc1950.txt
+ */
+
+
+========================================================================
+arch/power/adler32_vmx.c
+
+/* adler32_vmx.c -- compute the Adler-32 checksum of a data stream
+ * Copyright (C) 1995-2011 Mark Adler
+ * Copyright (C) 2017-2023 Mika T. Lindqvist <postmaster@raasu.org>
+ * Copyright (C) 2021 Adam Stylinski <kungfujesus06@gmail.com>
+ * For conditions of distribution and use, see copyright notice in zlib.h
+ */
+
+
+========================================================================
+arch/power/chunkset_power8.c
+
+/* chunkset_power8.c -- VSX inline functions to copy small data chunks.
+ * For conditions of distribution and use, see copyright notice in zlib.h
+ */
+
+
+========================================================================
+arch/power/compare256_power9.c
+
+/* compare256_power9.c - Power9 version of compare256
+ * Copyright (C) 2019 Matheus Castanho <msc@linux.ibm.com>, IBM
+ * For conditions of distribution and use, see copyright notice in zlib.h
+ */
+
+
+========================================================================
+arch/power/crc32_constants.h
+
+/* Constants table used by crc32_power8.c
+ * Copyright (C) 2021 IBM Corporation
+ *
+ * This file was automatically generated, DO NOT EDIT IT MANUALLY.
+ *
+ * For conditions of distribution and use, see copyright notice in zlib.h
+ */
+
+
+========================================================================
+arch/power/crc32_power8.c
+
+/* crc32 for POWER8 using VSX instructions
+ * Copyright (C) 2021 IBM Corporation
+ *
+ * Author: Rogerio Alves <rogealve@br.ibm.com>
+ *
+ * For conditions of distribution and use, see copyright notice in zlib.h
+ *
+ * Calculate the checksum of data that is 16 byte aligned and a multiple of
+ * 16 bytes.
+ *
+ * The first step is to reduce it to 1024 bits. We do this in 8 parallel
+ * chunks in order to mask the latency of the vpmsum instructions. If we
+ * have more than 32 kB of data to checksum we repeat this step multiple
+ * times, passing in the previous 1024 bits.
+ *
+ * The next step is to reduce the 1024 bits to 64 bits. This step adds
+ * 32 bits of 0s to the end - this matches what a CRC does. We just
+ * calculate constants that land the data in this 32 bits.
+ *
+ * We then use fixed point Barrett reduction to compute a mod n over GF(2)
+ * for n = CRC using POWER8 instructions. We use x = 32.
+ *
+ * http://en.wikipedia.org/wiki/Barrett_reduction
+ *
+ * This code uses gcc vector builtins instead using assembly directly.
+ */
+
+
+========================================================================
+arch/power/power_features.c
+
+/* power_features.c - POWER feature check
+ * Copyright (C) 2020 Matheus Castanho <msc@linux.ibm.com>, IBM
+ * Copyright (C) 2021-2024 Mika T. Lindqvist <postmaster@raasu.org>
+ * For conditions of distribution and use, see copyright notice in zlib.h
+ */
+
+
+========================================================================
+arch/power/power_features.h
+
+/* power_features.h -- check for POWER CPU features
+ * Copyright (C) 2020 Matheus Castanho <msc@linux.ibm.com>, IBM
+ * Copyright (C) 2021 Mika T. Lindqvist <postmaster@raasu.org>
+ * For conditions of distribution and use, see copyright notice in zlib.h
+ */
+
+
+========================================================================
+arch/power/power_functions.h
+
+/* power_functions.h -- POWER implementations for arch-specific functions.
+ * Copyright (C) 2020 Matheus Castanho <msc@linux.ibm.com>, IBM
+ * Copyright (C) 2021 Mika T. Lindqvist <postmaster@raasu.org>
+ * For conditions of distribution and use, see copyright notice in zlib.h
+ */
+
+
+========================================================================
+arch/power/power_intrins.h
+
+/* Helper functions to work around issues with clang builtins
+ * Copyright (C) 2021 IBM Corporation
+ *
+ * Authors:
+ *   Daniel Black <daniel@linux.vnet.ibm.com>
+ *   Rogerio Alves <rogealve@br.ibm.com>
+ *   Tulio Magno Quites Machado Filho <tuliom@linux.ibm.com>
+ *
+ * For conditions of distribution and use, see copyright notice in zlib.h
+ */
+
+
+========================================================================
+arch/power/slide_hash_power8.c
+
+/* Optimized slide_hash for POWER processors
+ * Copyright (C) 2019-2020 IBM Corporation
+ * Author: Matheus Castanho <msc@linux.ibm.com>
+ * For conditions of distribution and use, see copyright notice in zlib.h
+ */
+
+
+========================================================================
+arch/power/slide_hash_vmx.c
+
+/* Optimized slide_hash for PowerPC processors with VMX instructions
+ * Copyright (C) 2017-2021 Mika T. Lindqvist <postmaster@raasu.org>
+ * For conditions of distribution and use, see copyright notice in zlib.h
+ */
+
+
+========================================================================
+arch/power/slide_ppc_tpl.h
+
+/* Optimized slide_hash for PowerPC processors
+ * Copyright (C) 2017-2021 Mika T. Lindqvist <postmaster@raasu.org>
+ * For conditions of distribution and use, see copyright notice in zlib.h
+ */
+
+
+========================================================================
+arch/riscv/adler32_rvv.c
+
+/* adler32_rvv.c - RVV version of adler32
+ * Copyright (C) 2023 SiFive, Inc. All rights reserved.
+ * Contributed by Alex Chiang <alex.chiang@sifive.com>
+ * For conditions of distribution and use, see copyright notice in zlib.h
+ */
+
+
+========================================================================
+arch/riscv/chunkset_rvv.c
+
+/* chunkset_rvv.c - RVV version of chunkset
+ * Copyright (C) 2023 SiFive, Inc. All rights reserved.
+ * Contributed by Alex Chiang <alex.chiang@sifive.com>
+ * For conditions of distribution and use, see copyright notice in zlib.h
+ */
+
+
+========================================================================
+arch/riscv/compare256_rvv.c
+
+/* compare256_rvv.c - RVV version of compare256
+ * Copyright (C) 2023 SiFive, Inc. All rights reserved.
+ * Contributed by Alex Chiang <alex.chiang@sifive.com>
+ * For conditions of distribution and use, see copyright notice in zlib.h
+ */
+
+
+========================================================================
+arch/riscv/crc32_zbc.c
+
+/* crc32_zbc.c - RISCV Zbc version of crc32
+ * Copyright (C) 2025 ByteDance. All rights reserved.
+ * Contributed by Yin Tong <yintong.ustc@bytedance.com>
+ * For conditions of distribution and use, see copyright notice in zlib.h
+ */
+
+
+========================================================================
+arch/riscv/riscv_features.h
+
+/* riscv_features.h -- check for riscv features.
+ *
+ * Copyright (C) 2023 SiFive, Inc. All rights reserved.
+ * Contributed by Alex Chiang <alex.chiang@sifive.com>
+ *
+ * For conditions of distribution and use, see copyright notice in zlib.h
+ */
+
+
+========================================================================
+arch/riscv/riscv_functions.h
+
+/* riscv_functions.h -- RISCV implementations for arch-specific functions.
+ *
+ * Copyright (C) 2023 SiFive, Inc. All rights reserved.
+ * Contributed by Alex Chiang <alex.chiang@sifive.com>
+ *
+ * For conditions of distribution and use, see copyright notice in zlib.h
+ */
+
+
+========================================================================
+arch/riscv/slide_hash_rvv.c
+
+/* slide_hash_rvv.c - RVV version of slide_hash
+ * Copyright (C) 2023 SiFive, Inc. All rights reserved.
+ * Contributed by Alex Chiang <alex.chiang@sifive.com>
+ * For conditions of distribution and use, see copyright notice in zlib.h
+ */
+
+
+========================================================================
+arch/s390/s390_features.h
+
+/* s390_features.h -- check for s390 features.
+ * For conditions of distribution and use, see copyright notice in zlib.h
+ */
+
+
+========================================================================
+arch/s390/s390_functions.h
+
+/* s390_functions.h -- s390 implementations for arch-specific functions.
+ * For conditions of distribution and use, see copyright notice in zlib.h
+ */
+
+
+========================================================================
+arch/x86/adler32_avx2.c
+
+/* adler32_avx2.c -- compute the Adler-32 checksum of a data stream
+ * Copyright (C) 1995-2011 Mark Adler
+ * Copyright (C) 2022 Adam Stylinski
+ * Authors:
+ *   Brian Bockelman <bockelman@gmail.com>
+ *   Adam Stylinski <kungfujesus06@gmail.com>
+ * For conditions of distribution and use, see copyright notice in zlib.h
+ */
+
+
+========================================================================
+arch/x86/adler32_avx2_p.h
+
+/* adler32_avx2_p.h -- adler32 avx2 utility functions
+ * Copyright (C) 2022 Adam Stylinski
+ * For conditions of distribution and use, see copyright notice in zlib.h
+ */
+
+
+========================================================================
+arch/x86/adler32_avx512.c
+
+/* adler32_avx512.c -- compute the Adler-32 checksum of a data stream
+ * Copyright (C) 1995-2011 Mark Adler
+ * Authors:
+ *   Adam Stylinski <kungfujesus06@gmail.com>
+ *   Brian Bockelman <bockelman@gmail.com>
+ * For conditions of distribution and use, see copyright notice in zlib.h
+ */
+
+
+========================================================================
+arch/x86/adler32_avx512_vnni.c
+
+/* adler32_avx512_vnni.c -- compute the Adler-32 checksum of a data stream
+ * Based on Brian Bockelman's AVX2 version
+ * Copyright (C) 1995-2011 Mark Adler
+ * Authors:
+ *   Adam Stylinski <kungfujesus06@gmail.com>
+ *   Brian Bockelman <bockelman@gmail.com>
+ * For conditions of distribution and use, see copyright notice in zlib.h
+ */
+
+
+========================================================================
+arch/x86/adler32_sse42.c
+
+/* adler32_sse42.c -- compute the Adler-32 checksum of a data stream
+ * Copyright (C) 1995-2011 Mark Adler
+ * Authors:
+ *   Adam Stylinski <kungfujesus06@gmail.com>
+ *   Brian Bockelman <bockelman@gmail.com>
+ * For conditions of distribution and use, see copyright notice in zlib.h
+ */
+
+
+========================================================================
+arch/x86/adler32_ssse3.c
+
+/* adler32_ssse3.c -- compute the Adler-32 checksum of a data stream
+ * Copyright (C) 1995-2011 Mark Adler
+ * Authors:
+ *   Adam Stylinski <kungfujesus06@gmail.com>
+ *   Brian Bockelman <bockelman@gmail.com>
+ * For conditions of distribution and use, see copyright notice in zlib.h
+ */
+
+
+========================================================================
+arch/x86/adler32_ssse3_p.h
+
+/* adler32_ssse3_p.h -- adler32 ssse3 utility functions
+ * Copyright (C) 2022 Adam Stylinski
+ * For conditions of distribution and use, see copyright notice in zlib.h
+ */
+
+
+========================================================================
+arch/x86/chunkset_avx2.c
+
+/* chunkset_avx2.c -- AVX2 inline functions to copy small data chunks.
+ * For conditions of distribution and use, see copyright notice in zlib.h
+ */
+
+
+========================================================================
+arch/x86/chunkset_avx512.c
+
+/* chunkset_avx512.c -- AVX512 inline functions to copy small data chunks.
+ * For conditions of distribution and use, see copyright notice in zlib.h
+ */
+
+
+========================================================================
+arch/x86/chunkset_sse2.c
+
+/* chunkset_sse2.c -- SSE2 inline functions to copy small data chunks.
+ * For conditions of distribution and use, see copyright notice in zlib.h
+ */
+
+
+========================================================================
+arch/x86/chunkset_ssse3.c
+
+/* chunkset_ssse3.c -- SSSE3 inline functions to copy small data chunks.
+ * For conditions of distribution and use, see copyright notice in zlib.h
+ */
+
+
+========================================================================
+arch/x86/compare256_avx2.c
+
+/* compare256_avx2.c -- AVX2 version of compare256
+ * Copyright Mika T. Lindqvist  <postmaster@raasu.org>
+ * For conditions of distribution and use, see copyright notice in zlib.h
+ */
+
+
+========================================================================
+arch/x86/compare256_avx512.c
+
+/* compare256_avx512.c -- AVX512 version of compare256
+ * Copyright (C) 2025 Hans Kristian Rosbach
+ * Based on AVX2 implementation by Mika T. Lindqvist
+ * For conditions of distribution and use, see copyright notice in zlib.h
+ */
+
+
+========================================================================
+arch/x86/compare256_sse2.c
+
+/* compare256_sse2.c -- SSE2 version of compare256
+ * Copyright Adam Stylinski <kungfujesus06@gmail.com>
+ * For conditions of distribution and use, see copyright notice in zlib.h
+ */
+
+
+========================================================================
+arch/x86/crc32_fold_pclmulqdq_tpl.h
+arch/x86/crc32_pclmulqdq.c
+arch/x86/crc32_pclmulqdq_tpl.h
+
+/*
+ * Compute the CRC32 using a parallelized folding approach with the PCLMULQDQ
+ * instruction.
+ *
+ * A white paper describing this algorithm can be found at:
+ *     doc/crc-pclmulqdq.pdf
+ *
+ * Copyright (C) 2013 Intel Corporation. All rights reserved.
+ * Copyright (C) 2016 Marian Beermann (support for initial value)
+ * Authors:
+ *     Wajdi Feghali   <wajdi.k.feghali@intel.com>
+ *     Jim Guilford    <james.guilford@intel.com>
+ *     Vinodh Gopal    <vinodh.gopal@intel.com>
+ *     Erdinc Ozturk   <erdinc.ozturk@intel.com>
+ *     Jim Kukunas     <james.t.kukunas@linux.intel.com>
+ *
+ * For conditions of distribution and use, see copyright notice in zlib.h
+ */
+
+
+========================================================================
+arch/x86/crc32_fold_vpclmulqdq_tpl.h
+
+/* crc32_fold_vpclmulqdq_tpl.h -- VPCMULQDQ-based CRC32 folding template.
+ * Copyright Wangyang Guo (wangyang.guo@intel.com)
+ * For conditions of distribution and use, see copyright notice in zlib.h
+ */
+
+
+========================================================================
+arch/x86/crc32_vpclmulqdq.c
+
+/* crc32_vpclmulqdq.c -- VPCMULQDQ-based CRC32 folding implementation.
+ * Copyright Wangyang Guo (wangyang.guo@intel.com)
+ * For conditions of distribution and use, see copyright notice in zlib.h
+ */
+
+
+========================================================================
+arch/x86/slide_hash_avx2.c
+
+/*
+ * AVX2 optimized hash slide, based on Intel's slide_sse implementation
+ *
+ * Copyright (C) 2017 Intel Corporation
+ * Authors:
+ *   Arjan van de Ven   <arjan@linux.intel.com>
+ *   Jim Kukunas        <james.t.kukunas@linux.intel.com>
+ *   Mika T. Lindqvist  <postmaster@raasu.org>
+ *
+ * For conditions of distribution and use, see copyright notice in zlib.h
+ */
+
+
+========================================================================
+arch/x86/slide_hash_sse2.c
+
+/*
+ * SSE optimized hash slide
+ *
+ * Copyright (C) 2017 Intel Corporation
+ * Authors:
+ *   Arjan van de Ven   <arjan@linux.intel.com>
+ *   Jim Kukunas        <james.t.kukunas@linux.intel.com>
+ *
+ * For conditions of distribution and use, see copyright notice in zlib.h
+ */
+
+
+========================================================================
+arch/x86/x86_features.c
+
+/* x86_features.c - x86 feature check
+ *
+ * Copyright (C) 2013 Intel Corporation. All rights reserved.
+ * Author:
+ *  Jim Kukunas
+ *
+ * For conditions of distribution and use, see copyright notice in zlib.h
+ */
+
+
+========================================================================
+arch/x86/x86_features.h
+
+/* x86_features.h -- check for CPU features
+ * Copyright (C) 2013 Intel Corporation Jim Kukunas
+ * For conditions of distribution and use, see copyright notice in zlib.h
+ */
+
+
+========================================================================
+arch/x86/x86_functions.h
+
+/* x86_functions.h -- x86 implementations for arch-specific functions.
+ * Copyright (C) 2013 Intel Corporation Jim Kukunas
+ * For conditions of distribution and use, see copyright notice in zlib.h
+ */
+
+
+========================================================================
+arch_functions.h
+
+/* arch_functions.h -- Arch-specific function prototypes.
+ * Copyright (C) 2017 Hans Kristian Rosbach
+ * For conditions of distribution and use, see copyright notice in zlib.h
+ */
+
+
+========================================================================
+chunkset_tpl.h
+
+/* chunkset_tpl.h -- inline functions to copy small data chunks.
+ * For conditions of distribution and use, see copyright notice in zlib.h
+ */
+
+
+========================================================================
+cmake/detect-arch.c
+
+// archdetect.c -- Detect compiler architecture and raise preprocessor error
+//                 containing a simple arch identifier.
+// Copyright (C) 2019 Hans Kristian Rosbach
+// Licensed under the Zlib license, see LICENSE.md for details
+
+
+
+========================================================================
+compare256_rle.h
+
+/* compare256_rle.h -- 256 byte run-length encoding comparison
+ * Copyright (C) 2022 Nathan Moinvaziri
+ * For conditions of distribution and use, see copyright notice in zlib.h
+ */
+
+
+========================================================================
+compress.c
+
+/* compress.c -- compress a memory buffer
+ * Copyright (C) 1995-2005, 2014, 2016 Jean-loup Gailly, Mark Adler
+ * For conditions of distribution and use, see copyright notice in zlib.h
+ */
+
+
+========================================================================
+cpu_features.c
+
+/* cpu_features.c -- CPU architecture feature check
+ * Copyright (C) 2017 Hans Kristian Rosbach
+ * For conditions of distribution and use, see copyright notice in zlib.h
+ */
+
+
+========================================================================
+cpu_features.h
+
+/* cpu_features.h -- CPU architecture feature check
+ * Copyright (C) 2017 Hans Kristian Rosbach
+ * For conditions of distribution and use, see copyright notice in zlib.h
+ */
+
+
+========================================================================
+crc32.c
+
+/* crc32.c -- compute the CRC-32 of a data stream
+ * Copyright (C) 1995-2022 Mark Adler
+ * For conditions of distribution and use, see copyright notice in zlib.h
+ *
+ * This interleaved implementation of a CRC makes use of pipelined multiple
+ * arithmetic-logic units, commonly found in modern CPU cores. It is due to
+ * Kadatch and Jenkins (2010). See doc/crc-doc.1.0.pdf in this distribution.
+ */
+
+
+========================================================================
+crc32.h
+
+/* crc32.h -- crc32 folding interface
+ * Copyright (C) 2021 Nathan Moinvaziri
+ * For conditions of distribution and use, see copyright notice in zlib.h
+ */
+
+
+========================================================================
+crc32_braid_comb.c
+
+/* crc32_braid_comb.c -- compute the CRC-32 of a data stream
+ * Copyright (C) 1995-2022 Mark Adler
+ * For conditions of distribution and use, see copyright notice in zlib.h
+ *
+ * This interleaved implementation of a CRC makes use of pipelined multiple
+ * arithmetic-logic units, commonly found in modern CPU cores. It is due to
+ * Kadatch and Jenkins (2010). See doc/crc-doc.1.0.pdf in this distribution.
+ */
+
+
+========================================================================
+deflate.c
+
+/* deflate.c -- compress data using the deflation algorithm
+ * Copyright (C) 1995-2024 Jean-loup Gailly and Mark Adler
+ * For conditions of distribution and use, see copyright notice in zlib.h
+ */
+
+/*
+  If you use the zlib library in a product, an acknowledgment is welcome
+  in the documentation of your product. If for some reason you cannot
+  include such an acknowledgment, I would appreciate that you keep this
+  copyright string in the executable of your product.
+ */
+
+
+========================================================================
+deflate.h
+
+/* deflate.h -- internal compression state
+ * Copyright (C) 1995-2016 Jean-loup Gailly
+ * For conditions of distribution and use, see copyright notice in zlib.h
+ */
+
+
+========================================================================
+deflate_fast.c
+
+/* deflate_fast.c -- compress data using the fast strategy of deflation algorithm
+ *
+ * Copyright (C) 1995-2024 Jean-loup Gailly and Mark Adler
+ * For conditions of distribution and use, see copyright notice in zlib.h
+ */
+
+
+========================================================================
+deflate_huff.c
+
+/* deflate_huff.c -- compress data using huffman encoding only strategy
+ *
+ * Copyright (C) 1995-2024 Jean-loup Gailly and Mark Adler
+ * For conditions of distribution and use, see copyright notice in zlib.h
+ */
+
+
+========================================================================
+deflate_medium.c
+
+/* deflate_medium.c -- The deflate_medium deflate strategy
+ *
+ * Copyright (C) 2013 Intel Corporation. All rights reserved.
+ * Authors:
+ *  Arjan van de Ven    <arjan@linux.intel.com>
+ *
+ * For conditions of distribution and use, see copyright notice in zlib.h
+ */
+
+
+========================================================================
+deflate_p.h
+
+/* deflate_p.h -- Private inline functions and macros shared with more than
+ *                one deflate method
+ *
+ * Copyright (C) 1995-2024 Jean-loup Gailly and Mark Adler
+ * For conditions of distribution and use, see copyright notice in zlib.h
+ *
+ */
+
+
+========================================================================
+deflate_quick.c
+
+/*
+ * The deflate_quick deflate strategy, designed to be used when cycles are
+ * at a premium.
+ *
+ * Copyright (C) 2013 Intel Corporation. All rights reserved.
+ * Authors:
+ *  Wajdi Feghali   <wajdi.k.feghali@intel.com>
+ *  Jim Guilford    <james.guilford@intel.com>
+ *  Vinodh Gopal    <vinodh.gopal@intel.com>
+ *     Erdinc Ozturk   <erdinc.ozturk@intel.com>
+ *  Jim Kukunas     <james.t.kukunas@linux.intel.com>
+ *
+ * Portions are Copyright (C) 2016 12Sided Technology, LLC.
+ * Author:
+ *  Phil Vachon     <pvachon@12sidedtech.com>
+ *
+ * For conditions of distribution and use, see copyright notice in zlib.h
+ */
+
+
+========================================================================
+deflate_rle.c
+
+/* deflate_rle.c -- compress data using RLE strategy of deflation algorithm
+ *
+ * Copyright (C) 1995-2024 Jean-loup Gailly and Mark Adler
+ * For conditions of distribution and use, see copyright notice in zlib.h
+ */
+
+
+========================================================================
+deflate_slow.c
+
+/* deflate_slow.c -- compress data using the slow strategy of deflation algorithm
+ *
+ * Copyright (C) 1995-2024 Jean-loup Gailly and Mark Adler
+ * For conditions of distribution and use, see copyright notice in zlib.h
+ */
+
+
+========================================================================
+deflate_stored.c
+
+/* deflate_stored.c -- store data without compression using deflation algorithm
+ *
+ * Copyright (C) 1995-2024 Jean-loup Gailly and Mark Adler
+ * For conditions of distribution and use, see copyright notice in zlib.h
+ */
+
+
+========================================================================
+functable.c
+
+/* functable.c -- Choose relevant optimized functions at runtime
+ * Copyright (C) 2017 Hans Kristian Rosbach
+ * For conditions of distribution and use, see copyright notice in zlib.h
+ */
+
+
+========================================================================
+functable.h
+
+/* functable.h -- Struct containing function pointers to optimized functions
+ * Copyright (C) 2017 Hans Kristian Rosbach
+ * For conditions of distribution and use, see copyright notice in zlib.h
+ */
+
+
+========================================================================
+gzguts.h
+
+/* gzguts.h -- zlib internal header definitions for gz* operations
+ * Copyright (C) 2004-2024 Mark Adler
+ * For conditions of distribution and use, see copyright notice in zlib.h
+ */
+
+
+========================================================================
+gzlib.c
+
+/* gzlib.c -- zlib functions common to reading and writing gzip files
+ * Copyright (C) 2004-2024 Mark Adler
+ * For conditions of distribution and use, see copyright notice in zlib.h
+ */
+
+
+========================================================================
+gzread.c
+
+/* gzread.c -- zlib functions for reading gzip files
+ * Copyright (C) 2004-2017 Mark Adler
+ * For conditions of distribution and use, see copyright notice in zlib.h
+ */
+
+
+========================================================================
+gzwrite.c
+
+/* gzwrite.c -- zlib functions for writing gzip files
+ * Copyright (C) 2004-2019 Mark Adler
+ * For conditions of distribution and use, see copyright notice in zlib.h
+ */
+
+
+========================================================================
+infback.c
+
+/* infback.c -- inflate using a call-back interface
+ * Copyright (C) 1995-2022 Mark Adler
+ * For conditions of distribution and use, see copyright notice in zlib.h
+ */
+
+
+========================================================================
+inffast_tpl.h
+
+/* inffast.c -- fast decoding
+ * Copyright (C) 1995-2017 Mark Adler
+ * For conditions of distribution and use, see copyright notice in zlib.h
+ */
+
+
+========================================================================
+inflate.c
+
+/* inflate.c -- zlib decompression
+ * Copyright (C) 1995-2022 Mark Adler
+ * For conditions of distribution and use, see copyright notice in zlib.h
+ */
+
+
+========================================================================
+inflate.h
+
+/* inflate.h -- internal inflate state definition
+ * Copyright (C) 1995-2019 Mark Adler
+ * For conditions of distribution and use, see copyright notice in zlib.h
+ */
+
+
+========================================================================
+inftrees.c
+
+/* inftrees.c -- generate Huffman trees for efficient decoding
+ * Copyright (C) 1995-2024 Mark Adler
+ * For conditions of distribution and use, see copyright notice in zlib.h
+ */
+
+/*
+  If you use the zlib library in a product, an acknowledgment is welcome
+  in the documentation of your product. If for some reason you cannot
+  include such an acknowledgment, I would appreciate that you keep this
+  copyright string in the executable of your product.
+ */
+
+
+========================================================================
+inftrees.h
+
+/* inftrees.h -- header to use inftrees.c
+ * Copyright (C) 1995-2022 Mark Adler
+ * For conditions of distribution and use, see copyright notice in zlib.h
+ */
+
+
+========================================================================
+insert_string.c
+
+/* insert_string.c -- insert_string integer hash variant
+ *
+ * Copyright (C) 1995-2024 Jean-loup Gailly and Mark Adler
+ * For conditions of distribution and use, see copyright notice in zlib.h
+ *
+ */
+
+
+========================================================================
+insert_string_roll.c
+
+/* insert_string_roll.c -- insert_string rolling hash variant
+ *
+ * Copyright (C) 1995-2024 Jean-loup Gailly and Mark Adler
+ * For conditions of distribution and use, see copyright notice in zlib.h
+ *
+ */
+
+
+========================================================================
+insert_string_tpl.h
+
+/* insert_string_tpl.h -- Private insert_string functions shared with more than
+ *                        one insert string implementation
+ *
+ * Copyright (C) 1995-2024 Jean-loup Gailly and Mark Adler
+ *
+ * Copyright (C) 2013 Intel Corporation. All rights reserved.
+ * Authors:
+ *  Wajdi Feghali   <wajdi.k.feghali@intel.com>
+ *  Jim Guilford    <james.guilford@intel.com>
+ *  Vinodh Gopal    <vinodh.gopal@intel.com>
+ *  Erdinc Ozturk   <erdinc.ozturk@intel.com>
+ *  Jim Kukunas     <james.t.kukunas@linux.intel.com>
+ *
+ * Portions are Copyright (C) 2016 12Sided Technology, LLC.
+ * Author:
+ *  Phil Vachon     <pvachon@12sidedtech.com>
+ *
+ * For conditions of distribution and use, see copyright notice in zlib.h
+ *
+ */
+
+
+========================================================================
+match_tpl.h
+
+/* match_tpl.h -- find longest match template for compare256 variants
+ *
+ * Copyright (C) 1995-2024 Jean-loup Gailly and Mark Adler
+ * For conditions of distribution and use, see copyright notice in zlib.h
+ *
+ * Portions copyright (C) 2014-2021 Konstantin Nosov
+ *  Fast-zlib optimized longest_match
+ *  https://github.com/gildor2/fast_zlib
+ */
+
+
+========================================================================
+tools/makecrct.c
+
+/* makecrct.c -- output crc32 tables
+ * Copyright (C) 1995-2022 Mark Adler
+ * For conditions of distribution and use, see copyright notice in zlib.h
+*/
+
+
+========================================================================
+tools/maketrees.c
+
+/* maketrees.c -- output static huffman trees
+ * Copyright (C) 1995-2017 Jean-loup Gailly
+ * For conditions of distribution and use, see copyright notice in zlib.h
+ */
+
+
+========================================================================
+trees.c
+
+/* trees.c -- output deflated data using Huffman coding
+ * Copyright (C) 1995-2024 Jean-loup Gailly
+ * detect_data_type() function provided freely by Cosmin Truta, 2006
+ * For conditions of distribution and use, see copyright notice in zlib.h
+ */
+
+
+========================================================================
+uncompr.c
+
+/* uncompr.c -- decompress a memory buffer
+ * Copyright (C) 1995-2003, 2010, 2014, 2016 Jean-loup Gailly, Mark Adler.
+ * For conditions of distribution and use, see copyright notice in zlib.h
+ */
+
+
+========================================================================
+zendian.h
+
+/* zendian.h -- define BYTE_ORDER for endian tests
+ * For conditions of distribution and use, see copyright notice in zlib.h
+ */
+
+
+========================================================================
+zmemory.h
+
+/* zmemory.h -- Private inline functions used internally in zlib-ng
+ * For conditions of distribution and use, see copyright notice in zlib.h
+ */
+
+
+========================================================================
+zutil.c
+
+/* zutil.c -- target dependent utility functions for the compression library
+ * Copyright (C) 1995-2017 Jean-loup Gailly
+ * For conditions of distribution and use, see copyright notice in zlib.h
+ */
+
+
+========================================================================
+zutil.h
+
+/* zutil.h -- internal interface and configuration of the compression library
+ * Copyright (C) 1995-2024 Jean-loup Gailly, Mark Adler
+ * For conditions of distribution and use, see copyright notice in zlib.h
+ */
+
+
+========================================================================
+zutil_p.h
+
+/* zutil_p.h -- Private inline functions used internally in zlib-ng
+ * For conditions of distribution and use, see copyright notice in zlib.h
+ */

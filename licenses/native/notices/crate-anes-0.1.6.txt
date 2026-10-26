@@ -1,0 +1,34 @@
+Native source notices: crate-anes-0.1.6
+Source archive SHA-256: 4b46cbb362ab8752921c97e041f5e366ee6297bd428a31275b9fcf1e380f7299
+Original terms and copyright statements follow. Coverage includes conservative build/tool dependencies.
+
+
+========================================================================
+README.md
+
+## License
+
+The ANES crate is dual-licensed under [Apache 2.0][apache-license-link] and
+[MIT][mit-license-link] terms.
+
+Copyrights in the ANES project are retained by their contributors. No
+copyright assignment is required to contribute to the ANES project.
+
+[actions-stable-badge]: https://github.com/zrzka/anes-rs/workflows/stable/badge.svg
+[actions-beta-badge]: https://github.com/zrzka/anes-rs/workflows/beta/badge.svg
+[actions-nightly-badge]: https://github.com/zrzka/anes-rs/workflows/nightly/badge.svg
+[actions-link]: https://github.com/zrzka/anes-rs/actions
+
+[crates-badge]: https://img.shields.io/crates/v/anes.svg
+[crates-link]: https://crates.io/crates/anes
+
+[docs-badge]: https://docs.rs/anes/badge.svg
+[docs-link]: https://docs.rs/anes
+
+[mit-license-badge]: https://img.shields.io/badge/license-MIT-blue.svg
+[mit-license-link]: ./LICENSE-MIT
+[apache-license-badge]: https://img.shields.io/badge/license-Apache2-blue.svg
+[apache-license-link]: /LICENSE-APACHE
+
+[loc-badge]: https://tokei.rs/b1/github/zrzka/anes-rs?category=code
+

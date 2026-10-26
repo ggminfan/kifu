@@ -1,0 +1,9 @@
+Native source notices: crate-plotters-svg-0.3.7
+Source archive SHA-256: 51bae2ac328883f7acdfea3d66a7c35751187f870bc81f94563733a154d7a670
+Original terms and copyright statements follow. Coverage includes conservative build/tool dependencies.
+
+
+========================================================================
+LICENSE
+
+../LICENSE

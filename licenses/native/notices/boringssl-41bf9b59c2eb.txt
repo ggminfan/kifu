@@ -1,0 +1,3148 @@
+Native source notices: boringssl-41bf9b59c2eb
+Source archive SHA-256: a5028d5475f1eaf0ad785c18666b330027a923121d601129f4a61e7bfc89a1dd
+Original terms and copyright statements follow. Coverage includes conservative build/tool dependencies.
+
+
+========================================================================
+LICENSE
+
+
+                                 Apache License
+                           Version 2.0, January 2004
+                        http://www.apache.org/licenses/
+
+   TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION
+
+   1. Definitions.
+
+      "License" shall mean the terms and conditions for use, reproduction,
+      and distribution as defined by Sections 1 through 9 of this document.
+
+      "Licensor" shall mean the copyright owner or entity authorized by
+      the copyright owner that is granting the License.
+
+      "Legal Entity" shall mean the union of the acting entity and all
+      other entities that control, are controlled by, or are under common
+      control with that entity. For the purposes of this definition,
+      "control" means (i) the power, direct or indirect, to cause the
+      direction or management of such entity, whether by contract or
+      otherwise, or (ii) ownership of fifty percent (50%) or more of the
+      outstanding shares, or (iii) beneficial ownership of such entity.
+
+      "You" (or "Your") shall mean an individual or Legal Entity
+      exercising permissions granted by this License.
+
+      "Source" form shall mean the preferred form for making modifications,
+      including but not limited to software source code, documentation
+      source, and configuration files.
+
+      "Object" form shall mean any form resulting from mechanical
+      transformation or translation of a Source form, including but
+      not limited to compiled object code, generated documentation,
+      and conversions to other media types.
+
+      "Work" shall mean the work of authorship, whether in Source or
+      Object form, made available under the License, as indicated by a
+      copyright notice that is included in or attached to the work
+      (an example is provided in the Appendix below).
+
+      "Derivative Works" shall mean any work, whether in Source or Object
+      form, that is based on (or derived from) the Work and for which the
+      editorial revisions, annotations, elaborations, or other modifications
+      represent, as a whole, an original work of authorship. For the purposes
+      of this License, Derivative Works shall not include works that remain
+      separable from, or merely link (or bind by name) to the interfaces of,
+      the Work and Derivative Works thereof.
+
+      "Contribution" shall mean any work of authorship, including
+      the original version of the Work and any modifications or additions
+      to that Work or Derivative Works thereof, that is intentionally
+      submitted to Licensor for inclusion in the Work by the copyright owner
+      or by an individual or Legal Entity authorized to submit on behalf of
+      the copyright owner. For the purposes of this definition, "submitted"
+      means any form of electronic, verbal, or written communication sent
+      to the Licensor or its representatives, including but not limited to
+      communication on electronic mailing lists, source code control systems,
+      and issue tracking systems that are managed by, or on behalf of, the
+      Licensor for the purpose of discussing and improving the Work, but
+      excluding communication that is conspicuously marked or otherwise
+      designated in writing by the copyright owner as "Not a Contribution."
+
+      "Contributor" shall mean Licensor and any individual or Legal Entity
+      on behalf of whom a Contribution has been received by Licensor and
+      subsequently incorporated within the Work.
+
+   2. Grant of Copyright License. Subject to the terms and conditions of
+      this License, each Contributor hereby grants to You a perpetual,
+      worldwide, non-exclusive, no-charge, royalty-free, irrevocable
+      copyright license to reproduce, prepare Derivative Works of,
+      publicly display, publicly perform, sublicense, and distribute the
+      Work and such Derivative Works in Source or Object form.
+
+   3. Grant of Patent License. Subject to the terms and conditions of
+      this License, each Contributor hereby grants to You a perpetual,
+      worldwide, non-exclusive, no-charge, royalty-free, irrevocable
+      (except as stated in this section) patent license to make, have made,
+      use, offer to sell, sell, import, and otherwise transfer the Work,
+      where such license applies only to those patent claims licensable
+      by such Contributor that are necessarily infringed by their
+      Contribution(s) alone or by combination of their Contribution(s)
+      with the Work to which such Contribution(s) was submitted. If You
+      institute patent litigation against any entity (including a
+      cross-claim or counterclaim in a lawsuit) alleging that the Work
+      or a Contribution incorporated within the Work constitutes direct
+      or contributory patent infringement, then any patent licenses
+      granted to You under this License for that Work shall terminate
+      as of the date such litigation is filed.
+
+   4. Redistribution. You may reproduce and distribute copies of the
+      Work or Derivative Works thereof in any medium, with or without
+      modifications, and in Source or Object form, provided that You
+      meet the following conditions:
+
+      (a) You must give any other recipients of the Work or
+          Derivative Works a copy of this License; and
+
+      (b) You must cause any modified files to carry prominent notices
+          stating that You changed the files; and
+
+      (c) You must retain, in the Source form of any Derivative Works
+          that You distribute, all copyright, patent, trademark, and
+          attribution notices from the Source form of the Work,
+          excluding those notices that do not pertain to any part of
+          the Derivative Works; and
+
+      (d) If the Work includes a "NOTICE" text file as part of its
+          distribution, then any Derivative Works that You distribute must
+          include a readable copy of the attribution notices contained
+          within such NOTICE file, excluding those notices that do not
+          pertain to any part of the Derivative Works, in at least one
+          of the following places: within a NOTICE text file distributed
+          as part of the Derivative Works; within the Source form or
+          documentation, if provided along with the Derivative Works; or,
+          within a display generated by the Derivative Works, if and
+          wherever such third-party notices normally appear. The contents
+          of the NOTICE file are for informational purposes only and
+          do not modify the License. You may add Your own attribution
+          notices within Derivative Works that You distribute, alongside
+          or as an addendum to the NOTICE text from the Work, provided
+          that such additional attribution notices cannot be construed
+          as modifying the License.
+
+      You may add Your own copyright statement to Your modifications and
+      may provide additional or different license terms and conditions
+      for use, reproduction, or distribution of Your modifications, or
+      for any such Derivative Works as a whole, provided Your use,
+      reproduction, and distribution of the Work otherwise complies with
+      the conditions stated in this License.
+
+   5. Submission of Contributions. Unless You explicitly state otherwise,
+      any Contribution intentionally submitted for inclusion in the Work
+      by You to the Licensor shall be under the terms and conditions of
+      this License, without any additional terms or conditions.
+      Notwithstanding the above, nothing herein shall supersede or modify
+      the terms of any separate license agreement you may have executed
+      with Licensor regarding such Contributions.
+
+   6. Trademarks. This License does not grant permission to use the trade
+      names, trademarks, service marks, or product names of the Licensor,
+      except as required for reasonable and customary use in describing the
+      origin of the Work and reproducing the content of the NOTICE file.
+
+   7. Disclaimer of Warranty. Unless required by applicable law or
+      agreed to in writing, Licensor provides the Work (and each
+      Contributor provides its Contributions) on an "AS IS" BASIS,
+      WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or
+      implied, including, without limitation, any warranties or conditions
+      of TITLE, NON-INFRINGEMENT, MERCHANTABILITY, or FITNESS FOR A
+      PARTICULAR PURPOSE. You are solely responsible for determining the
+      appropriateness of using or redistributing the Work and assume any
+      risks associated with Your exercise of permissions under this License.
+
+   8. Limitation of Liability. In no event and under no legal theory,
+      whether in tort (including negligence), contract, or otherwise,
+      unless required by applicable law (such as deliberate and grossly
+      negligent acts) or agreed to in writing, shall any Contributor be
+      liable to You for damages, including any direct, indirect, special,
+      incidental, or consequential damages of any character arising as a
+      result of this License or out of the use or inability to use the
+      Work (including but not limited to damages for loss of goodwill,
+      work stoppage, computer failure or malfunction, or any and all
+      other commercial damages or losses), even if such Contributor
+      has been advised of the possibility of such damages.
+
+   9. Accepting Warranty or Additional Liability. While redistributing
+      the Work or Derivative Works thereof, You may choose to offer,
+      and charge a fee for, acceptance of support, warranty, indemnity,
+      or other liability obligations and/or rights consistent with this
+      License. However, in accepting such obligations, You may act only
+      on Your own behalf and on Your sole responsibility, not on behalf
+      of any other Contributor, and only if You agree to indemnify,
+      defend, and hold each Contributor harmless for any liability
+      incurred by, or claims asserted against, such Contributor by reason
+      of your accepting any such warranty or additional liability.
+
+   END OF TERMS AND CONDITIONS
+
+   APPENDIX: How to apply the Apache License to your work.
+
+      To apply the Apache License to your work, attach the following
+      boilerplate notice, with the fields enclosed by brackets "[]"
+      replaced with your own identifying information. (Don't include
+      the brackets!)  The text should be enclosed in the appropriate
+      comment syntax for the file format. We also recommend that a
+      file or class name and description of purpose be included on the
+      same "printed page" as the copyright notice for easier
+      identification within third-party archives.
+
+   Copyright [yyyy] [name of copyright owner]
+
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+
+
+Licenses for support code
+-------------------------
+
+Parts of the TLS test suite are under the Go license. This code is not included
+in BoringSSL (i.e. libcrypto and libssl) when compiled, however, so
+distributing code linked against BoringSSL does not trigger this license:
+
+Copyright (c) 2009 The Go Authors. All rights reserved.
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are
+met:
+
+   * Redistributions of source code must retain the above copyright
+notice, this list of conditions and the following disclaimer.
+   * Redistributions in binary form must reproduce the above
+copyright notice, this list of conditions and the following disclaimer
+in the documentation and/or other materials provided with the
+distribution.
+   * Neither the name of Google Inc. nor the names of its
+contributors may be used to endorse or promote products derived from
+this software without specific prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+"AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+
+
+========================================================================
+crypto/abi_self_test.cc
+crypto/bytestring/unicode.cc
+crypto/chacha/internal.h
+crypto/cpu_aarch64_fuchsia.cc
+crypto/cpu_arm_linux.h
+crypto/cpu_arm_linux_test.cc
+crypto/fipsmodule/sha/internal.h
+crypto/fipsmodule/sha/sha_test.cc
+crypto/fipsmodule/tls/internal.h
+crypto/hrss/hrss.cc
+crypto/hrss/hrss_test.cc
+crypto/hrss/internal.h
+crypto/impl_dispatch_test.cc
+crypto/md5/internal.h
+crypto/md5/md5_test.cc
+crypto/pem/pem_test.cc
+crypto/rand/rand_test.cc
+crypto/self_test.cc
+crypto/stack/stack_test.cc
+fuzz/arm_cpuinfo.cc
+fuzz/pkcs12.cc
+include/openssl/e_os2.h
+include/openssl/hrss.h
+ssl/handoff.cc
+
+// Copyright 2018 The BoringSSL Authors
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//     https://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+
+
+
+========================================================================
+crypto/aes/aes.cc
+crypto/cipher/e_aeseax.cc
+crypto/cms/cms.cc
+crypto/cms/cms_test.cc
+crypto/ecdsa/ecdsa_p1363.cc
+crypto/ecdsa/ecdsa_p1363_test.cc
+crypto/evp/p_mldsa.cc
+crypto/fipsmodule/entropy/internal.h
+crypto/fipsmodule/entropy/jitter_test.cc
+crypto/fuzzer_mode.cc
+crypto/mem_internal.h
+crypto/mem_test.cc
+crypto/x509/x509_extension_test.cc
+crypto/xwing/xwing.cc
+crypto/xwing/xwing_test.cc
+include/openssl/cms.h
+include/openssl/lhash.h
+include/openssl/xwing.h
+pki/merkle_tree.cc
+pki/merkle_tree.h
+pki/merkle_tree_unittest.cc
+third_party/fiat/bedrock_platform_test.cc
+util/bazel-example/example_ssl.cc
+util/fipstools/acvp/entropy_modulewrapper/main.cc
+util/fipstools/acvp/entropy_modulewrapper/modulewrapper.cc
+util/fipstools/acvp/modulewrapper/proto.cc
+util/fipstools/entropy/jitter_deltas.cc
+
+// Copyright 2025 The BoringSSL Authors
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//     https://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+
+
+
+========================================================================
+crypto/asn1/a_bitstr.cc
+crypto/asn1/a_bool.cc
+crypto/asn1/a_d2i_fp.cc
+crypto/asn1/a_dup.cc
+crypto/asn1/a_gentm.cc
+crypto/asn1/a_i2d_fp.cc
+crypto/asn1/a_int.cc
+crypto/asn1/a_object.cc
+crypto/asn1/a_octet.cc
+crypto/asn1/a_type.cc
+crypto/asn1/a_utctm.cc
+crypto/asn1/asn1_lib.cc
+crypto/asn1/asn1_par.cc
+crypto/asn1/f_int.cc
+crypto/asn1/f_string.cc
+crypto/base64/base64.cc
+crypto/bio/bio.cc
+crypto/bio/bio_mem.cc
+crypto/bio/connect.cc
+crypto/bio/errno.cc
+crypto/bio/fd.cc
+crypto/bio/file.cc
+crypto/bio/hexdump.cc
+crypto/bio/internal.h
+crypto/bio/printf.cc
+crypto/bio/socket.cc
+crypto/bn/convert.cc
+crypto/bn/div.cc
+crypto/bn/exponentiation.cc
+crypto/buf/buf.cc
+crypto/cipher/derive_key.cc
+crypto/cipher/e_des.cc
+crypto/cipher/e_null.cc
+crypto/cipher/e_rc2.cc
+crypto/cipher/e_rc4.cc
+crypto/cipher/get_cipher.cc
+crypto/cipher/internal.h
+crypto/conf/conf.cc
+crypto/cpu_intel.cc
+crypto/des/des.cc
+crypto/des/internal.h
+crypto/dh/dh_test.cc
+crypto/digest/digest_extra.cc
+crypto/dsa/dsa.cc
+crypto/dsa/dsa_test.cc
+crypto/err/err.cc
+crypto/evp/evp.cc
+crypto/evp/evp_asn1.cc
+crypto/evp/sign.cc
+crypto/ex_data.cc
+crypto/fipsmodule/cipher/internal.h
+crypto/fipsmodule/digest/internal.h
+crypto/fipsmodule/rsa/internal.h
+crypto/hmac/hmac_test.cc
+crypto/internal.h
+crypto/lhash/internal.h
+crypto/lhash/lhash.cc
+crypto/md4/md4.cc
+crypto/md5/md5.cc
+crypto/mem.cc
+crypto/obj/obj.cc
+crypto/obj/obj_dat.h
+crypto/pem/internal.h
+crypto/pem/pem_all.cc
+crypto/pem/pem_info.cc
+crypto/pem/pem_lib.cc
+crypto/pem/pem_oth.cc
+crypto/pem/pem_pk8.cc
+crypto/pem/pem_pkey.cc
+crypto/rc4/rc4.cc
+crypto/ripemd/ripemd.cc
+crypto/rsa/internal.h
+crypto/rsa/rsa_crypt.cc
+crypto/stack/stack.cc
+crypto/thread.cc
+crypto/x509/a_digest.cc
+crypto/x509/a_sign.cc
+crypto/x509/a_verify.cc
+crypto/x509/algorithm.cc
+crypto/x509/by_dir.cc
+crypto/x509/by_file.cc
+crypto/x509/i2d_pr.cc
+crypto/x509/t_req.cc
+crypto/x509/t_x509.cc
+crypto/x509/t_x509a.cc
+crypto/x509/x509.cc
+crypto/x509/x509_att.cc
+crypto/x509/x509_cmp.cc
+crypto/x509/x509_d2.cc
+crypto/x509/x509_def.cc
+crypto/x509/x509_ext.cc
+crypto/x509/x509_lu.cc
+crypto/x509/x509_obj.cc
+crypto/x509/x509_req.cc
+crypto/x509/x509_set.cc
+crypto/x509/x509_txt.cc
+crypto/x509/x509_v3.cc
+crypto/x509/x509_vfy.cc
+crypto/x509/x509name.cc
+crypto/x509/x509rset.cc
+crypto/x509/x_algor.cc
+crypto/x509/x_all.cc
+crypto/x509/x_attrib.cc
+crypto/x509/x_crl.cc
+crypto/x509/x_name.cc
+crypto/x509/x_pubkey.cc
+crypto/x509/x_req.cc
+crypto/x509/x_sig.cc
+crypto/x509/x_spki.cc
+crypto/x509/x_x509.cc
+decrepit/bio/base64_bio.cc
+decrepit/blowfish/blowfish.cc
+decrepit/cast/cast.cc
+decrepit/cast/cast_tables.cc
+decrepit/cast/internal.h
+decrepit/des/cfb64ede.cc
+decrepit/macros.h
+decrepit/rc4/rc4_decrepit.cc
+decrepit/ssl/ssl_decrepit.cc
+include/openssl/asn1.h
+include/openssl/base64.h
+include/openssl/bio.h
+include/openssl/blowfish.h
+include/openssl/buf.h
+include/openssl/cast.h
+include/openssl/cipher.h
+include/openssl/conf.h
+include/openssl/des.h
+include/openssl/dh.h
+include/openssl/digest.h
+include/openssl/dsa.h
+include/openssl/err.h
+include/openssl/evp.h
+include/openssl/evp_errors.h
+include/openssl/ex_data.h
+include/openssl/hmac.h
+include/openssl/md4.h
+include/openssl/md5.h
+include/openssl/mem.h
+include/openssl/nid.h
+include/openssl/obj.h
+include/openssl/pem.h
+include/openssl/rc4.h
+include/openssl/ripemd.h
+include/openssl/rsa.h
+include/openssl/sha.h
+include/openssl/sha2.h
+include/openssl/stack.h
+include/openssl/thread.h
+include/openssl/tls_prf.h
+ssl/bio_ssl.cc
+ssl/extensions.cc
+ssl/s3_pkt.cc
+ssl/ssl_file.cc
+ssl/ssl_privkey.cc
+ssl/tls_method.cc
+ssl/tls_record.cc
+
+// Copyright 1995-2016 The OpenSSL Project Authors. All Rights Reserved.
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//     https://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+
+
+
+========================================================================
+crypto/asn1/a_mbstr.cc
+crypto/asn1/a_strnid.cc
+crypto/asn1/a_time.cc
+crypto/asn1/asn_pack.cc
+crypto/bio/pair.cc
+crypto/dsa/dsa_asn1.cc
+crypto/evp/pbkdf.cc
+crypto/fipsmodule/digest/md32_common.h
+crypto/pkcs8/internal.h
+crypto/pkcs8/p5_pbev2.cc
+crypto/pkcs8/pkcs8.cc
+crypto/pkcs8/pkcs8_x509.cc
+crypto/rsa/rsa_test.cc
+crypto/x509/t_crl.cc
+crypto/x509/v3_akey.cc
+crypto/x509/v3_alt.cc
+crypto/x509/v3_bcons.cc
+crypto/x509/v3_bitst.cc
+crypto/x509/v3_conf.cc
+crypto/x509/v3_cpols.cc
+crypto/x509/v3_crld.cc
+crypto/x509/v3_enum.cc
+crypto/x509/v3_extku.cc
+crypto/x509/v3_genn.cc
+crypto/x509/v3_ia5.cc
+crypto/x509/v3_info.cc
+crypto/x509/v3_int.cc
+crypto/x509/v3_lib.cc
+crypto/x509/v3_prn.cc
+crypto/x509/v3_purp.cc
+crypto/x509/v3_skey.cc
+crypto/x509/v3_utl.cc
+crypto/x509/x509_trs.cc
+crypto/x509/x509spki.cc
+crypto/x509/x_x509a.cc
+include/openssl/pkcs8.h
+include/openssl/type_check.h
+include/openssl/x509v3_errors.h
+
+// Copyright 1999-2016 The OpenSSL Project Authors. All Rights Reserved.
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//     https://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+
+
+
+========================================================================
+crypto/asn1/a_strex.cc
+crypto/asn1/tasn_dec.cc
+crypto/asn1/tasn_enc.cc
+crypto/asn1/tasn_fre.cc
+crypto/asn1/tasn_new.cc
+crypto/asn1/tasn_typ.cc
+crypto/asn1/tasn_utl.cc
+crypto/bn/sqrt.cc
+crypto/dh/dh_asn1.cc
+crypto/evp/internal.h
+crypto/rsa/rsa_asn1.cc
+crypto/x509/name_print.cc
+crypto/x509/v3_ocsp.cc
+crypto/x509/x_exten.cc
+include/openssl/asn1t.h
+
+// Copyright 2000-2016 The OpenSSL Project Authors. All Rights Reserved.
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//     https://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+
+
+
+========================================================================
+crypto/asn1/asn1_test.cc
+crypto/bytestring/asn1_compat.cc
+crypto/chacha/chacha_test.cc
+crypto/cpu_aarch64_linux.cc
+crypto/cpu_arm_linux.cc
+crypto/curve25519/spake25519.cc
+crypto/curve25519/spake25519_test.cc
+crypto/ecdh/ecdh_test.cc
+crypto/fipsmodule/ec/p256-nistz_test.cc
+crypto/obj/obj_test.cc
+crypto/poly1305/internal.h
+crypto/pool/internal.h
+crypto/pool/pool.cc
+crypto/pool/pool_test.cc
+crypto/rand/deterministic.cc
+crypto/x509/x509_test.cc
+decrepit/evp/dss1.cc
+decrepit/evp/evp_do_all.cc
+decrepit/obj/obj_decrepit.cc
+decrepit/ripemd/ripemd_test.cc
+decrepit/x509/x509_decrepit.cc
+fuzz/cert.cc
+fuzz/client.cc
+fuzz/client_no_fuzzer_mode.cc
+fuzz/pkcs8.cc
+fuzz/privkey.cc
+fuzz/read_pem.cc
+fuzz/server.cc
+fuzz/server_no_fuzzer_mode.cc
+fuzz/session.cc
+fuzz/spki.cc
+fuzz/ssl_ctx_api.cc
+include/openssl/asn1_mac.h
+include/openssl/obj_mac.h
+include/openssl/pool.h
+ssl/tls13_both.cc
+ssl/tls13_client.cc
+ssl/tls13_enc.cc
+ssl/tls13_server.cc
+
+// Copyright 2016 The BoringSSL Authors
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//     https://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+
+
+
+========================================================================
+crypto/asn1/internal.h
+ssl/d1_both.cc
+ssl/d1_lib.cc
+ssl/d1_pkt.cc
+ssl/dtls_method.cc
+ssl/dtls_record.cc
+
+// Copyright 2005-2016 The OpenSSL Project Authors. All Rights Reserved.
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//     https://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+
+
+
+========================================================================
+crypto/asn1/posix_time.cc
+
+// Copyright 2022 The BoringSSL Authors
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//     https://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+
+
+// Inspired by algorithms presented in
+// https://howardhinnant.github.io/date_algorithms.html
+// (Public Domain)
+
+
+// Inspired by algorithms presented in
+// https://howardhinnant.github.io/date_algorithms.html
+// (Public Domain)
+
+
+
+========================================================================
+crypto/base64/base64_test.cc
+crypto/bio/bio_test.cc
+crypto/bio/socket_helper.cc
+crypto/bytestring/ber.cc
+crypto/bytestring/bytestring_test.cc
+crypto/bytestring/cbb.cc
+crypto/bytestring/cbs.cc
+crypto/bytestring/internal.h
+crypto/cipher/aead_test.cc
+crypto/cipher/e_chacha20poly1305.cc
+crypto/cipher/e_tls.cc
+crypto/crypto.cc
+crypto/digest/digest_test.cc
+crypto/engine/engine.cc
+crypto/err/err_test.cc
+crypto/evp/evp_extra_test.cc
+crypto/fipsmodule/ec/ec_test.cc
+crypto/fipsmodule/hkdf/hkdf_test.cc
+crypto/lhash/lhash_test.cc
+crypto/pkcs7/pkcs7.cc
+crypto/pkcs7/pkcs7_test.cc
+crypto/pkcs8/pkcs12_test.cc
+crypto/poly1305/poly1305.cc
+crypto/poly1305/poly1305_vec.cc
+crypto/rand/urandom.cc
+crypto/rand/windows.cc
+include/openssl/aead.h
+include/openssl/bytestring.h
+include/openssl/chacha.h
+include/openssl/cpu.h
+include/openssl/crypto.h
+include/openssl/engine.h
+include/openssl/hkdf.h
+include/openssl/objects.h
+include/openssl/opensslconf.h
+include/openssl/opensslv.h
+include/openssl/ossl_typ.h
+include/openssl/pkcs12.h
+include/openssl/pkcs7.h
+include/openssl/poly1305.h
+include/openssl/rand.h
+include/openssl/safestack.h
+ssl/ssl_test.cc
+tool/args.cc
+tool/client.cc
+tool/const.cc
+tool/digest.cc
+tool/internal.h
+tool/pkcs12.cc
+tool/server.cc
+tool/tool.cc
+tool/transport_common.cc
+tool/transport_common.h
+
+// Copyright 2014 The BoringSSL Authors
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//     https://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+
+
+
+========================================================================
+crypto/bcm_support.h
+crypto/fipsmodule/bcm_interface.h
+crypto/fipsmodule/slhdsa/address.h
+crypto/fipsmodule/slhdsa/fors.h
+crypto/fipsmodule/slhdsa/merkle.h
+crypto/fipsmodule/slhdsa/params.h
+crypto/fipsmodule/slhdsa/thash.h
+crypto/fipsmodule/slhdsa/wots.h
+crypto/mldsa/mldsa.cc
+crypto/mldsa/mldsa_test.cc
+crypto/mlkem/mlkem.cc
+crypto/mlkem/mlkem_test.cc
+crypto/rand/internal.h
+crypto/rsa/rsa_extra.cc
+crypto/sha/sha1.cc
+crypto/sha/sha256.cc
+crypto/sha/sha512.cc
+crypto/slhdsa/slhdsa.cc
+crypto/slhdsa/slhdsa_test.cc
+crypto/spake2plus/internal.h
+crypto/spake2plus/spake2plus.cc
+crypto/spake2plus/spake2plus_test.cc
+include/openssl/mldsa.h
+include/openssl/mlkem.h
+include/openssl/pki/verify_error.h
+include/openssl/prefix_symbols.h
+include/openssl/prefix_symbols_internal_S.h
+include/openssl/prefix_symbols_internal_c.h
+include/openssl/slhdsa.h
+include/openssl/time.h
+pki/verify_error.cc
+rust/bssl-crypto/src/ecdsa.rs
+rust/bssl-crypto/src/hpke.rs
+rust/bssl-crypto/src/macros.rs
+rust/bssl-crypto/src/mldsa.rs
+rust/bssl-crypto/src/mlkem.rs
+rust/bssl-crypto/src/rsa.rs
+rust/bssl-crypto/src/scoped.rs
+rust/bssl-crypto/src/slhdsa.rs
+ssl/ssl_credential.cc
+ssl/ssl_internal_test.cc
+util/bazel-example/example.cc
+
+// Copyright 2024 The BoringSSL Authors
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//     https://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+
+
+
+========================================================================
+crypto/blake2/blake2.cc
+crypto/blake2/blake2_test.cc
+crypto/conf/conf_test.cc
+crypto/cpu_aarch64_apple.cc
+crypto/fipsmodule/ecdsa/internal.h
+decrepit/evp/evp_test.cc
+fuzz/decode_client_hello_inner.cc
+include/openssl/blake2.h
+include/openssl/x509_vfy.h
+rust/bssl-sys/build.rs
+ssl/encrypted_client_hello.cc
+tool/generate_ech.cc
+util/fipstools/acvp/modulewrapper/main.cc
+util/fipstools/acvp/modulewrapper/modulewrapper.h
+
+// Copyright 2021 The BoringSSL Authors
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//     https://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+
+
+
+========================================================================
+crypto/bn/bn_asn1.cc
+crypto/conf/internal.h
+crypto/curve25519/ed25519_test.cc
+crypto/curve25519/x25519_test.cc
+crypto/evp/pbkdf_test.cc
+crypto/fipsmodule/aes/aes_test.cc
+crypto/fipsmodule/cmac/cmac_test.cc
+crypto/fipsmodule/rand/internal.h
+crypto/pkcs8/pkcs8_test.cc
+crypto/poly1305/poly1305_test.cc
+crypto/refcount.cc
+crypto/refcount_test.cc
+crypto/thread_none.cc
+crypto/thread_pthread.cc
+crypto/thread_test.cc
+crypto/thread_win.cc
+gen/crypto/err_data.cc
+include/openssl/buffer.h
+include/openssl/cmac.h
+include/openssl/curve25519.h
+include/openssl/dtls1.h
+include/openssl/srtp.h
+ssl/ssl_aead_ctx.cc
+ssl/ssl_buffer.cc
+ssl/ssl_key_share.cc
+tool/ciphers.cc
+tool/generate_ed25519.cc
+tool/genrsa.cc
+tool/rand.cc
+
+// Copyright 2015 The BoringSSL Authors
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//     https://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+
+
+
+========================================================================
+crypto/buf/buf_test.cc
+crypto/cipher/e_aesctrhmac.cc
+crypto/cipher/e_aesgcmsiv.cc
+crypto/compiler_test.cc
+crypto/err/internal.h
+crypto/evp/p_ed25519.cc
+crypto/evp/scrypt_test.cc
+crypto/fipsmodule/aes/internal.h
+crypto/fipsmodule/bcm.cc
+crypto/fipsmodule/delocate.h
+crypto/fipsmodule/rand/ctrdrbg_test.cc
+crypto/pkcs7/internal.h
+crypto/pkcs7/pkcs7_x509.cc
+crypto/rand/forkunsafe.cc
+crypto/rand/rand.cc
+decrepit/cfb/cfb.cc
+decrepit/cfb/cfb_test.cc
+fuzz/bn_div.cc
+fuzz/bn_mod_exp.cc
+fuzz/dtls_client.cc
+fuzz/dtls_server.cc
+include/openssl/is_boringssl.h
+include/openssl/span.h
+ssl/span_test.cc
+ssl/ssl_versions.cc
+tool/file.cc
+tool/sign.cc
+util/fipstools/test_fips.cc
+
+// Copyright 2017 The BoringSSL Authors
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//     https://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+
+
+
+========================================================================
+crypto/chacha/chacha.cc
+
+// Copyright 2014 The BoringSSL Authors
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//     https://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+
+
+// Adapted from the public domain, estream code by D. Bernstein.
+
+
+
+========================================================================
+crypto/cipher/cipher_test.cc
+crypto/evp/evp_test.cc
+crypto/evp/scrypt.cc
+
+// Copyright 2015-2016 The OpenSSL Project Authors. All Rights Reserved.
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//     https://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+
+
+
+========================================================================
+crypto/cipher/tls_cbc.cc
+
+// Copyright 2012-2016 The OpenSSL Project Authors. All Rights Reserved.
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//     https://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+
+
+
+========================================================================
+crypto/constant_time_test.cc
+
+// Copyright 2014-2016 The OpenSSL Project Authors. All Rights Reserved.
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//     https://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+
+
+
+========================================================================
+crypto/cpu_aarch64_openbsd.cc
+
+// Copyright (c) 2022, Robert Nagy <robert.nagy@gmail.com>
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//     https://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+
+
+
+========================================================================
+crypto/cpu_aarch64_sysreg.cc
+crypto/curve25519/curve25519_64_adx.cc
+crypto/fipsmodule/ec/builtin_curves.h
+crypto/fipsmodule/ec/p256_test.cc
+crypto/fipsmodule/keccak/internal.h
+crypto/fipsmodule/keccak/keccak_test.cc
+crypto/rand/getentropy.cc
+crypto/rand/getentropy_test.cc
+crypto/rand/ios.cc
+crypto/rand/trusty.cc
+include/openssl/asm_base.h
+include/openssl/pki/certificate.h
+include/openssl/target.h
+include/openssl/x509v3.h
+pki/certificate.cc
+pki/certificate_unittest.cc
+pki/trust_store_in_memory_unittest.cc
+pki/verify.cc
+pki/verify_unittest.cc
+rust/bssl-crypto/src/aead.rs
+rust/bssl-crypto/src/aes.rs
+rust/bssl-crypto/src/cipher/aes_cbc.rs
+rust/bssl-crypto/src/cipher/aes_ctr.rs
+rust/bssl-crypto/src/cipher/mod.rs
+rust/bssl-crypto/src/digest.rs
+rust/bssl-crypto/src/ec.rs
+rust/bssl-crypto/src/ecdh.rs
+rust/bssl-crypto/src/ed25519.rs
+rust/bssl-crypto/src/hkdf.rs
+rust/bssl-crypto/src/hmac.rs
+rust/bssl-crypto/src/lib.rs
+rust/bssl-crypto/src/mem.rs
+rust/bssl-crypto/src/rand.rs
+rust/bssl-crypto/src/test_helpers.rs
+rust/bssl-crypto/src/x25519.rs
+
+// Copyright 2023 The BoringSSL Authors
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//     https://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+
+
+
+========================================================================
+crypto/cpu_aarch64_win.cc
+
+// Copyright 2018 The BoringSSL Authors
+// Copyright (c) 2020, Arm Ltd.
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//     https://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+
+
+
+========================================================================
+crypto/cpu_arm_freebsd.cc
+crypto/evp/p_hkdf.cc
+crypto/fipsmodule/dh/internal.h
+crypto/x509/policy.cc
+fuzz/conf.cc
+fuzz/der_roundtrip.cc
+include/openssl/ctrdrbg.h
+include/openssl/kdf.h
+include/openssl/posix_time.h
+
+// Copyright 2022 The BoringSSL Authors
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//     https://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+
+
+
+========================================================================
+crypto/crypto_test.cc
+crypto/curve25519/curve25519_tables.h
+crypto/curve25519/internal.h
+crypto/dsa/internal.h
+crypto/ec/hash_to_curve.cc
+crypto/ec/internal.h
+crypto/fipsmodule/ec/p256_table.h
+crypto/hpke/hpke.cc
+crypto/hpke/hpke_test.cc
+crypto/rand/fork_detect.cc
+crypto/rand/fork_detect_test.cc
+crypto/trust_token/pmbtoken.cc
+crypto/trust_token/trust_token_test.cc
+crypto/trust_token/voprf.cc
+decrepit/xts/xts_test.cc
+include/openssl/hpke.h
+include/openssl/trust_token.h
+tool/fd.cc
+
+// Copyright 2020 The BoringSSL Authors
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//     https://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+
+
+
+========================================================================
+crypto/curve25519/curve25519.cc
+
+// Copyright 2020 The BoringSSL Authors
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//     https://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+
+
+// Some of this code is taken from the ref10 version of Ed25519 in SUPERCOP
+// 20141124 (http://bench.cr.yp.to/supercop.html). That code is released as
+// public domain. Other parts have been replaced to call into code generated by
+// Fiat (https://github.com/mit-plv/fiat-crypto) in //third_party/fiat.
+//
+// The field functions are shared by Ed25519 and X25519 where possible.
+
+
+
+========================================================================
+crypto/dh/params.cc
+decrepit/xts/xts.cc
+include/openssl/arm_arch.h
+
+// Copyright 2011-2016 The OpenSSL Project Authors. All Rights Reserved.
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//     https://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+
+
+
+========================================================================
+crypto/ec/ec_asn1.cc
+crypto/ecdsa/ecdsa_asn1.cc
+crypto/x509/asn1_gen.cc
+decrepit/dh/dh_decrepit.cc
+decrepit/dsa/dsa_decrepit.cc
+decrepit/rsa/rsa_decrepit.cc
+include/openssl/aes.h
+include/openssl/ecdsa.h
+
+// Copyright 2002-2016 The OpenSSL Project Authors. All Rights Reserved.
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//     https://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+
+
+
+========================================================================
+crypto/ec/ec_derive.cc
+crypto/evp/p_x25519.cc
+crypto/fipsmodule/aes/gcm_test.cc
+crypto/fipsmodule/fips_shared_support.cc
+crypto/rand/urandom_test.cc
+crypto/siphash/siphash.cc
+crypto/siphash/siphash_test.cc
+crypto/trust_token/internal.h
+crypto/trust_token/trust_token.cc
+decrepit/blowfish/blowfish_test.cc
+decrepit/cast/cast_test.cc
+include/openssl/siphash.h
+ssl/ssl_c_test.c
+util/fipstools/acvp/modulewrapper/modulewrapper.cc
+
+// Copyright 2019 The BoringSSL Authors
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//     https://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+
+
+
+========================================================================
+crypto/ecdh/ecdh.cc
+crypto/fipsmodule/ecdsa/ecdsa_test.cc
+include/openssl/ecdh.h
+
+// Copyright 2002-2016 The OpenSSL Project Authors. All Rights Reserved.
+// Copyright (c) 2002, Oracle and/or its affiliates. All rights reserved.
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//     https://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+
+
+
+========================================================================
+crypto/evp/evp_ctx.cc
+crypto/evp/p_dsa.cc
+crypto/evp/p_ec.cc
+crypto/evp/p_rsa.cc
+crypto/evp/print.cc
+crypto/obj/obj_xref.cc
+crypto/x509/rsa_pss.cc
+
+// Copyright 2006-2016 The OpenSSL Project Authors. All Rights Reserved.
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//     https://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+
+
+
+========================================================================
+crypto/evp/evp_kem.cc
+crypto/evp/p_mlkem.cc
+crypto/evp/p_xwing.cc
+crypto/params_internal.h
+crypto/x509/x509_mtc.cc
+include/openssl/configuration.h
+include/openssl/params.h
+include/openssl/types.h
+pki/testdata/verify_unittest/generate_mldsa_certs.cc
+rust/bssl-crypto/src/pkcs8.rs
+rust/bssl-crypto/src/tls12_prf.rs
+rust/bssl-macros/src/lib.rs
+rust/bssl-rustls-adapters/src/aead.rs
+rust/bssl-rustls-adapters/src/cipher_suites.rs
+rust/bssl-rustls-adapters/src/key_exchange.rs
+rust/bssl-rustls-adapters/src/key_exchange/mlkem.rs
+rust/bssl-rustls-adapters/src/lib.rs
+rust/bssl-rustls-adapters/src/pki.rs
+rust/bssl-rustls-adapters/src/prf.rs
+rust/bssl-rustls-adapters/src/sign.rs
+rust/bssl-rustls-adapters/src/tests.rs
+rust/bssl-tls-tokio/src/hyper.rs
+rust/bssl-tls-tokio/src/lib.rs
+rust/bssl-tls-tokio/src/tests.rs
+rust/bssl-tls/src/alerts.rs
+rust/bssl-tls/src/alpn.rs
+rust/bssl-tls/src/ciphers.rs
+rust/bssl-tls/src/config.rs
+rust/bssl-tls/src/connection.rs
+rust/bssl-tls/src/connection/alpn.rs
+rust/bssl-tls/src/connection/credentials.rs
+rust/bssl-tls/src/connection/io.rs
+rust/bssl-tls/src/connection/io/stdio.rs
+rust/bssl-tls/src/connection/lifecycle.rs
+rust/bssl-tls/src/connection/methods.rs
+rust/bssl-tls/src/connection/transport.rs
+rust/bssl-tls/src/context.rs
+rust/bssl-tls/src/context/alpn.rs
+rust/bssl-tls/src/context/credentials.rs
+rust/bssl-tls/src/context/methods.rs
+rust/bssl-tls/src/context/sessions.rs
+rust/bssl-tls/src/credentials.rs
+rust/bssl-tls/src/credentials/early_callback.rs
+rust/bssl-tls/src/credentials/methods.rs
+rust/bssl-tls/src/credentials/select_cert.rs
+rust/bssl-tls/src/credentials/tests.rs
+rust/bssl-tls/src/errors.rs
+rust/bssl-tls/src/ffi.rs
+rust/bssl-tls/src/io.rs
+rust/bssl-tls/src/io/stdio.rs
+rust/bssl-tls/src/io/sync_io.rs
+rust/bssl-tls/src/io/unix.rs
+rust/bssl-tls/src/lib.rs
+rust/bssl-tls/src/macros.rs
+rust/bssl-tls/src/methods.rs
+rust/bssl-tls/src/sessions.rs
+rust/bssl-tls/src/sync_io.rs
+rust/bssl-tls/src/tests.rs
+rust/bssl-x509/src/certificates.rs
+rust/bssl-x509/src/errors.rs
+rust/bssl-x509/src/ffi.rs
+rust/bssl-x509/src/keys.rs
+rust/bssl-x509/src/lib.rs
+rust/bssl-x509/src/oids.rs
+rust/bssl-x509/src/params.rs
+rust/bssl-x509/src/store.rs
+rust/bssl-x509/src/tests.rs
+rust/bssl-x509/src/verify.rs
+
+// Copyright 2026 The BoringSSL Authors
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//     https://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+
+
+
+========================================================================
+crypto/evp/p_dh.cc
+
+// Copyright 2006-2019 The OpenSSL Project Authors. All Rights Reserved.
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//     https://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+
+
+
+========================================================================
+crypto/fipsmodule/bn/bn_test.cc
+crypto/fipsmodule/bn/internal.h
+include/openssl/bn.h
+include/openssl/ssl3.h
+include/openssl/x509.h
+ssl/handshake.cc
+ssl/s3_both.cc
+ssl/ssl_cert.cc
+
+// Copyright 1995-2016 The OpenSSL Project Authors. All Rights Reserved.
+// Copyright (c) 2002, Oracle and/or its affiliates. All rights reserved.
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//     https://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+
+
+
+========================================================================
+crypto/fipsmodule/bn/rsaz_exp.h
+
+// Copyright 2013-2016 The OpenSSL Project Authors. All Rights Reserved.
+// Copyright (c) 2012, Intel Corporation. All Rights Reserved.
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//     https://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+//
+// Originally written by Shay Gueron (1, 2), and Vlad Krasnov (1)
+// (1) Intel Corporation, Israel Development Center, Haifa, Israel
+// (2) University of Haifa, Israel
+
+
+
+========================================================================
+crypto/fipsmodule/ec/internal.h
+
+// Copyright 2001-2016 The OpenSSL Project Authors. All Rights Reserved.
+// Copyright (c) 2002, Oracle and/or its affiliates. All rights reserved.
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//     https://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+
+
+
+========================================================================
+crypto/fipsmodule/ec/p256-nistz-table.h
+
+// Copyright 2014-2016 The OpenSSL Project Authors. All Rights Reserved.
+// Copyright (c) 2015, Intel Inc.
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//     https://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+
+
+
+========================================================================
+crypto/fipsmodule/ec/p256-nistz.h
+
+// Copyright 2014-2016 The OpenSSL Project Authors. All Rights Reserved.
+// Copyright (c) 2014, Intel Corporation. All Rights Reserved.
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//     https://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+//
+// Originally written by Shay Gueron (1, 2), and Vlad Krasnov (1)
+// (1) Intel Corporation, Israel Development Center, Haifa, Israel
+// (2) University of Haifa, Israel
+//
+// Reference:
+// S.Gueron and V.Krasnov, "Fast Prime Field Elliptic Curve Cryptography with
+//                          256 Bit Primes"
+
+
+
+========================================================================
+crypto/fipsmodule/service_indicator/internal.h
+crypto/fipsmodule/service_indicator/service_indicator_test.cc
+include/openssl/service_indicator.h
+
+// Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//     https://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+
+
+
+========================================================================
+crypto/pem/pem_x509.cc
+crypto/pem/pem_xaux.cc
+crypto/x509/v3_akeya.cc
+crypto/x509/x509cset.cc
+include/openssl/base.h
+
+// Copyright 2001-2016 The OpenSSL Project Authors. All Rights Reserved.
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//     https://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+
+
+
+========================================================================
+crypto/poly1305/poly1305_arm.cc
+
+// Copyright 2014 The BoringSSL Authors
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//     https://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+
+
+// This implementation was taken from the public domain, neon2 version in
+// SUPERCOP by D. J. Bernstein and Peter Schwabe.
+
+
+
+========================================================================
+crypto/rsa/rsa_print.cc
+
+// Copyright 2006-2017 The OpenSSL Project Authors. All Rights Reserved.
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//     https://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+
+
+
+========================================================================
+crypto/x509/internal.h
+
+// Copyright 2013-2016 The OpenSSL Project Authors. All Rights Reserved.
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//     https://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+
+
+
+========================================================================
+crypto/x509/v3_ncons.cc
+crypto/x509/v3_pcons.cc
+crypto/x509/v3_pmaps.cc
+
+// Copyright 2003-2016 The OpenSSL Project Authors. All Rights Reserved.
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//     https://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+
+
+
+========================================================================
+crypto/x509/x509_time_test.cc
+
+// Copyright 2017 The OpenSSL Project Authors. All Rights Reserved.
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//     https://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+
+
+
+========================================================================
+crypto/x509/x509_vpm.cc
+
+// Copyright 2004-2016 The OpenSSL Project Authors. All Rights Reserved.
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//     https://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+
+
+
+========================================================================
+decrepit/des/des_test.cc
+
+// Copyright 1995-2017 The OpenSSL Project Authors. All Rights Reserved.
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//     https://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+
+
+
+========================================================================
+fuzz/crl_getcrlstatusforcert_fuzzer.cc
+fuzz/crl_parse_crl_certificatelist_fuzzer.cc
+fuzz/crl_parse_crl_tbscertlist_fuzzer.cc
+fuzz/crl_parse_issuing_distribution_point_fuzzer.cc
+fuzz/ocsp_parse_ocsp_cert_id_fuzzer.cc
+fuzz/ocsp_parse_ocsp_response_data_fuzzer.cc
+fuzz/ocsp_parse_ocsp_response_fuzzer.cc
+fuzz/ocsp_parse_ocsp_single_response_fuzzer.cc
+fuzz/parse_authority_key_identifier_fuzzer.cc
+pki/crl.cc
+pki/crl.h
+pki/crl_unittest.cc
+pki/revocation_util.cc
+pki/revocation_util.h
+
+// Copyright 2019 The Chromium Authors
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//     https://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+
+
+
+========================================================================
+fuzz/parse_certificate_fuzzer.cc
+fuzz/verify_name_match_fuzzer.cc
+fuzz/verify_name_match_normalizename_fuzzer.cc
+fuzz/verify_name_match_verifynameinsubtree_fuzzer.cc
+include/openssl/pki/ocsp.h
+pki/cert_error_id.cc
+pki/cert_error_id.h
+pki/cert_error_params.cc
+pki/cert_error_params.h
+pki/cert_errors.cc
+pki/cert_errors.h
+pki/cert_issuer_source.h
+pki/cert_issuer_source_static.cc
+pki/cert_issuer_source_static.h
+pki/cert_issuer_source_static_unittest.cc
+pki/cert_issuer_source_sync_unittest.h
+pki/encode_values.cc
+pki/encode_values.h
+pki/encode_values_unittest.cc
+pki/nist_pkits_unittest.h
+pki/ocsp.cc
+pki/ocsp.h
+pki/ocsp_unittest.cc
+pki/parse_name.cc
+pki/parse_name.h
+pki/parse_name_unittest.cc
+pki/parsed_certificate.cc
+pki/parsed_certificate.h
+pki/path_builder.cc
+pki/path_builder.h
+pki/path_builder_pkits_unittest.cc
+pki/path_builder_unittest.cc
+pki/path_builder_verify_certificate_chain_unittest.cc
+pki/trust_store.cc
+pki/trust_store.h
+pki/trust_store_collection.cc
+pki/trust_store_collection.h
+pki/trust_store_collection_unittest.cc
+pki/trust_store_in_memory.cc
+pki/trust_store_in_memory.h
+pki/verify_certificate_chain_pkits_unittest.cc
+pki/verify_certificate_chain_typed_unittest.h
+
+// Copyright 2016 The Chromium Authors
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//     https://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+
+
+
+========================================================================
+fuzz/parse_crldp_fuzzer.cc
+pki/ip_util.cc
+pki/ip_util.h
+pki/ip_util_unittest.cc
+
+// Copyright 2023 The Chromium Authors
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//     https://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+
+
+
+========================================================================
+include/openssl/ec.h
+include/openssl/ec_key.h
+
+// Copyright 2000-2016 The OpenSSL Project Authors. All Rights Reserved.
+// Copyright (c) 2002, Oracle and/or its affiliates. All rights reserved.
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//     https://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+
+
+
+========================================================================
+include/openssl/pki/signature_verify_cache.h
+pki/mock_signature_verify_cache.cc
+pki/mock_signature_verify_cache.h
+pki/string_util.cc
+pki/string_util.h
+pki/string_util_unittest.cc
+
+// Copyright 2022 The Chromium Authors
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//     https://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+
+
+
+========================================================================
+include/openssl/ssl.h
+include/openssl/tls1.h
+ssl/handshake_client.cc
+ssl/handshake_server.cc
+ssl/internal.h
+ssl/s3_lib.cc
+ssl/ssl_cipher.cc
+ssl/ssl_lib.cc
+ssl/ssl_x509.cc
+
+// Copyright 1995-2016 The OpenSSL Project Authors. All Rights Reserved.
+// Copyright (c) 2002, Oracle and/or its affiliates. All rights reserved.
+// Copyright 2005 Nokia. All rights reserved.
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//     https://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+
+
+
+========================================================================
+pki/certificate_policies.cc
+pki/certificate_policies.h
+pki/certificate_policies_unittest.cc
+pki/extended_key_usage.cc
+pki/extended_key_usage.h
+pki/extended_key_usage_unittest.cc
+pki/input.cc
+pki/input.h
+pki/input_unittest.cc
+pki/name_constraints.cc
+pki/name_constraints.h
+pki/name_constraints_unittest.cc
+pki/parse_certificate.cc
+pki/parse_certificate.h
+pki/parse_certificate_unittest.cc
+pki/parse_values.cc
+pki/parse_values.h
+pki/parse_values_unittest.cc
+pki/parser.cc
+pki/parser.h
+pki/parser_unittest.cc
+pki/signature_algorithm.cc
+pki/signature_algorithm.h
+pki/signature_algorithm_unittest.cc
+pki/test_helpers.cc
+pki/test_helpers.h
+pki/verify_certificate_chain.cc
+pki/verify_certificate_chain.h
+pki/verify_certificate_chain_unittest.cc
+pki/verify_name_match.cc
+pki/verify_name_match.h
+pki/verify_name_match_unittest.cc
+pki/verify_signed_data.cc
+pki/verify_signed_data.h
+pki/verify_signed_data_unittest.cc
+
+// Copyright 2015 The Chromium Authors
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//     https://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+
+
+
+========================================================================
+pki/common_cert_errors.cc
+pki/common_cert_errors.h
+pki/general_names.cc
+pki/general_names.h
+pki/general_names_unittest.cc
+pki/nist_pkits_unittest.cc
+pki/parsed_certificate_unittest.cc
+pki/simple_path_builder_delegate.cc
+pki/simple_path_builder_delegate.h
+pki/simple_path_builder_delegate_unittest.cc
+
+// Copyright 2017 The Chromium Authors
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//     https://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+
+
+
+========================================================================
+pki/pem.cc
+pki/pem_unittest.cc
+
+// Copyright 2010 The Chromium Authors
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//     https://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+
+
+
+========================================================================
+pki/pem.h
+
+// Copyright 2011 The Chromium Authors
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//     https://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+
+
+
+========================================================================
+ssl/d1_srtp.cc
+
+// Copyright 2011-2016 The OpenSSL Project Authors. All Rights Reserved.
+// Copyright (C) 2006, Network Resonance, Inc.
+// Copyright (C) 2011, RTFM, Inc.
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//     https://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+
+
+
+========================================================================
+ssl/ssl_asn1.cc
+ssl/ssl_session.cc
+ssl/ssl_stat.cc
+ssl/ssl_transcript.cc
+ssl/t1_enc.cc
+
+// Copyright 1995-2016 The OpenSSL Project Authors. All Rights Reserved.
+// Copyright 2005 Nokia. All rights reserved.
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//     https://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+
+
+
+========================================================================
+third_party/benchmark/LICENSE
+
+
+                                 Apache License
+                           Version 2.0, January 2004
+                        http://www.apache.org/licenses/
+
+   TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION
+
+   1. Definitions.
+
+      "License" shall mean the terms and conditions for use, reproduction,
+      and distribution as defined by Sections 1 through 9 of this document.
+
+      "Licensor" shall mean the copyright owner or entity authorized by
+      the copyright owner that is granting the License.
+
+      "Legal Entity" shall mean the union of the acting entity and all
+      other entities that control, are controlled by, or are under common
+      control with that entity. For the purposes of this definition,
+      "control" means (i) the power, direct or indirect, to cause the
+      direction or management of such entity, whether by contract or
+      otherwise, or (ii) ownership of fifty percent (50%) or more of the
+      outstanding shares, or (iii) beneficial ownership of such entity.
+
+      "You" (or "Your") shall mean an individual or Legal Entity
+      exercising permissions granted by this License.
+
+      "Source" form shall mean the preferred form for making modifications,
+      including but not limited to software source code, documentation
+      source, and configuration files.
+
+      "Object" form shall mean any form resulting from mechanical
+      transformation or translation of a Source form, including but
+      not limited to compiled object code, generated documentation,
+      and conversions to other media types.
+
+      "Work" shall mean the work of authorship, whether in Source or
+      Object form, made available under the License, as indicated by a
+      copyright notice that is included in or attached to the work
+      (an example is provided in the Appendix below).
+
+      "Derivative Works" shall mean any work, whether in Source or Object
+      form, that is based on (or derived from) the Work and for which the
+      editorial revisions, annotations, elaborations, or other modifications
+      represent, as a whole, an original work of authorship. For the purposes
+      of this License, Derivative Works shall not include works that remain
+      separable from, or merely link (or bind by name) to the interfaces of,
+      the Work and Derivative Works thereof.
+
+      "Contribution" shall mean any work of authorship, including
+      the original version of the Work and any modifications or additions
+      to that Work or Derivative Works thereof, that is intentionally
+      submitted to Licensor for inclusion in the Work by the copyright owner
+      or by an individual or Legal Entity authorized to submit on behalf of
+      the copyright owner. For the purposes of this definition, "submitted"
+      means any form of electronic, verbal, or written communication sent
+      to the Licensor or its representatives, including but not limited to
+      communication on electronic mailing lists, source code control systems,
+      and issue tracking systems that are managed by, or on behalf of, the
+      Licensor for the purpose of discussing and improving the Work, but
+      excluding communication that is conspicuously marked or otherwise
+      designated in writing by the copyright owner as "Not a Contribution."
+
+      "Contributor" shall mean Licensor and any individual or Legal Entity
+      on behalf of whom a Contribution has been received by Licensor and
+      subsequently incorporated within the Work.
+
+   2. Grant of Copyright License. Subject to the terms and conditions of
+      this License, each Contributor hereby grants to You a perpetual,
+      worldwide, non-exclusive, no-charge, royalty-free, irrevocable
+      copyright license to reproduce, prepare Derivative Works of,
+      publicly display, publicly perform, sublicense, and distribute the
+      Work and such Derivative Works in Source or Object form.
+
+   3. Grant of Patent License. Subject to the terms and conditions of
+      this License, each Contributor hereby grants to You a perpetual,
+      worldwide, non-exclusive, no-charge, royalty-free, irrevocable
+      (except as stated in this section) patent license to make, have made,
+      use, offer to sell, sell, import, and otherwise transfer the Work,
+      where such license applies only to those patent claims licensable
+      by such Contributor that are necessarily infringed by their
+      Contribution(s) alone or by combination of their Contribution(s)
+      with the Work to which such Contribution(s) was submitted. If You
+      institute patent litigation against any entity (including a
+      cross-claim or counterclaim in a lawsuit) alleging that the Work
+      or a Contribution incorporated within the Work constitutes direct
+      or contributory patent infringement, then any patent licenses
+      granted to You under this License for that Work shall terminate
+      as of the date such litigation is filed.
+
+   4. Redistribution. You may reproduce and distribute copies of the
+      Work or Derivative Works thereof in any medium, with or without
+      modifications, and in Source or Object form, provided that You
+      meet the following conditions:
+
+      (a) You must give any other recipients of the Work or
+          Derivative Works a copy of this License; and
+
+      (b) You must cause any modified files to carry prominent notices
+          stating that You changed the files; and
+
+      (c) You must retain, in the Source form of any Derivative Works
+          that You distribute, all copyright, patent, trademark, and
+          attribution notices from the Source form of the Work,
+          excluding those notices that do not pertain to any part of
+          the Derivative Works; and
+
+      (d) If the Work includes a "NOTICE" text file as part of its
+          distribution, then any Derivative Works that You distribute must
+          include a readable copy of the attribution notices contained
+          within such NOTICE file, excluding those notices that do not
+          pertain to any part of the Derivative Works, in at least one
+          of the following places: within a NOTICE text file distributed
+          as part of the Derivative Works; within the Source form or
+          documentation, if provided along with the Derivative Works; or,
+          within a display generated by the Derivative Works, if and
+          wherever such third-party notices normally appear. The contents
+          of the NOTICE file are for informational purposes only and
+          do not modify the License. You may add Your own attribution
+          notices within Derivative Works that You distribute, alongside
+          or as an addendum to the NOTICE text from the Work, provided
+          that such additional attribution notices cannot be construed
+          as modifying the License.
+
+      You may add Your own copyright statement to Your modifications and
+      may provide additional or different license terms and conditions
+      for use, reproduction, or distribution of Your modifications, or
+      for any such Derivative Works as a whole, provided Your use,
+      reproduction, and distribution of the Work otherwise complies with
+      the conditions stated in this License.
+
+   5. Submission of Contributions. Unless You explicitly state otherwise,
+      any Contribution intentionally submitted for inclusion in the Work
+      by You to the Licensor shall be under the terms and conditions of
+      this License, without any additional terms or conditions.
+      Notwithstanding the above, nothing herein shall supersede or modify
+      the terms of any separate license agreement you may have executed
+      with Licensor regarding such Contributions.
+
+   6. Trademarks. This License does not grant permission to use the trade
+      names, trademarks, service marks, or product names of the Licensor,
+      except as required for reasonable and customary use in describing the
+      origin of the Work and reproducing the content of the NOTICE file.
+
+   7. Disclaimer of Warranty. Unless required by applicable law or
+      agreed to in writing, Licensor provides the Work (and each
+      Contributor provides its Contributions) on an "AS IS" BASIS,
+      WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or
+      implied, including, without limitation, any warranties or conditions
+      of TITLE, NON-INFRINGEMENT, MERCHANTABILITY, or FITNESS FOR A
+      PARTICULAR PURPOSE. You are solely responsible for determining the
+      appropriateness of using or redistributing the Work and assume any
+      risks associated with Your exercise of permissions under this License.
+
+   8. Limitation of Liability. In no event and under no legal theory,
+      whether in tort (including negligence), contract, or otherwise,
+      unless required by applicable law (such as deliberate and grossly
+      negligent acts) or agreed to in writing, shall any Contributor be
+      liable to You for damages, including any direct, indirect, special,
+      incidental, or consequential damages of any character arising as a
+      result of this License or out of the use or inability to use the
+      Work (including but not limited to damages for loss of goodwill,
+      work stoppage, computer failure or malfunction, or any and all
+      other commercial damages or losses), even if such Contributor
+      has been advised of the possibility of such damages.
+
+   9. Accepting Warranty or Additional Liability. While redistributing
+      the Work or Derivative Works thereof, You may choose to offer,
+      and charge a fee for, acceptance of support, warranty, indemnity,
+      or other liability obligations and/or rights consistent with this
+      License. However, in accepting such obligations, You may act only
+      on Your own behalf and on Your sole responsibility, not on behalf
+      of any other Contributor, and only if You agree to indemnify,
+      defend, and hold each Contributor harmless for any liability
+      incurred by, or claims asserted against, such Contributor by reason
+      of your accepting any such warranty or additional liability.
+
+   END OF TERMS AND CONDITIONS
+
+   APPENDIX: How to apply the Apache License to your work.
+
+      To apply the Apache License to your work, attach the following
+      boilerplate notice, with the fields enclosed by brackets "[]"
+      replaced with your own identifying information. (Don't include
+      the brackets!)  The text should be enclosed in the appropriate
+      comment syntax for the file format. We also recommend that a
+      file or class name and description of purpose be included on the
+      same "printed page" as the copyright notice for easier
+      identification within third-party archives.
+
+   Copyright [yyyy] [name of copyright owner]
+
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+
+
+
+========================================================================
+third_party/benchmark/include/benchmark/benchmark.h
+third_party/benchmark/src/benchmark.cc
+third_party/benchmark/src/benchmark_name.cc
+third_party/benchmark/src/benchmark_register.cc
+third_party/benchmark/src/benchmark_runner.cc
+third_party/benchmark/src/benchmark_runner.h
+third_party/benchmark/src/colorprint.cc
+third_party/benchmark/src/commandlineflags.cc
+third_party/benchmark/src/console_reporter.cc
+third_party/benchmark/src/counter.cc
+third_party/benchmark/src/counter.h
+third_party/benchmark/src/csv_reporter.cc
+third_party/benchmark/src/json_reporter.cc
+third_party/benchmark/src/re.h
+third_party/benchmark/src/reporter.cc
+third_party/benchmark/src/sysinfo.cc
+third_party/benchmark/src/timers.cc
+
+// Copyright 2015 Google Inc. All rights reserved.
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//     http://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+
+
+
+========================================================================
+third_party/benchmark/src/benchmark_main.cc
+
+// Copyright 2018 Google Inc. All rights reserved.
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//     http://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+
+
+
+========================================================================
+third_party/benchmark/src/complexity.cc
+third_party/benchmark/src/complexity.h
+
+// Copyright 2016 Ismael Jimenez Martinez. All rights reserved.
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//     http://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+
+
+
+========================================================================
+third_party/benchmark/src/perf_counters.cc
+third_party/benchmark/src/perf_counters.h
+
+// Copyright 2021 Google Inc. All rights reserved.
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//     http://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+
+
+
+========================================================================
+third_party/benchmark/src/statistics.cc
+third_party/benchmark/src/statistics.h
+
+// Copyright 2016 Ismael Jimenez Martinez. All rights reserved.
+// Copyright 2017 Roman Lebedev. All rights reserved.
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//     http://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+
+
+
+========================================================================
+third_party/fiat/LICENSE
+
+The Apache License, Version 2.0 (Apache-2.0)
+
+Copyright 2015-2020 the fiat-crypto authors (see the AUTHORS file)
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
+
+
+========================================================================
+third_party/googletest/LICENSE
+
+Copyright 2008, Google Inc.
+All rights reserved.
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are
+met:
+
+    * Redistributions of source code must retain the above copyright
+notice, this list of conditions and the following disclaimer.
+    * Redistributions in binary form must reproduce the above
+copyright notice, this list of conditions and the following disclaimer
+in the documentation and/or other materials provided with the
+distribution.
+    * Neither the name of Google Inc. nor the names of its
+contributors may be used to endorse or promote products derived from
+this software without specific prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+"AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+
+
+========================================================================
+third_party/googletest/googlemock/include/gmock/gmock-actions.h
+third_party/googletest/googlemock/include/gmock/gmock-cardinalities.h
+third_party/googletest/googlemock/include/gmock/gmock-function-mocker.h
+third_party/googletest/googlemock/include/gmock/gmock-matchers.h
+third_party/googletest/googlemock/include/gmock/gmock-more-actions.h
+third_party/googletest/googlemock/include/gmock/gmock-spec-builders.h
+third_party/googletest/googlemock/include/gmock/gmock.h
+third_party/googletest/googlemock/include/gmock/internal/gmock-internal-utils.h
+third_party/googletest/googlemock/src/gmock-cardinalities.cc
+third_party/googletest/googlemock/src/gmock-internal-utils.cc
+third_party/googletest/googlemock/src/gmock-matchers.cc
+third_party/googletest/googlemock/src/gmock-spec-builders.cc
+third_party/googletest/googletest/include/gtest/gtest-matchers.h
+third_party/googletest/googletest/include/gtest/gtest-printers.h
+third_party/googletest/googletest/include/gtest/gtest-spi.h
+third_party/googletest/googletest/src/gtest-matchers.cc
+third_party/googletest/googletest/src/gtest-printers.cc
+
+// Copyright 2007, Google Inc.
+// All rights reserved.
+//
+// Redistribution and use in source and binary forms, with or without
+// modification, are permitted provided that the following conditions are
+// met:
+//
+//     * Redistributions of source code must retain the above copyright
+// notice, this list of conditions and the following disclaimer.
+//     * Redistributions in binary form must reproduce the above
+// copyright notice, this list of conditions and the following disclaimer
+// in the documentation and/or other materials provided with the
+// distribution.
+//     * Neither the name of Google Inc. nor the names of its
+// contributors may be used to endorse or promote products derived from
+// this software without specific prior written permission.
+//
+// THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+// "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+// LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+// A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+// OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+// SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+// LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+// DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+// THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+// (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+// OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+
+
+========================================================================
+third_party/googletest/googlemock/include/gmock/gmock-more-matchers.h
+
+// Copyright 2013, Google Inc.
+// All rights reserved.
+//
+// Redistribution and use in source and binary forms, with or without
+// modification, are permitted provided that the following conditions are
+// met:
+//
+//     * Redistributions of source code must retain the above copyright
+// notice, this list of conditions and the following disclaimer.
+//     * Redistributions in binary form must reproduce the above
+// copyright notice, this list of conditions and the following disclaimer
+// in the documentation and/or other materials provided with the
+// distribution.
+//     * Neither the name of Google Inc. nor the names of its
+// contributors may be used to endorse or promote products derived from
+// this software without specific prior written permission.
+//
+// THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+// "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+// LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+// A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+// OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+// SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+// LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+// DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+// THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+// (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+// OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+
+
+========================================================================
+third_party/googletest/googlemock/include/gmock/gmock-nice-strict.h
+third_party/googletest/googlemock/include/gmock/internal/gmock-port.h
+third_party/googletest/googlemock/src/gmock-all.cc
+third_party/googletest/googlemock/src/gmock.cc
+third_party/googletest/googlemock/src/gmock_main.cc
+third_party/googletest/googletest/include/gtest/gtest-param-test.h
+third_party/googletest/googletest/include/gtest/gtest-test-part.h
+third_party/googletest/googletest/include/gtest/internal/gtest-filepath.h
+third_party/googletest/googletest/src/gtest-all.cc
+third_party/googletest/googletest/src/gtest-filepath.cc
+third_party/googletest/googletest/src/gtest-port.cc
+third_party/googletest/googletest/src/gtest-test-part.cc
+
+// Copyright 2008, Google Inc.
+// All rights reserved.
+//
+// Redistribution and use in source and binary forms, with or without
+// modification, are permitted provided that the following conditions are
+// met:
+//
+//     * Redistributions of source code must retain the above copyright
+// notice, this list of conditions and the following disclaimer.
+//     * Redistributions in binary form must reproduce the above
+// copyright notice, this list of conditions and the following disclaimer
+// in the documentation and/or other materials provided with the
+// distribution.
+//     * Neither the name of Google Inc. nor the names of its
+// contributors may be used to endorse or promote products derived from
+// this software without specific prior written permission.
+//
+// THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+// "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+// LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+// A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+// OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+// SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+// LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+// DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+// THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+// (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+// OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+
+
+========================================================================
+third_party/googletest/googlemock/include/gmock/internal/custom/gmock-matchers.h
+third_party/googletest/googlemock/include/gmock/internal/custom/gmock-port.h
+third_party/googletest/googletest/include/gtest/internal/gtest-port-arch.h
+
+// Copyright 2015, Google Inc.
+// All rights reserved.
+//
+// Redistribution and use in source and binary forms, with or without
+// modification, are permitted provided that the following conditions are
+// met:
+//
+//     * Redistributions of source code must retain the above copyright
+// notice, this list of conditions and the following disclaimer.
+//     * Redistributions in binary form must reproduce the above
+// copyright notice, this list of conditions and the following disclaimer
+// in the documentation and/or other materials provided with the
+// distribution.
+//     * Neither the name of Google Inc. nor the names of its
+// contributors may be used to endorse or promote products derived from
+// this software without specific prior written permission.
+//
+// THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+// "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+// LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+// A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+// OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+// SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+// LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+// DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+// THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+// (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+// OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+
+
+========================================================================
+third_party/googletest/googletest/include/gtest/gtest-assertion-result.h
+third_party/googletest/googletest/include/gtest/gtest-death-test.h
+third_party/googletest/googletest/include/gtest/gtest-message.h
+third_party/googletest/googletest/include/gtest/gtest.h
+third_party/googletest/googletest/include/gtest/internal/gtest-death-test-internal.h
+third_party/googletest/googletest/include/gtest/internal/gtest-internal.h
+third_party/googletest/googletest/include/gtest/internal/gtest-port.h
+third_party/googletest/googletest/include/gtest/internal/gtest-string.h
+third_party/googletest/googletest/samples/sample1.cc
+third_party/googletest/googletest/samples/sample1.h
+third_party/googletest/googletest/samples/sample1_unittest.cc
+third_party/googletest/googletest/samples/sample2.cc
+third_party/googletest/googletest/samples/sample2.h
+third_party/googletest/googletest/samples/sample2_unittest.cc
+third_party/googletest/googletest/samples/sample3-inl.h
+third_party/googletest/googletest/samples/sample3_unittest.cc
+third_party/googletest/googletest/samples/sample4.cc
+third_party/googletest/googletest/samples/sample4.h
+third_party/googletest/googletest/samples/sample4_unittest.cc
+third_party/googletest/googletest/samples/sample5_unittest.cc
+third_party/googletest/googletest/src/gtest-assertion-result.cc
+third_party/googletest/googletest/src/gtest-death-test.cc
+third_party/googletest/googletest/src/gtest-internal-inl.h
+third_party/googletest/googletest/src/gtest.cc
+
+// Copyright 2005, Google Inc.
+// All rights reserved.
+//
+// Redistribution and use in source and binary forms, with or without
+// modification, are permitted provided that the following conditions are
+// met:
+//
+//     * Redistributions of source code must retain the above copyright
+// notice, this list of conditions and the following disclaimer.
+//     * Redistributions in binary form must reproduce the above
+// copyright notice, this list of conditions and the following disclaimer
+// in the documentation and/or other materials provided with the
+// distribution.
+//     * Neither the name of Google Inc. nor the names of its
+// contributors may be used to endorse or promote products derived from
+// this software without specific prior written permission.
+//
+// THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+// "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+// LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+// A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+// OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+// SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+// LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+// DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+// THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+// (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+// OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+
+
+========================================================================
+third_party/googletest/googletest/include/gtest/gtest-typed-test.h
+third_party/googletest/googletest/include/gtest/internal/gtest-param-util.h
+third_party/googletest/googletest/include/gtest/internal/gtest-type-util.h
+third_party/googletest/googletest/samples/prime_tables.h
+third_party/googletest/googletest/samples/sample6_unittest.cc
+third_party/googletest/googletest/samples/sample7_unittest.cc
+third_party/googletest/googletest/samples/sample8_unittest.cc
+third_party/googletest/googletest/src/gtest-typed-test.cc
+
+// Copyright 2008 Google Inc.
+// All Rights Reserved.
+//
+// Redistribution and use in source and binary forms, with or without
+// modification, are permitted provided that the following conditions are
+// met:
+//
+//     * Redistributions of source code must retain the above copyright
+// notice, this list of conditions and the following disclaimer.
+//     * Redistributions in binary form must reproduce the above
+// copyright notice, this list of conditions and the following disclaimer
+// in the documentation and/or other materials provided with the
+// distribution.
+//     * Neither the name of Google Inc. nor the names of its
+// contributors may be used to endorse or promote products derived from
+// this software without specific prior written permission.
+//
+// THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+// "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+// LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+// A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+// OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+// SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+// LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+// DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+// THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+// (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+// OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+
+
+========================================================================
+third_party/googletest/googletest/include/gtest/gtest_pred_impl.h
+
+// Copyright 2006, Google Inc.
+// All rights reserved.
+//
+// Redistribution and use in source and binary forms, with or without
+// modification, are permitted provided that the following conditions are
+// met:
+//
+//     * Redistributions of source code must retain the above copyright
+// notice, this list of conditions and the following disclaimer.
+//     * Redistributions in binary form must reproduce the above
+// copyright notice, this list of conditions and the following disclaimer
+// in the documentation and/or other materials provided with the
+// distribution.
+//     * Neither the name of Google Inc. nor the names of its
+// contributors may be used to endorse or promote products derived from
+// this software without specific prior written permission.
+//
+// THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+// "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+// LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+// A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+// OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+// SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+// LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+// DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+// THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+// (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+// OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+//
+// Implements a family of generic predicate assertion macros.
+
+
+
+========================================================================
+third_party/googletest/googletest/include/gtest/gtest_prod.h
+third_party/googletest/googletest/src/gtest_main.cc
+
+// Copyright 2006, Google Inc.
+// All rights reserved.
+//
+// Redistribution and use in source and binary forms, with or without
+// modification, are permitted provided that the following conditions are
+// met:
+//
+//     * Redistributions of source code must retain the above copyright
+// notice, this list of conditions and the following disclaimer.
+//     * Redistributions in binary form must reproduce the above
+// copyright notice, this list of conditions and the following disclaimer
+// in the documentation and/or other materials provided with the
+// distribution.
+//     * Neither the name of Google Inc. nor the names of its
+// contributors may be used to endorse or promote products derived from
+// this software without specific prior written permission.
+//
+// THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+// "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+// LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+// A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+// OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+// SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+// LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+// DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+// THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+// (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+// OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+
+
+========================================================================
+third_party/googletest/googletest/include/gtest/internal/custom/gtest-port.h
+third_party/googletest/googletest/include/gtest/internal/custom/gtest.h
+
+// Copyright 2015, Google Inc.
+// All rights reserved.
+//
+// Redistribution and use in source and binary forms, with or without
+// modification, are permitted provided that the following conditions are
+// met:
+//
+//     * Redistributions of source code must retain the above copyright
+// notice, this list of conditions and the following disclaimer.
+//     * Redistributions in binary form must reproduce the above
+// copyright notice, this list of conditions and the following disclaimer
+// in the documentation and/or other materials provided with the
+// distribution.
+//     * Neither the name of Google Inc. nor the names of its
+// contributors may be used to endorse or promote products derived from
+// this software without specific prior written permission.
+//
+// THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+// "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+// LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+// A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+// OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+// SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+// LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+// DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+// THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+// (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+// OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+//
+// Injection point for custom user configurations. See README for details
+//
+// ** Custom implementation starts here **
+
+
+
+========================================================================
+third_party/googletest/googletest/include/gtest/internal/custom/gtest-printers.h
+
+// Copyright 2015, Google Inc.
+// All rights reserved.
+//
+// Redistribution and use in source and binary forms, with or without
+// modification, are permitted provided that the following conditions are
+// met:
+//
+//     * Redistributions of source code must retain the above copyright
+// notice, this list of conditions and the following disclaimer.
+//     * Redistributions in binary form must reproduce the above
+// copyright notice, this list of conditions and the following disclaimer
+// in the documentation and/or other materials provided with the
+// distribution.
+//     * Neither the name of Google Inc. nor the names of its
+// contributors may be used to endorse or promote products derived from
+// this software without specific prior written permission.
+//
+// THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+// "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+// LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+// A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+// OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+// SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+// LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+// DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+// THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+// (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+// OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+//
+// This file provides an injection point for custom printers in a local
+// installation of gTest.
+// It will be included from gtest-printers.h and the overrides in this file
+// will be visible to everyone.
+//
+// Injection point for custom user configurations. See README for details
+//
+// ** Custom implementation starts here **
+
+
+
+========================================================================
+third_party/googletest/googletest/samples/sample10_unittest.cc
+third_party/googletest/googletest/samples/sample9_unittest.cc
+
+// Copyright 2009 Google Inc. All Rights Reserved.
+//
+// Redistribution and use in source and binary forms, with or without
+// modification, are permitted provided that the following conditions are
+// met:
+//
+//     * Redistributions of source code must retain the above copyright
+// notice, this list of conditions and the following disclaimer.
+//     * Redistributions in binary form must reproduce the above
+// copyright notice, this list of conditions and the following disclaimer
+// in the documentation and/or other materials provided with the
+// distribution.
+//     * Neither the name of Google Inc. nor the names of its
+// contributors may be used to endorse or promote products derived from
+// this software without specific prior written permission.
+//
+// THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+// "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+// LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+// A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+// OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+// SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+// LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+// DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+// THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+// (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+// OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+
+
+========================================================================
+third_party/wycheproof_testvectors/LICENSE
+
+
+                                 Apache License
+                           Version 2.0, January 2004
+                        http://www.apache.org/licenses/
+
+   TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION
+
+   1. Definitions.
+
+      "License" shall mean the terms and conditions for use, reproduction,
+      and distribution as defined by Sections 1 through 9 of this document.
+
+      "Licensor" shall mean the copyright owner or entity authorized by
+      the copyright owner that is granting the License.
+
+      "Legal Entity" shall mean the union of the acting entity and all
+      other entities that control, are controlled by, or are under common
+      control with that entity. For the purposes of this definition,
+      "control" means (i) the power, direct or indirect, to cause the
+      direction or management of such entity, whether by contract or
+      otherwise, or (ii) ownership of fifty percent (50%) or more of the
+      outstanding shares, or (iii) beneficial ownership of such entity.
+
+      "You" (or "Your") shall mean an individual or Legal Entity
+      exercising permissions granted by this License.
+
+      "Source" form shall mean the preferred form for making modifications,
+      including but not limited to software source code, documentation
+      source, and configuration files.
+
+      "Object" form shall mean any form resulting from mechanical
+      transformation or translation of a Source form, including but
+      not limited to compiled object code, generated documentation,
+      and conversions to other media types.
+
+      "Work" shall mean the work of authorship, whether in Source or
+      Object form, made available under the License, as indicated by a
+      copyright notice that is included in or attached to the work
+      (an example is provided in the Appendix below).
+
+      "Derivative Works" shall mean any work, whether in Source or Object
+      form, that is based on (or derived from) the Work and for which the
+      editorial revisions, annotations, elaborations, or other modifications
+      represent, as a whole, an original work of authorship. For the purposes
+      of this License, Derivative Works shall not include works that remain
+      separable from, or merely link (or bind by name) to the interfaces of,
+      the Work and Derivative Works thereof.
+
+      "Contribution" shall mean any work of authorship, including
+      the original version of the Work and any modifications or additions
+      to that Work or Derivative Works thereof, that is intentionally
+      submitted to Licensor for inclusion in the Work by the copyright owner
+      or by an individual or Legal Entity authorized to submit on behalf of
+      the copyright owner. For the purposes of this definition, "submitted"
+      means any form of electronic, verbal, or written communication sent
+      to the Licensor or its representatives, including but not limited to
+      communication on electronic mailing lists, source code control systems,
+      and issue tracking systems that are managed by, or on behalf of, the
+      Licensor for the purpose of discussing and improving the Work, but
+      excluding communication that is conspicuously marked or otherwise
+      designated in writing by the copyright owner as "Not a Contribution."
+
+      "Contributor" shall mean Licensor and any individual or Legal Entity
+      on behalf of whom a Contribution has been received by Licensor and
+      subsequently incorporated within the Work.
+
+   2. Grant of Copyright License. Subject to the terms and conditions of
+      this License, each Contributor hereby grants to You a perpetual,
+      worldwide, non-exclusive, no-charge, royalty-free, irrevocable
+      copyright license to reproduce, prepare Derivative Works of,
+      publicly display, publicly perform, sublicense, and distribute the
+      Work and such Derivative Works in Source or Object form.
+
+   3. Grant of Patent License. Subject to the terms and conditions of
+      this License, each Contributor hereby grants to You a perpetual,
+      worldwide, non-exclusive, no-charge, royalty-free, irrevocable
+      (except as stated in this section) patent license to make, have made,
+      use, offer to sell, sell, import, and otherwise transfer the Work,
+      where such license applies only to those patent claims licensable
+      by such Contributor that are necessarily infringed by their
+      Contribution(s) alone or by combination of their Contribution(s)
+      with the Work to which such Contribution(s) was submitted. If You
+      institute patent litigation against any entity (including a
+      cross-claim or counterclaim in a lawsuit) alleging that the Work
+      or a Contribution incorporated within the Work constitutes direct
+      or contributory patent infringement, then any patent licenses
+      granted to You under this License for that Work shall terminate
+      as of the date such litigation is filed.
+
+   4. Redistribution. You may reproduce and distribute copies of the
+      Work or Derivative Works thereof in any medium, with or without
+      modifications, and in Source or Object form, provided that You
+      meet the following conditions:
+
+      (a) You must give any other recipients of the Work or
+          Derivative Works a copy of this License; and
+
+      (b) You must cause any modified files to carry prominent notices
+          stating that You changed the files; and
+
+      (c) You must retain, in the Source form of any Derivative Works
+          that You distribute, all copyright, patent, trademark, and
+          attribution notices from the Source form of the Work,
+          excluding those notices that do not pertain to any part of
+          the Derivative Works; and
+
+      (d) If the Work includes a "NOTICE" text file as part of its
+          distribution, then any Derivative Works that You distribute must
+          include a readable copy of the attribution notices contained
+          within such NOTICE file, excluding those notices that do not
+          pertain to any part of the Derivative Works, in at least one
+          of the following places: within a NOTICE text file distributed
+          as part of the Derivative Works; within the Source form or
+          documentation, if provided along with the Derivative Works; or,
+          within a display generated by the Derivative Works, if and
+          wherever such third-party notices normally appear. The contents
+          of the NOTICE file are for informational purposes only and
+          do not modify the License. You may add Your own attribution
+          notices within Derivative Works that You distribute, alongside
+          or as an addendum to the NOTICE text from the Work, provided
+          that such additional attribution notices cannot be construed
+          as modifying the License.
+
+      You may add Your own copyright statement to Your modifications and
+      may provide additional or different license terms and conditions
+      for use, reproduction, or distribution of Your modifications, or
+      for any such Derivative Works as a whole, provided Your use,
+      reproduction, and distribution of the Work otherwise complies with
+      the conditions stated in this License.
+
+   5. Submission of Contributions. Unless You explicitly state otherwise,
+      any Contribution intentionally submitted for inclusion in the Work
+      by You to the Licensor shall be under the terms and conditions of
+      this License, without any additional terms or conditions.
+      Notwithstanding the above, nothing herein shall supersede or modify
+      the terms of any separate license agreement you may have executed
+      with Licensor regarding such Contributions.
+
+   6. Trademarks. This License does not grant permission to use the trade
+      names, trademarks, service marks, or product names of the Licensor,
+      except as required for reasonable and customary use in describing the
+      origin of the Work and reproducing the content of the NOTICE file.
+
+   7. Disclaimer of Warranty. Unless required by applicable law or
+      agreed to in writing, Licensor provides the Work (and each
+      Contributor provides its Contributions) on an "AS IS" BASIS,
+      WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or
+      implied, including, without limitation, any warranties or conditions
+      of TITLE, NON-INFRINGEMENT, MERCHANTABILITY, or FITNESS FOR A
+      PARTICULAR PURPOSE. You are solely responsible for determining the
+      appropriateness of using or redistributing the Work and assume any
+      risks associated with Your exercise of permissions under this License.
+
+   8. Limitation of Liability. In no event and under no legal theory,
+      whether in tort (including negligence), contract, or otherwise,
+      unless required by applicable law (such as deliberate and grossly
+      negligent acts) or agreed to in writing, shall any Contributor be
+      liable to You for damages, including any direct, indirect, special,
+      incidental, or consequential damages of any character arising as a
+      result of this License or out of the use or inability to use the
+      Work (including but not limited to damages for loss of goodwill,
+      work stoppage, computer failure or malfunction, or any and all
+      other commercial damages or losses), even if such Contributor
+      has been advised of the possibility of such damages.
+
+   9. Accepting Warranty or Additional Liability. While redistributing
+      the Work or Derivative Works thereof, You may choose to offer,
+      and charge a fee for, acceptance of support, warranty, indemnity,
+      or other liability obligations and/or rights consistent with this
+      License. However, in accepting such obligations, You may act only
+      on Your own behalf and on Your sole responsibility, not on behalf
+      of any other Contributor, and only if You agree to indemnify,
+      defend, and hold each Contributor harmless for any liability
+      incurred by, or claims asserted against, such Contributor by reason
+      of your accepting any such warranty or additional liability.
+
+   END OF TERMS AND CONDITIONS
+
+   APPENDIX: How to apply the Apache License to your work.
+
+      To apply the Apache License to your work, attach the following
+      boilerplate notice, with the fields enclosed by brackets "[]"
+      replaced with your own identifying information. (Don't include
+      the brackets!)  The text should be enclosed in the appropriate
+      comment syntax for the file format. We also recommend that a
+      file or class name and description of purpose be included on the
+      same "printed page" as the copyright notice for easier
+      identification within third-party archives.
+
+   Copyright [yyyy] [name of copyright owner]
+
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.

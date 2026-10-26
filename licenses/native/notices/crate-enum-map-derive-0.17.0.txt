@@ -1,0 +1,36 @@
+Native source notices: crate-enum-map-derive-0.17.0
+Source archive SHA-256: f282cfdfe92516eb26c2af8589c274c7c17681f5ecc03c18255fe741c6aa64eb
+Original terms and copyright statements follow. Coverage includes conservative build/tool dependencies.
+
+
+========================================================================
+src/derive_enum.rs
+
+// SPDX-FileCopyrightText: 2021 - 2023 Kamila Borowska <kamila@borowska.pw>
+// SPDX-FileCopyrightText: 2021 Bruno Corrêa Zimmermann <brunoczim@gmail.com>
+//
+// SPDX-License-Identifier: MIT OR Apache-2.0
+
+
+
+========================================================================
+src/derive_struct.rs
+
+// SPDX-FileCopyrightText: 2021 - 2022 Kamila Borowska <kamila@borowska.pw>
+// SPDX-FileCopyrightText: 2021 Bruno Corrêa Zimmermann <brunoczim@gmail.com>
+//
+// SPDX-License-Identifier: MIT OR Apache-2.0
+
+
+
+========================================================================
+src/lib.rs
+
+// SPDX-FileCopyrightText: 2017 - 2022 Kamila Borowska <kamila@borowska.pw>
+// SPDX-FileCopyrightText: 2018 hcpl <hcpl.prog@gmail.com>
+// SPDX-FileCopyrightText: 2019 mara <vmedea@protonmail.com>
+// SPDX-FileCopyrightText: 2021 Bruno Corrêa Zimmermann <brunoczim@gmail.com>
+// SPDX-FileCopyrightText: 2021 Dietrich <dietrich@teilgedanken.de>
+//
+// SPDX-License-Identifier: MIT OR Apache-2.0
+

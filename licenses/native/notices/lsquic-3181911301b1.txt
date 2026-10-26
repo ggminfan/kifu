@@ -1,0 +1,586 @@
+Native source notices: lsquic-3181911301b1
+Source archive SHA-256: f8cb90fb327eb91597c23163bf596c0d1882560be35b661d9ba84891cc461735
+Original terms and copyright statements follow. Coverage includes conservative build/tool dependencies.
+
+
+========================================================================
+LICENSE
+
+MIT License
+
+Copyright (c) 2017 - 2026 LiteSpeed Technologies Inc
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+
+
+========================================================================
+LICENSE.chrome
+
+A few parts of LiteSpeed QUIC library are based on proto-quic.  That
+code is covered by this additional license:
+
+------------------------------
+
+Copyright 2015 The Chromium Authors. All rights reserved.
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are
+met:
+
+* Redistributions of source code must retain the above copyright
+notice, this list of conditions and the following disclaimer.
+* Redistributions in binary form must reproduce the above
+copyright notice, this list of conditions and the following disclaimer
+in the documentation and/or other materials provided with the
+distribution.
+* Neither the name of Google Inc. nor the names of its
+contributors may be used to endorse or promote products derived from
+this software without specific prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+"AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+
+
+========================================================================
+bin/duck_client.c
+bin/duck_server.c
+bin/echo_client.c
+bin/echo_server.c
+bin/http_client.c
+bin/http_server.c
+bin/md5_client.c
+bin/md5_server.c
+bin/perf_client.c
+bin/perf_server.c
+bin/prog.c
+bin/prog.h
+bin/test_cert.c
+bin/test_cert.h
+bin/test_common.c
+bin/test_common.h
+include/lsquic_types.h
+include/lsxpack_header.h
+src/liblsquic/lsquic_adaptive_cc.c
+src/liblsquic/lsquic_adaptive_cc.h
+src/liblsquic/lsquic_alarmset.c
+src/liblsquic/lsquic_alarmset.h
+src/liblsquic/lsquic_arr.c
+src/liblsquic/lsquic_arr.h
+src/liblsquic/lsquic_attq.c
+src/liblsquic/lsquic_attq.h
+src/liblsquic/lsquic_bw_sampler.c
+src/liblsquic/lsquic_byteswap.h
+src/liblsquic/lsquic_cfcw.c
+src/liblsquic/lsquic_chsk_stream.c
+src/liblsquic/lsquic_chsk_stream.h
+src/liblsquic/lsquic_cong_ctl.h
+src/liblsquic/lsquic_conn.c
+src/liblsquic/lsquic_conn.h
+src/liblsquic/lsquic_conn_flow.h
+src/liblsquic/lsquic_conn_public.h
+src/liblsquic/lsquic_crand.c
+src/liblsquic/lsquic_crand.h
+src/liblsquic/lsquic_crt_compress.c
+src/liblsquic/lsquic_crt_compress.h
+src/liblsquic/lsquic_crypto.c
+src/liblsquic/lsquic_crypto.h
+src/liblsquic/lsquic_cubic.c
+src/liblsquic/lsquic_cubic.h
+src/liblsquic/lsquic_data_in_if.h
+src/liblsquic/lsquic_di_error.c
+src/liblsquic/lsquic_di_hash.c
+src/liblsquic/lsquic_di_nocopy.c
+src/liblsquic/lsquic_enc_sess.h
+src/liblsquic/lsquic_enc_sess_common.c
+src/liblsquic/lsquic_enc_sess_ietf.c
+src/liblsquic/lsquic_eng_hist.c
+src/liblsquic/lsquic_eng_hist.h
+src/liblsquic/lsquic_engine_public.h
+src/liblsquic/lsquic_ev_log.c
+src/liblsquic/lsquic_ev_log.h
+src/liblsquic/lsquic_frab_list.c
+src/liblsquic/lsquic_frab_list.h
+src/liblsquic/lsquic_frame_common.c
+src/liblsquic/lsquic_frame_common.h
+src/liblsquic/lsquic_frame_reader.c
+src/liblsquic/lsquic_frame_reader.h
+src/liblsquic/lsquic_frame_writer.c
+src/liblsquic/lsquic_frame_writer.h
+src/liblsquic/lsquic_full_conn.c
+src/liblsquic/lsquic_full_conn.h
+src/liblsquic/lsquic_full_conn_ietf.c
+src/liblsquic/lsquic_global.c
+src/liblsquic/lsquic_handshake.c
+src/liblsquic/lsquic_handshake.h
+src/liblsquic/lsquic_hash.c
+src/liblsquic/lsquic_hash.h
+src/liblsquic/lsquic_hcsi_reader.c
+src/liblsquic/lsquic_hcsi_reader.h
+src/liblsquic/lsquic_hcso_writer.c
+src/liblsquic/lsquic_hcso_writer.h
+src/liblsquic/lsquic_headers.h
+src/liblsquic/lsquic_headers_stream.c
+src/liblsquic/lsquic_headers_stream.h
+src/liblsquic/lsquic_hkdf.c
+src/liblsquic/lsquic_hkdf.h
+src/liblsquic/lsquic_hpi.c
+src/liblsquic/lsquic_hpi.h
+src/liblsquic/lsquic_hq.h
+src/liblsquic/lsquic_hspack_valid.c
+src/liblsquic/lsquic_http.c
+src/liblsquic/lsquic_http1x_if.c
+src/liblsquic/lsquic_http1x_if.h
+src/liblsquic/lsquic_ietf.h
+src/liblsquic/lsquic_int_types.h
+src/liblsquic/lsquic_logger.c
+src/liblsquic/lsquic_logger.h
+src/liblsquic/lsquic_malo.c
+src/liblsquic/lsquic_malo.h
+src/liblsquic/lsquic_min_heap.c
+src/liblsquic/lsquic_min_heap.h
+src/liblsquic/lsquic_mini_conn.c
+src/liblsquic/lsquic_mini_conn.h
+src/liblsquic/lsquic_mini_conn_ietf.c
+src/liblsquic/lsquic_mini_conn_ietf.h
+src/liblsquic/lsquic_minmax.h
+src/liblsquic/lsquic_mm.c
+src/liblsquic/lsquic_mm.h
+src/liblsquic/lsquic_pacer.c
+src/liblsquic/lsquic_pacer.h
+src/liblsquic/lsquic_packet_common.c
+src/liblsquic/lsquic_packet_common.h
+src/liblsquic/lsquic_packet_gquic.c
+src/liblsquic/lsquic_packet_gquic.h
+src/liblsquic/lsquic_packet_ietf.h
+src/liblsquic/lsquic_packet_in.c
+src/liblsquic/lsquic_packet_in.h
+src/liblsquic/lsquic_packet_out.c
+src/liblsquic/lsquic_packet_out.h
+src/liblsquic/lsquic_packet_resize.c
+src/liblsquic/lsquic_packet_resize.h
+src/liblsquic/lsquic_parse.h
+src/liblsquic/lsquic_parse_Q046.c
+src/liblsquic/lsquic_parse_Q050.c
+src/liblsquic/lsquic_parse_common.c
+src/liblsquic/lsquic_parse_common.h
+src/liblsquic/lsquic_parse_gquic_be.c
+src/liblsquic/lsquic_parse_gquic_be.h
+src/liblsquic/lsquic_parse_gquic_common.c
+src/liblsquic/lsquic_parse_ietf.h
+src/liblsquic/lsquic_parse_ietf_v1.c
+src/liblsquic/lsquic_parse_iquic_common.c
+src/liblsquic/lsquic_pr_queue.c
+src/liblsquic/lsquic_pr_queue.h
+src/liblsquic/lsquic_purga.c
+src/liblsquic/lsquic_purga.h
+src/liblsquic/lsquic_push_promise.h
+src/liblsquic/lsquic_qdec_hdl.c
+src/liblsquic/lsquic_qdec_hdl.h
+src/liblsquic/lsquic_qenc_hdl.c
+src/liblsquic/lsquic_qenc_hdl.h
+src/liblsquic/lsquic_qlog.c
+src/liblsquic/lsquic_qlog.h
+src/liblsquic/lsquic_qpack_dec_logger.h
+src/liblsquic/lsquic_qpack_enc_logger.h
+src/liblsquic/lsquic_qpack_exp.c
+src/liblsquic/lsquic_qpack_exp.h
+src/liblsquic/lsquic_qtags.h
+src/liblsquic/lsquic_rechist.c
+src/liblsquic/lsquic_rechist.h
+src/liblsquic/lsquic_rtt.c
+src/liblsquic/lsquic_rtt.h
+src/liblsquic/lsquic_send_ctl.c
+src/liblsquic/lsquic_send_ctl.h
+src/liblsquic/lsquic_senhist.c
+src/liblsquic/lsquic_senhist.h
+src/liblsquic/lsquic_set.c
+src/liblsquic/lsquic_set.h
+src/liblsquic/lsquic_sfcw.c
+src/liblsquic/lsquic_sfcw.h
+src/liblsquic/lsquic_shsk_stream.c
+src/liblsquic/lsquic_shsk_stream.h
+src/liblsquic/lsquic_sizes.h
+src/liblsquic/lsquic_spi.c
+src/liblsquic/lsquic_spi.h
+src/liblsquic/lsquic_stock_shi.c
+src/liblsquic/lsquic_stock_shi.h
+src/liblsquic/lsquic_str.c
+src/liblsquic/lsquic_str.h
+src/liblsquic/lsquic_stream.c
+src/liblsquic/lsquic_stream.h
+src/liblsquic/lsquic_tokgen.c
+src/liblsquic/lsquic_tokgen.h
+src/liblsquic/lsquic_trans_params.c
+src/liblsquic/lsquic_trans_params.h
+src/liblsquic/lsquic_trechist.c
+src/liblsquic/lsquic_trechist.h
+src/liblsquic/lsquic_util.c
+src/liblsquic/lsquic_util.h
+src/liblsquic/lsquic_varint.c
+src/liblsquic/lsquic_varint.h
+src/liblsquic/lsquic_ver_neg.h
+src/liblsquic/lsquic_version.c
+src/liblsquic/lsquic_version.h
+wincompat/vc_compat.h
+
+/* Copyright (c) 2017 - 2026 LiteSpeed Technologies Inc.  See LICENSE. */
+
+
+========================================================================
+include/lsquic.h
+src/liblsquic/lsquic_engine.c
+
+/* Copyright (c) 2017 - 2026 LiteSpeed Technologies Inc.  See LICENSE. */
+
+/* Copyright (c) 2017 - 2026 LiteSpeed Technologies Inc.  See LICENSE. */
+
+
+========================================================================
+src/liblsquic/common_cert_set_2.c
+src/liblsquic/common_cert_set_3.c
+
+/* Copyright (c) 2017 - 2026 LiteSpeed Technologies Inc.  See LICENSE. */
+
+/* Copyright (c) 2015 The Chromium Authors. All rights reserved.
+ * Use of this source code is governed by a BSD-style license that can be
+ * found in the LICENSE.chrome file.
+ */
+
+
+========================================================================
+src/liblsquic/fiu-local.h
+
+/* Copyright (c) 2017 - 2026 LiteSpeed Technologies Inc.  See LICENSE. */
+
+/* libfiu - Fault Injection in Userspace
+ *
+ * This header, part of libfiu, is meant to be included in your project to
+ * avoid having libfiu as a mandatory build-time dependency.
+ *
+ * You can add it to your project, and #include it instead of fiu.h.
+ * The real fiu.h will be used only when FIU_ENABLE is defined.
+ *
+ * This header, as the rest of libfiu, is in the public domain.
+ *
+ * You can find more information about libfiu at
+ * http://blitiri.com.ar/p/libfiu.
+ */
+
+
+========================================================================
+src/liblsquic/ls-sfparser.c
+src/liblsquic/ls-sfparser.h
+
+/* Copyright (c) 2017 - 2026 LiteSpeed Technologies Inc.  See LICENSE. */
+
+/*
+MIT License
+
+Copyright (c) 2020 LiteSpeed Technologies Inc
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+*/
+
+
+========================================================================
+src/liblsquic/lsquic_bbr.c
+
+/* Copyright (c) 2017 - 2026 LiteSpeed Technologies Inc.  See LICENSE. */
+
+// Copyright 2016 The Chromium Authors. All rights reserved.
+// Use of this source code is governed by a BSD-style license that can be
+// found in the LICENSE.chrome file.
+
+
+
+========================================================================
+src/liblsquic/lsquic_bbr.h
+
+/* Copyright (c) 2017 - 2026 LiteSpeed Technologies Inc.  See LICENSE. */
+
+/* Our BBR implementation is copied from Chromium with some modifications.
+ * Besides the obvious translation from C++ to C, differences are:
+ *
+ *  1. Instead of OnCongestionEvent(), the ACK information is processed at the
+ *     same time as the ACK itself using cci_begin_ack(), cci_ack(), and
+ *     cci_end_ack() methods.  This is done to fit with the flow in
+ *     lsquic_send_ctl_got_ack().
+ *
+ *  2. The bandwidth sampler does not use a hash.  Instead, the sample
+ *     information is attached directly to the packet via po_bwp_state.
+ *
+ * In this file and in lsquic_bbr.c, C++-style comments are those copied
+ * verbatim from Chromium.  C-style comments are ours.
+ *
+ * Code is based on bbr_sender.cc 1a578a76c16abc942205a1a80584a288c262d03a in
+ * the "quiche" repository.  (Not to be confused with Cloudflare's "quiche".)
+ *
+ * The BBR I-D is here:
+ *  https://tools.ietf.org/html/draft-cardwell-iccrg-bbr-congestion-control-00
+ *
+ * As for quiche, see
+ *  http://www.bernstein-plus-sons.com/RPDEQ.html
+ *
+ * Chromium copyright notice follows.
+ */
+
+// Copyright 2016 The Chromium Authors. All rights reserved.
+// Use of this source code is governed by a BSD-style license that can be
+// found in the LICENSE.chrome file.
+
+
+
+========================================================================
+src/liblsquic/lsquic_bw_sampler.h
+
+/* Copyright (c) 2017 - 2026 LiteSpeed Technologies Inc.  See LICENSE. */
+
+// Copyright 2016 The Chromium Authors. All rights reserved.
+
+
+
+========================================================================
+src/liblsquic/lsquic_minmax.c
+
+/* Copyright (c) 2017 - 2026 LiteSpeed Technologies Inc.  See LICENSE. */
+
+/*
+ * Copyright 2017, Google Inc.
+ *
+ * Use of this source code is governed by the following BSD-style license:
+ * 
+ * Redistribution and use in source and binary forms, with or without
+ * modification, are permitted provided that the following conditions are
+ * met:
+ * 
+ *    * Redistributions of source code must retain the above copyright
+ * notice, this list of conditions and the following disclaimer.
+ *    * Redistributions in binary form must reproduce the above
+ * copyright notice, this list of conditions and the following disclaimer
+ * in the documentation and/or other materials provided with the
+ * distribution.
+ * 
+ *    * Neither the name of Google Inc. nor the names of its
+ * contributors may be used to endorse or promote products derived from
+ * this software without specific prior written permission.
+ * 
+ * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+ * "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+ * LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+ * A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+ * OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+ * SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+ * LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+ * DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+ * THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+ * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+ * OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ */
+
+
+========================================================================
+src/liblsquic/lsquic_rapidhash.h
+
+/* Copyright (c) 2017 - 2026 LiteSpeed Technologies Inc.  See LICENSE. */
+
+/*
+ * rapidhash - Very fast, high quality, platform-independent hashing algorithm.
+ * Copyright (C) 2024 Nicolas De Carli
+ *
+ * Based on 'wyhash', by Wang Yi <godspeed_china@yeah.net>
+ *
+ * BSD 2-Clause License (https://www.opensource.org/licenses/bsd-license.php)
+ *
+ * Redistribution and use in source and binary forms, with or without
+ * modification, are permitted provided that the following conditions are
+ * met:
+ *
+ *    * Redistributions of source code must retain the above copyright
+ *      notice, this list of conditions and the following disclaimer.
+ *    * Redistributions in binary form must reproduce the above
+ *      copyright notice, this list of conditions and the following disclaimer
+ *      in the documentation and/or other materials provided with the
+ *      distribution.
+ *
+ * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+ * "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+ * LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+ * A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+ * OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+ * SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+ * LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+ * DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+ * THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+ * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+ * OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ *
+ * You can contact the author at:
+ *   - rapidhash source repository: https://github.com/Nicoshev/rapidhash
+ */
+
+
+========================================================================
+src/liblsquic/lsquic_shared_support.h
+
+/* Copyright (c) 2017 - 2021 LiteSpeed Technologies Inc.  See LICENSE. */
+
+
+========================================================================
+src/liblsquic/lsquic_xxhash.c
+
+/* Copyright (c) 2017 - 2026 LiteSpeed Technologies Inc.  See LICENSE. */
+
+/*
+xxHash - Fast Hash algorithm
+Copyright (C) 2012-2014, Yann Collet.
+BSD 2-Clause License (http://www.opensource.org/licenses/bsd-license.php)
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are
+met:
+
+* Redistributions of source code must retain the above copyright
+notice, this list of conditions and the following disclaimer.
+* Redistributions in binary form must reproduce the above
+copyright notice, this list of conditions and the following disclaimer
+in the documentation and/or other materials provided with the
+distribution.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+"AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+You can contact the author at :
+- xxHash source repository : http://code.google.com/p/xxhash/
+- public discussion board : https://groups.google.com/forum/#!forum/lz4c
+*/
+
+
+========================================================================
+src/liblsquic/lsquic_xxhash.h
+
+/* Copyright (c) 2017 - 2026 LiteSpeed Technologies Inc.  See LICENSE. */
+
+/*
+   xxHash - Extremely Fast Hash algorithm
+   Header File
+   Copyright (C) 2012-2014, Yann Collet.
+   BSD 2-Clause License (http://www.opensource.org/licenses/bsd-license.php)
+
+   Redistribution and use in source and binary forms, with or without
+   modification, are permitted provided that the following conditions are
+   met:
+
+       * Redistributions of source code must retain the above copyright
+   notice, this list of conditions and the following disclaimer.
+       * Redistributions in binary form must reproduce the above
+   copyright notice, this list of conditions and the following disclaimer
+   in the documentation and/or other materials provided with the
+   distribution.
+
+   THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+   "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+   LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+   A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+   OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+   SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+   LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+   DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+   THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+   (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+   OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+   You can contact the author at :
+   - xxHash source repository : http://code.google.com/p/xxhash/
+*/
+
+
+========================================================================
+wincompat/sys/queue.h
+
+/* Copyright (c) 2017 - 2026 LiteSpeed Technologies Inc.  See LICENSE. */
+
+/*-
+ * SPDX-License-Identifier: BSD-3-Clause
+ *
+ * Copyright (c) 1991, 1993
+ *	The Regents of the University of California.  All rights reserved.
+ *
+ * Redistribution and use in source and binary forms, with or without
+ * modification, are permitted provided that the following conditions
+ * are met:
+ * 1. Redistributions of source code must retain the above copyright
+ *    notice, this list of conditions and the following disclaimer.
+ * 2. Redistributions in binary form must reproduce the above copyright
+ *    notice, this list of conditions and the following disclaimer in the
+ *    documentation and/or other materials provided with the distribution.
+ * 3. Neither the name of the University nor the names of its contributors
+ *    may be used to endorse or promote products derived from this software
+ *    without specific prior written permission.
+ *
+ * THIS SOFTWARE IS PROVIDED BY THE REGENTS AND CONTRIBUTORS ``AS IS'' AND
+ * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+ * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ * ARE DISCLAIMED.  IN NO EVENT SHALL THE REGENTS OR CONTRIBUTORS BE LIABLE
+ * FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+ * DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS
+ * OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
+ * HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT
+ * LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY
+ * OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
+ * SUCH DAMAGE.
+ *
+ *	@(#)queue.h	8.5 (Berkeley) 8/20/94
+ * $FreeBSD$
+ */

@@ -1,0 +1,5 @@
+Native source notices: crate-blake2b_simd-1.0.4
+Source archive SHA-256: b79834656f71332577234b50bfc009996f7449e0c056884e6a02492ded0ca2f3
+Original terms and copyright statements follow. Coverage includes conservative build/tool dependencies.
+
+Workspace notices: crate-upstream-blake2_simd-6a94ae2e1898

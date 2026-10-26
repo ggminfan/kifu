@@ -1,0 +1,5 @@
+Native source notices: crate-wit-parser-0.244.0
+Source archive SHA-256: ecc8ac4bc1dc3381b7f59c34f00b67e18f910c2c0f50015669dde7def656a736
+Original terms and copyright statements follow. Coverage includes conservative build/tool dependencies.
+
+Workspace notices: crate-upstream-wasm-tools-d4e317f22c3b

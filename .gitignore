@@ -1,0 +1,42 @@
+node_modules/
+dist/
+desktop/build/
+desktop/artifacts/
+*.log
+.DS_Store
+# never commit user data
+.kifu/
+test/fixtures/local/
+
+# Credentials, local configuration and generated session data
+.env
+.env.*
+!.env.example
+.npmrc
+.pnpm-store/
+.codex/
+.agents/
+.aws/
+.ssh/
+.claude/
+*.pem
+*.key
+*.p12
+*.pfx
+*.sqlite
+*.sqlite-*
+*.db
+*.db-*
+*.jsonl
+
+# Tool output
+coverage/
+playwright-report/
+test-results/
+*.tsbuildinfo
+.idea/
+.vscode/
+
+# Local test / analysis tooling
+.vitest/
+.codegraph/
