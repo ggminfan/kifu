@@ -52,7 +52,7 @@
     "codemirror": "^6.0.2",
     "diff": "^9.0.0",
     "hono": "^4.13.13",
-    "react": "^19.3.0",
+    "react": "^19.3.1",
     "react-dom": "^19.3.0",
     "react-markdown": "^10.1.0",
     "remark-gfm": "^4.0.1",
